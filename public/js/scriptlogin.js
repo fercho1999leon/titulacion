@@ -20070,10 +20070,10 @@ function useIsFocusVisible() {
 
 /***/ }),
 
-/***/ "./resources/js/components/ButtonLoad.jsx":
-/*!************************************************!*\
-  !*** ./resources/js/components/ButtonLoad.jsx ***!
-  \************************************************/
+/***/ "./resources/js/components/botones/ButtonLoad.jsx":
+/*!********************************************************!*\
+  !*** ./resources/js/components/botones/ButtonLoad.jsx ***!
+  \********************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -20103,6 +20103,13 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
+/*Este componente recibe 3 propiedades
+    1. Evento a ejecutar al ingresar al componete regresa con 6 parametrps (EventOnClick)
+        1.1 loading, setLoading, setSuccess, timer, e, props.parameteros 
+    2. Leabel del boton (text)
+    3. Parametros adicionales para el eventos (Opcional) (parameteros)
+*/
 
 
 
@@ -20159,7 +20166,7 @@ function ButtonLoad(props) {
         sx: buttonSx,
         disabled: loading,
         onClick: function onClick(e) {
-          props.EventOnClick(loading, setLoading, setSuccess, timer, e);
+          props.EventOnClick(loading, setLoading, setSuccess, timer, e, props.parameteros);
         },
         children: props.text
       }), loading && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_mui_material_CircularProgress__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -20172,6 +20179,148 @@ function ButtonLoad(props) {
           marginTop: "-12px",
           marginLeft: "-12px"
         }
+      })]
+    })
+  });
+}
+
+/***/ }),
+
+/***/ "./resources/js/components/moduloUsuarios/FormCreateUsers.jsx":
+/*!********************************************************************!*\
+  !*** ./resources/js/components/moduloUsuarios/FormCreateUsers.jsx ***!
+  \********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ FormCreateUsers)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Box/Box.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Grid/Grid.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/TextField/TextField.js");
+/* harmony import */ var _botones_ButtonLoad__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../botones/ButtonLoad */ "./resources/js/components/botones/ButtonLoad.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+var styleTextField = {
+  width: '90%'
+};
+var style = {
+  width: '50vw',
+  height: 'auto',
+  flexGrow: 1,
+  borderRadius: '10px',
+  padding: '15px',
+  WebkitBoxShadow: '0px 0px 56px 17px rgb(0 0 0 / 54%)'
+}; //Temporal (Loading for request of server)
+
+var EventOnClick = function EventOnClick() {
+  for (var _len = arguments.length, data = new Array(_len), _key = 0; _key < _len; _key++) {
+    data[_key] = arguments[_key];
+  }
+
+  if (!data[0]) {
+    data[2](false);
+    data[1](true);
+    data[3].current = window.setTimeout(function () {
+      data[2](true);
+      data[1](false);
+    }, 5000);
+  }
+};
+
+function FormCreateUsers(props) {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    sx: props.enableWindows ? style : {},
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      container: true,
+      justifyContent: "center",
+      spacing: 2,
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        item: true,
+        xs: 12,
+        sx: {
+          textAlign: "center"
+        },
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+          style: {
+            fontFamily: 'Roboto, sans-serif',
+            fontWeight: 900,
+            fontSize: 'x-large',
+            color: 'var(--color-primary)'
+          },
+          children: "REGISTRO DE USUARIO"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        item: true,
+        xs: 12,
+        md: 6,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          sx: styleTextField,
+          id: "idUser",
+          label: "Nombre",
+          variant: "outlined"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        item: true,
+        xs: 12,
+        md: 6,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          sx: styleTextField,
+          id: "idUser",
+          label: "Correo",
+          variant: "outlined"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        item: true,
+        xs: 12,
+        md: 6,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          sx: styleTextField,
+          id: "idUser",
+          label: "Usuario",
+          variant: "outlined"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        item: true,
+        xs: 12,
+        md: 6,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          sx: styleTextField,
+          id: "idUser",
+          label: "Contrase\xF1a",
+          variant: "outlined"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        item: true,
+        xs: 12,
+        md: 6,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          sx: styleTextField,
+          id: "idUser",
+          label: "Repita Contrase\xF1a",
+          variant: "outlined"
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        item: true,
+        xs: 12,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+          style: {
+            display: 'flex',
+            flexDirection: 'row',
+            justifyContent: 'center'
+          },
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_botones_ButtonLoad__WEBPACK_IMPORTED_MODULE_1__["default"], {
+            EventOnClick: EventOnClick,
+            text: 'Guardar'
+          })
+        })
       })]
     })
   });
@@ -20193,8 +20342,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var _components_FormLogin__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/FormLogin */ "./resources/js/pages/login/components/FormLogin.jsx");
-/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../css/main.css */ "./resources/css/main.css");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _components_moduloUsuarios_FormCreateUsers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/moduloUsuarios/FormCreateUsers */ "./resources/js/components/moduloUsuarios/FormCreateUsers.jsx");
+/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../css/main.css */ "./resources/css/main.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
 
 
 
@@ -20209,11 +20360,13 @@ var style = {
 };
 
 function Index() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
     className: "container",
     style: style,
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_FormLogin__WEBPACK_IMPORTED_MODULE_2__["default"], {})
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_moduloUsuarios_FormCreateUsers__WEBPACK_IMPORTED_MODULE_3__["default"], {
+        enableWindows: true
+      })
     })
   });
 }
@@ -20221,7 +20374,7 @@ function Index() {
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Index);
 
 if (document.getElementById('viewLogin')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(Index, {}), document.getElementById('viewLogin'));
+  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(Index, {}), document.getElementById('viewLogin'));
 }
 
 /***/ }),
@@ -20241,11 +20394,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _mui_material_Box__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material/Box */ "./node_modules/@mui/material/Box/Box.js");
 /* harmony import */ var _mui_material_Grid__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/Grid */ "./node_modules/@mui/material/Grid/Grid.js");
 /* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/TextField/TextField.js");
-/* harmony import */ var _components_ButtonLoad__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../components/ButtonLoad */ "./resources/js/components/ButtonLoad.jsx");
+/* harmony import */ var _components_botones_ButtonLoad__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../components/botones/ButtonLoad */ "./resources/js/components/botones/ButtonLoad.jsx");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-var _style;
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 
 
@@ -20253,13 +20403,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 
-
-var style = (_style = {
+var style = {
   width: '30vw',
-  height: '40vh',
+  height: '45vh',
   flexGrow: 1,
-  borderRadius: '10px'
-}, _defineProperty(_style, "height", '45vh'), _defineProperty(_style, "padding", '15px'), _defineProperty(_style, "WebkitBoxShadow", '0px 0px 56px 17px rgb(0 0 0 / 54%)'), _style);
+  borderRadius: '10px',
+  padding: '15px',
+  WebkitBoxShadow: '0px 0px 56px 17px rgb(0 0 0 / 54%)'
+};
 var styleTextField = {
   width: '90%'
 }; //Temporal (Loading for request of server)
@@ -20329,7 +20480,7 @@ function FormLogin() {
         },
         item: true,
         xs: 12,
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_ButtonLoad__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_components_botones_ButtonLoad__WEBPACK_IMPORTED_MODULE_1__["default"], {
           EventOnClick: EventOnClick,
           text: 'Iniciar Sesion'
         })

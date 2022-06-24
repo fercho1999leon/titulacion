@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import FormLogin from './components/FormLogin';
+import FormCreateUsers from '../../components/moduloUsuarios/FormCreateUsers';
 import '../../../css/main.css';
 
 const style = {
@@ -15,7 +16,7 @@ function Index() {
     return (
         <div className="container" style={style}>
             <div>
-                <FormLogin />
+                <FormCreateUsers enableWindows={true}/>
             </div>
         </div>
     );

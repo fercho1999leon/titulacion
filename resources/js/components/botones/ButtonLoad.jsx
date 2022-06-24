@@ -4,6 +4,12 @@ import CircularProgress from "@mui/material/CircularProgress";
 import { green } from "@mui/material/colors";
 import Button from "@mui/material/Button";
 
+/*Este componente recibe 3 propiedades
+    1. Evento a ejecutar al ingresar al componete regresa con 6 parametrps (EventOnClick)
+        1.1 loading, setLoading, setSuccess, timer, e, props.parameteros 
+    2. Leabel del boton (text)
+    3. Parametros adicionales para el eventos (Opcional) (parameteros)
+*/
 export default function ButtonLoad(props) {
     const [loading, setLoading] = React.useState(false);
     const [success, setSuccess] = React.useState(false);
@@ -45,7 +51,7 @@ export default function ButtonLoad(props) {
                     sx={buttonSx}
                     disabled={loading}
                     onClick={(e) => {
-                        props.EventOnClick(loading, setLoading, setSuccess, timer, e);
+                        props.EventOnClick(loading, setLoading, setSuccess, timer, e, props.parameteros);
                     }}
                 >
                     {props.text}

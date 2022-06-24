@@ -2,14 +2,13 @@ import React from "react";
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import { TextField } from "@mui/material";
-import ButtonLoad from "../../../components/ButtonLoad";
+import ButtonLoad from "../../../components/botones/ButtonLoad";
 
 const style = {
     width: '30vw',
-    height: '40vh',
+    height: '45vh',
     flexGrow: 1,
     borderRadius: '10px',
-    height: '45vh',
     padding: '15px',
     WebkitBoxShadow: '0px 0px 56px 17px rgb(0 0 0 / 54%)',
 }
