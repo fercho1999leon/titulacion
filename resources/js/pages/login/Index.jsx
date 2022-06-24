@@ -1,17 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import FormLogin from './components/FormLogin';
+import '../../../css/main.css';
+
+const style = {
+    width: '100%',
+    height: '100vh',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+}
 
 function Index() {
     return (
-        <div className="container">
-            <div className="row justify-content-center">
-                <div className="col-md-8">
-                    <div className="card">
-                        <div className="card-header">Example Component</div>
-
-                        <div className="card-body">LOGIN</div>
-                    </div>
-                </div>
+        <div className="container" style={style}>
+            <div>
+                <FormLogin />
             </div>
         </div>
     );

@@ -1,0 +1,18 @@
+*{
+    /*border: solid 1px #000;*/
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --color-primary:#123E66;
+    --color-secondary:#D8C65B;
+    --color-third:#336666;
+    --color-fourth:#FFFFFF;
+}
