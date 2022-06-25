@@ -21,7 +21,7 @@
         />
     </head>
     <body class="antialiased">
-        <div id="viewLogin"></div>
+        <div id="viewFormCreateUsers"></div>
         <script src="{{ asset('js/scriptlogin.js') }}" ></script>
     </body>
 </html>

@@ -20199,10 +20199,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Box/Box.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Grid/Grid.js");
-/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/TextField/TextField.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Grid/Grid.js");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/TextField/TextField.js");
 /* harmony import */ var _botones_ButtonLoad__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../botones/ButtonLoad */ "./resources/js/components/botones/ButtonLoad.jsx");
+/* harmony import */ var _mui_material_FormControl__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/material/FormControl */ "./node_modules/@mui/material/FormControl/FormControl.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+
 
 
 
@@ -20225,103 +20239,155 @@ var EventOnClick = function EventOnClick() {
     data[_key] = arguments[_key];
   }
 
-  if (!data[0]) {
-    data[2](false);
-    data[1](true);
-    data[3].current = window.setTimeout(function () {
-      data[2](true);
-      data[1](false);
-    }, 5000);
+  var form = document.querySelector('form');
+  var valid = form.reportValidity();
+
+  if (valid) {
+    if (!data[0]) {
+      data[2](false);
+      data[1](true);
+      var token = document.cookie.replace(/(?:(?:^|.*;\s*)__token\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+      var dataFormulario = document.getElementsByClassName('DataForm');
+      var arraydata = [];
+
+      for (var i = 0; i < dataFormulario.length; i++) {
+        arraydata = [].concat(_toConsumableArray(arraydata), [dataFormulario[i].childNodes[1].childNodes[0].value]);
+      }
+
+      var archivoDatos = {
+        name: arraydata[0],
+        email: arraydata[1],
+        username: arraydata[2],
+        password: arraydata[3]
+      };
+      archivoDatos = JSON.stringify(archivoDatos);
+      fetch('/new-user', {
+        headers: {
+          'X-CSRF-TOKEN': token,
+          'Content-Type': 'application/json'
+        },
+        method: 'POST',
+        body: archivoDatos
+      }).then(function (response) {
+        return response.text();
+      }).then(function (response) {
+        try {
+          var res = JSON.parse(response);
+          data[2](true);
+          data[1](false);
+
+          if (res['code'] === 0) {
+            window.location.reload();
+          }
+        } catch (error) {
+          document.open();
+          document.write(response);
+          document.close();
+        }
+      });
+    }
   }
 };
 
 function FormCreateUsers(props) {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_3__["default"], {
     sx: props.enableWindows ? style : {},
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      container: true,
-      justifyContent: "center",
-      spacing: 2,
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        item: true,
-        xs: 12,
-        sx: {
-          textAlign: "center"
-        },
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
-          style: {
-            fontFamily: 'Roboto, sans-serif',
-            fontWeight: 900,
-            fontSize: 'x-large',
-            color: 'var(--color-primary)'
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material_FormControl__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      component: "fieldset",
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
+        container: true,
+        component: "form",
+        autoComplete: "off",
+        justifyContent: "center",
+        spacing: 2,
+        children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          item: true,
+          xs: 12,
+          sx: {
+            textAlign: "center"
           },
-          children: "REGISTRO DE USUARIO"
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        item: true,
-        xs: 12,
-        md: 6,
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
-          sx: styleTextField,
-          id: "idUser",
-          label: "Nombre",
-          variant: "outlined"
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        item: true,
-        xs: 12,
-        md: 6,
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
-          sx: styleTextField,
-          id: "idUser",
-          label: "Correo",
-          variant: "outlined"
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        item: true,
-        xs: 12,
-        md: 6,
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
-          sx: styleTextField,
-          id: "idUser",
-          label: "Usuario",
-          variant: "outlined"
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        item: true,
-        xs: 12,
-        md: 6,
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
-          sx: styleTextField,
-          id: "idUser",
-          label: "Contrase\xF1a",
-          variant: "outlined"
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        item: true,
-        xs: 12,
-        md: 6,
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
-          sx: styleTextField,
-          id: "idUser",
-          label: "Repita Contrase\xF1a",
-          variant: "outlined"
-        })
-      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_4__["default"], {
-        item: true,
-        xs: 12,
-        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
-          style: {
-            display: 'flex',
-            flexDirection: 'row',
-            justifyContent: 'center'
-          },
-          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_botones_ButtonLoad__WEBPACK_IMPORTED_MODULE_1__["default"], {
-            EventOnClick: EventOnClick,
-            text: 'Guardar'
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+            style: {
+              fontFamily: 'Roboto, sans-serif',
+              fontWeight: 900,
+              fontSize: 'x-large',
+              color: 'var(--color-primary)'
+            },
+            children: "REGISTRO DE USUARIO"
           })
-        })
-      })]
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          item: true,
+          xs: 12,
+          md: 6,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            className: "DataForm",
+            sx: styleTextField,
+            label: "Nombre",
+            variant: "outlined",
+            required: true
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          item: true,
+          xs: 12,
+          md: 6,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            className: "DataForm",
+            sx: styleTextField,
+            label: "Correo",
+            variant: "outlined",
+            required: true
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          item: true,
+          xs: 12,
+          md: 6,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            className: "DataForm",
+            sx: styleTextField,
+            label: "Usuario",
+            variant: "outlined",
+            required: true
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          item: true,
+          xs: 12,
+          md: 6,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            className: "DataForm",
+            type: "password",
+            sx: styleTextField,
+            label: "Contrase\xF1a",
+            variant: "outlined",
+            required: true
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          item: true,
+          xs: 12,
+          md: 6,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            className: "DataForm",
+            type: "password",
+            sx: styleTextField,
+            label: "Repita Contrase\xF1a",
+            variant: "outlined",
+            required: true
+          })
+        }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_5__["default"], {
+          item: true,
+          xs: 12,
+          children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("span", {
+            style: {
+              display: 'flex',
+              flexDirection: 'row',
+              justifyContent: 'center'
+            },
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_botones_ButtonLoad__WEBPACK_IMPORTED_MODULE_1__["default"], {
+              EventOnClick: EventOnClick,
+              text: 'Guardar'
+            })
+          })
+        })]
+      })
     })
   });
 }
@@ -20342,10 +20408,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var _components_FormLogin__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/FormLogin */ "./resources/js/pages/login/components/FormLogin.jsx");
-/* harmony import */ var _components_moduloUsuarios_FormCreateUsers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/moduloUsuarios/FormCreateUsers */ "./resources/js/components/moduloUsuarios/FormCreateUsers.jsx");
-/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../css/main.css */ "./resources/css/main.css");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-
+/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../css/main.css */ "./resources/css/main.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
 
@@ -20360,13 +20424,11 @@ var style = {
 };
 
 function Index() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
     className: "container",
     style: style,
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("div", {
-      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_moduloUsuarios_FormCreateUsers__WEBPACK_IMPORTED_MODULE_3__["default"], {
-        enableWindows: true
-      })
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_FormLogin__WEBPACK_IMPORTED_MODULE_2__["default"], {})
     })
   });
 }
@@ -20374,7 +20436,7 @@ function Index() {
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Index);
 
 if (document.getElementById('viewLogin')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(Index, {}), document.getElementById('viewLogin'));
+  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(Index, {}), document.getElementById('viewLogin'));
 }
 
 /***/ }),
@@ -20491,6 +20553,55 @@ function FormLogin() {
 
 /***/ }),
 
+/***/ "./resources/js/pages/users/Index.jsx":
+/*!********************************************!*\
+  !*** ./resources/js/pages/users/Index.jsx ***!
+  \********************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var _components_moduloUsuarios_FormCreateUsers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../components/moduloUsuarios/FormCreateUsers */ "./resources/js/components/moduloUsuarios/FormCreateUsers.jsx");
+/* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../css/main.css */ "./resources/css/main.css");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+
+
+
+
+
+var style = {
+  width: '100%',
+  height: '100vh',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center'
+};
+
+function Index() {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+    id: "container",
+    style: style,
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+      children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_moduloUsuarios_FormCreateUsers__WEBPACK_IMPORTED_MODULE_2__["default"], {
+        enableWindows: true
+      })
+    })
+  });
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Index);
+
+if (document.getElementById('viewFormCreateUsers')) {
+  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(Index, {}), document.getElementById('viewFormCreateUsers'));
+}
+
+/***/ }),
+
 /***/ "./resources/js/scriptlogin.js":
 /*!*************************************!*\
   !*** ./resources/js/scriptlogin.js ***!
@@ -20509,6 +20620,8 @@ function FormLogin() {
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
+__webpack_require__(/*! ./pages/users/Index.jsx */ "./resources/js/pages/users/Index.jsx");
+
 __webpack_require__(/*! ./pages/login/Index.jsx */ "./resources/js/pages/login/Index.jsx");
 
 /***/ }),

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import FormLogin from './components/FormLogin';
+import FormCreateUsers from '../../components/moduloUsuarios/FormCreateUsers';
 import '../../../css/main.css';
 
 const style = {
@@ -13,9 +13,9 @@ const style = {
 
 function Index() {
     return (
-        <div className="container" style={style}>
+        <div id="container" style={style}>
             <div>
-                <FormLogin/>
+                <FormCreateUsers enableWindows={true}/>
             </div>
         </div>
     );
@@ -23,6 +23,6 @@ function Index() {
 
 export default Index;
 
-if (document.getElementById('viewLogin')) {
-    ReactDOM.render(<Index />, document.getElementById('viewLogin'));
+if (document.getElementById('viewFormCreateUsers')) {
+    ReactDOM.render(<Index />, document.getElementById('viewFormCreateUsers'));
 }

@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Auth;
 class ControllerLogin extends Controller
 {
     public function create(){
-        //setcookie("__token", csrf_token());  //Ya esta agregado el CSRF token en una meta del HTML
+        setcookie("__token", csrf_token());  //Ya esta agregado el CSRF token en una meta del HTML
         return view('/pages/login/index');
     }
     public function store(Request $request){
