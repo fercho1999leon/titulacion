@@ -4,7 +4,8 @@ import Grid from '@mui/material/Grid';
 import Alert from '@mui/material/Alert';
 import Stack from '@mui/material/Stack';
 import FormControl from '@mui/material/FormControl';
-import { TextField } from "@mui/material";
+import { duration, TextField } from "@mui/material";
+import { motion } from "framer-motion"
 import ButtonLoad from "../../../components/botones/ButtonLoad";
 
 const style = {
@@ -13,7 +14,7 @@ const style = {
     flexGrow: 1,
     borderRadius: '10px',
     padding: '15px',
-    WebkitBoxShadow: '0px 0px 56px 17px rgb(0 0 0 / 54%)',
+
 }
 
 const styleTextField = {
@@ -73,49 +74,74 @@ const EventOnClick = (...data) => {
     }
 }
 
+const ShowAlert = () => {
+    return (
+        <motion.div
+            transition={{ duration: 0.6 }}
+            animate={{
+                scale: [0, 1],
+            }}
+        >
+            <Stack sx={{ width: '100%' }} spacing={2}>
+                <Alert variant="filled" severity="info">
+                    Usuario o contraseña incorrecto
+                </Alert>
+            </Stack>
+        </motion.div>
+    );
+}
+
 export default function FormLogin() {
     const [showMsg, setShowMsg] = React.useState(false);
     return (
-        <Box sx={style}>
-            <FormControl component="fieldset">
-                <Grid
-                    container
-                    direction="column"
-                    justifyContent="center"
-                    alignItems="stretch"
-                    component="form"
-                    autoComplete="off"
-                    spacing={2}
-                >
-                    <Grid item xs={12} sx={{ textAlign: "center" }}>
-                        <span style={
-                            {
-                                fontFamily: 'Roboto, sans-serif',
-                                fontWeight: 900,
-                                fontSize: 'x-large',
-                                color: 'var(--color-primary)',
-                            }
-                        }>SISTEMA DE CONTROL</span>
+        <motion.div
+            transition={{ duration: 0.8 }}
+            initial={{
+                boxShadow: '0px 0px 56px 17px rgb(0 0 0 / 30%)',
+            }}
+            animate={{
+                scale: [0, 1],
+                rotate: [360, 0],
+                borderRadius: ["50%", "5%"],
+            }}
+        >
+            <Box sx={style}>
+                <FormControl component="fieldset">
+                    <Grid
+                        container
+                        direction="column"
+                        justifyContent="center"
+                        alignItems="stretch"
+                        component="form"
+                        autoComplete="off"
+                        spacing={2}
+                    >
+                        <Grid item xs={12} sx={{ textAlign: "center" }}>
+                            <span style={
+                                {
+                                    fontFamily: 'Roboto, sans-serif',
+                                    fontWeight: 900,
+                                    fontSize: 'x-large',
+                                    color: 'var(--color-primary)',
+                                }
+                            }>SISTEMA DE CONTROL</span>
+                        </Grid>
+                        <Grid item xs={12}>
+                            <TextField className="SendData" sx={styleTextField} id="idUser" label="Usuario" variant="standard" required></TextField>
+                        </Grid>
+                        <Grid item xs={12}>
+                            <TextField className="SendData" type={'password'} sx={styleTextField} id="idPassword" label="Contraseña" variant="standard" required></TextField>
+                        </Grid>
+                        <Grid sx={{ alignSelf: 'center' }} item xs={12}>
+                            <ButtonLoad EventOnClick={EventOnClick} text={'Iniciar Sesion'} parameteros={{ showMsg, setShowMsg }} />
+                        </Grid>
                     </Grid>
-                    <Grid item xs={12}>
-                        <TextField className="SendData" sx={styleTextField} id="idUser" label="Usuario" variant="standard" required></TextField>
-                    </Grid>
-                    <Grid item xs={12}>
-                        <TextField className="SendData" type={'password'} sx={styleTextField} id="idPassword" label="Contraseña" variant="standard" required></TextField>
-                    </Grid>
-                    <Grid sx={{ alignSelf: 'center' }} item xs={12}>
-                        <ButtonLoad EventOnClick={EventOnClick} text={'Iniciar Sesion'} parameteros={{ showMsg, setShowMsg }} />
-                    </Grid>
-                </Grid>
-            </FormControl>
-            {
-                showMsg ?
-                    <Stack sx={{ width: '100%' }} spacing={2}>
-                        <Alert variant="filled" severity="info">
-                            Usuario o contraseña incorrecto
-                        </Alert>
-                    </Stack> : <></>
-            }
-        </Box>
+                </FormControl>
+                {
+                    showMsg ?
+                    ShowAlert() : <></>
+                }
+            </Box>
+        </motion.div>
     );
 }
