@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 function Index() {
+    const [msg,setMsg] = React.useState('');
     window.Echo.private('prueba').listen('ListenerLineElectricEvent',(e)=>{
-        alert('Estado: '+e.stateLine+' Mensaje: '+e.msg);
+        setMsg(e.msg);
     });
     return (
         <div className="container">
@@ -11,7 +12,7 @@ function Index() {
                 <div className="col-md-8">
                     <div className="card">
                         <div className="card-header">Example Component</div>
-
+                            El mensaje del servidor es: {msg}
                         <div className="card-body">DASHBOARD</div>
                     </div>
                 </div>

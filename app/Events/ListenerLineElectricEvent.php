@@ -14,7 +14,7 @@ class ListenerLineElectricEvent implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    public string $msg;
+    public $msg;
     public $stateLine;
 
     /**
@@ -22,7 +22,7 @@ class ListenerLineElectricEvent implements ShouldBroadcast
      *
      * @return void
      */
-    public function __construct($stateLine, string $msg)
+    public function __construct($stateLine, $msg)
     {
         $this->msg=$msg;
         $this->stateLine=$stateLine;
