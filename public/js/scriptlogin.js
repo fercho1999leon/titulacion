@@ -21983,7 +21983,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 
 var style = {
-  width: '30vw',
+  width: 'auto',
   height: 'auto',
   flexGrow: 1,
   borderRadius: '10px',
@@ -22106,6 +22106,7 @@ function FormLogin() {
           xs: 12,
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], {
             className: "SendData",
+            type: 'password',
             sx: styleTextField,
             id: "idPassword",
             label: "Contrase\xF1a",

@@ -8,7 +8,7 @@ import { TextField } from "@mui/material";
 import ButtonLoad from "../../../components/botones/ButtonLoad";
 
 const style = {
-    width: '30vw',
+    width: 'auto',
     height: 'auto',
     flexGrow: 1,
     borderRadius: '10px',
@@ -101,7 +101,7 @@ export default function FormLogin() {
                         <TextField className="SendData" sx={styleTextField} id="idUser" label="Usuario" variant="standard" required></TextField>
                     </Grid>
                     <Grid item xs={12}>
-                        <TextField className="SendData" sx={styleTextField} id="idPassword" label="Contraseña" variant="standard" required></TextField>
+                        <TextField className="SendData" type={'password'} sx={styleTextField} id="idPassword" label="Contraseña" variant="standard" required></TextField>
                     </Grid>
                     <Grid sx={{ alignSelf: 'center' }} item xs={12}>
                         <ButtonLoad EventOnClick={EventOnClick} text={'Iniciar Sesion'} parameteros={{ showMsg, setShowMsg }} />
