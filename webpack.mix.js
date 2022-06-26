@@ -18,3 +18,4 @@ mix.js('resources/js/scriptlogin.js', 'public/js')
 mix.js('resources/js/scriptpostlogin.js', 'public/js')
    .react()
    .sass('resources/sass/stylepostlogin.scss', 'public/css');
+mix.js('resources/js/bootstrap.js', 'public/js');

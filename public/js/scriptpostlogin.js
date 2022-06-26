@@ -21,6 +21,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Index() {
+  window.Echo["private"]('prueba').listen('ListenerLineElectricEvent', function (e) {
+    alert('Estado: ' + e.stateLine + ' Mensaje: ' + e.msg);
+  });
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
     className: "container",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {

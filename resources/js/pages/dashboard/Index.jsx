@@ -2,6 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 function Index() {
+    window.Echo.private('prueba').listen('ListenerLineElectricEvent',(e)=>{
+        alert('Estado: '+e.stateLine+' Mensaje: '+e.msg);
+    });
     return (
         <div className="container">
             <div className="row justify-content-center">

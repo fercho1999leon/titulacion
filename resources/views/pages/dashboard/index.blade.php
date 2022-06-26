@@ -25,6 +25,7 @@
     </head>
     <body class="antialiased">
         <div id="viewMain"></div>
+        <script src="{{ asset('js/bootstrap.js') }}" ></script>
         <script src="{{ asset('js/scriptpostlogin.js') }}" ></script>
     </body>
 </html>
