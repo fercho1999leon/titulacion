@@ -46,7 +46,6 @@ export default function ButtonLoad(props) {
         <Box sx={{ display: "flex", alignItems: "center" }}>
             <Box sx={{ m: 1, position: "relative" }}>
                 <Button
-                    type="submit"
                     variant="contained"
                     sx={buttonSx}
                     disabled={loading}

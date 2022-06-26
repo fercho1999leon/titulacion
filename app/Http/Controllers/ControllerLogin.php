@@ -12,13 +12,17 @@ class ControllerLogin extends Controller
         return view('/pages/login/index');
     }
     public function store(Request $request){
-        $user = $request->user;
-        $pass = $request->pass;
+        $user = $request->username;
+        $pass = $request->password;
         if (Auth::attempt(['username' => $user, 'password' => $pass,'active' => 1])) {
             $request->session()->regenerate();
             return redirect()->intended(route('ViewDashboard'));
         }
-        return redirect()->intended(route('ViewLogin'));
+        $respuesta = array(
+            'code' => 1,
+            'body' => 'Error credenciales no coincides'
+        );
+        return json_encode($respuesta);
     }
     public function destroy(Request $request)
     {

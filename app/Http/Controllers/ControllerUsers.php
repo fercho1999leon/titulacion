@@ -17,6 +17,7 @@ class ControllerUsers extends Controller
         $user->username = $request->username;
         $user->name = $request->name;
         $user->email = $request->email;
+        $user->active = 1;
         $user->password = Hash::make($request->password);
         $user->save();
         $respuesta = array(

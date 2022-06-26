@@ -1,5 +1,7 @@
 import React from "react";
 import { Box, Grid, TextField } from "@mui/material";
+import Alert from '@mui/material/Alert';
+import Stack from '@mui/material/Stack';
 import ButtonLoad from "../botones/ButtonLoad";
 import FormControl from '@mui/material/FormControl';
 
@@ -18,55 +20,64 @@ const style = {
 
 //Temporal (Loading for request of server)
 const EventOnClick = (...data) => {
-    const form = document.querySelector('form');
-    const valid = form.reportValidity();
-    if (valid) {
+    if((data[5])['showMsg']){
+        (data[5])['setShowMsg'](false);
+    }
+    const $form = document.querySelector('form');
+    if ($form.reportValidity()) {
+        const $data = $form.elements;
         if (!data[0]) {
             data[2](false);
             data[1](true);
             const token = document.cookie.replace(/(?:(?:^|.*;\s*)__token\s*\=\s*([^;]*).*$)|^.*$/, "$1");
-            const dataFormulario = document.getElementsByClassName('DataForm');
             let arraydata = [];
-            for (let i = 0; i < dataFormulario.length; i++) {
-                arraydata = [...arraydata, dataFormulario[i].childNodes[1].childNodes[0].value]
-            }
-            let archivoDatos = {
-                name: arraydata[0],
-                email: arraydata[1],
-                username: arraydata[2],
-                password: arraydata[3],
-            }
-            archivoDatos = JSON.stringify(archivoDatos);
-            fetch('/new-user', {
-                headers: {
-                    'X-CSRF-TOKEN': token,
-                    'Content-Type': 'application/json',
-                },
-                method: 'POST',
-                body: archivoDatos,
-            }).then(response => {
-                return response.text();
-            }).then(response => {
-                try {
-                    const res = JSON.parse(response);
-                    data[2](true);
-                    data[1](false);
-                    if (res['code'] === 0) {
-                        window.location.reload();
-                    }
-                } catch (error) {
-                    document.open();
-                    document.write(response);
-                    document.close();
+            for (let i = 0; i < $data.length; i++) {
+                if ($data[i].tagName === "INPUT") {
+                    arraydata = [...arraydata, $data[i].value]
                 }
-            });
+            }
+            if(arraydata[3]===arraydata[4]){
+                let archivoDatos = {
+                    name: arraydata[0],
+                    email: arraydata[1],
+                    username: arraydata[2],
+                    password: arraydata[3],
+                }
+                archivoDatos = JSON.stringify(archivoDatos);
+                fetch('/new-user', {
+                    headers: {
+                        'X-CSRF-TOKEN': token,
+                        'Content-Type': 'application/json',
+                    },
+                    method: 'POST',
+                    body: archivoDatos,
+                }).then(response => {
+                    return response.text();
+                }).then(response => {
+                    try {
+                        const res = JSON.parse(response);
+                        data[2](true);
+                        data[1](false);
+                        if (res['code'] === 0) {
+                            window.location.reload();
+                        }
+                    } catch (error) {
+                        document.open();
+                        document.write(response);
+                        document.close();
+                    }
+                });
+            }else{
+                data[2](true);
+                data[1](false);
+                (data[5])['setShowMsg'](true);
+            }
         }
-
     }
-
 }
 
 export default function FormCreateUsers(props) {
+    const [showMsg, setShowMsg] = React.useState(false);
 
     return (
         <Box sx={props.enableWindows ? style : {}}>
@@ -109,9 +120,17 @@ export default function FormCreateUsers(props) {
                             flexDirection: 'row',
                             justifyContent: 'center',
                         }}
-                        ><ButtonLoad EventOnClick={EventOnClick} text={'Guardar'} /></span>
+                        ><ButtonLoad EventOnClick={EventOnClick} text={'Guardar'} parameteros={{showMsg,setShowMsg}}/></span>
                     </Grid>
                 </Grid>
+                {
+                    showMsg ?
+                        <Stack sx={{ width: '100%' }} spacing={2}>
+                            <Alert variant="filled" severity="warning">
+                                Las contraseñas ingresadas no coinciden
+                            </Alert>
+                        </Stack>:<></>
+                }
             </FormControl>
         </Box>
     );
