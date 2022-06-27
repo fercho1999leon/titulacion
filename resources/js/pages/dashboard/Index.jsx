@@ -1,5 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import NavMain from './components/navMain/NavMain';
+import '../../../css/main.css';
+
+const styleMain = {
+    width: '100%',
+    height:'98vh',
+}
 
 function Index() {
     const [msg,setMsg] = React.useState('');
@@ -7,16 +14,8 @@ function Index() {
         setMsg(e.msg);
     });
     return (
-        <div className="container">
-            <div className="row justify-content-center">
-                <div className="col-md-8">
-                    <div className="card">
-                        <div className="card-header">Example Component</div>
-                            El mensaje del servidor es: {msg}
-                        <div className="card-body">DASHBOARD</div>
-                    </div>
-                </div>
-            </div>
+        <div style={styleMain}>
+            <NavMain></NavMain>
         </div>
     );
 }
