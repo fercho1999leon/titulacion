@@ -10037,7 +10037,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var _components_navMain_NavMain__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/navMain/NavMain */ "./resources/js/pages/dashboard/components/navMain/NavMain.jsx");
 /* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../css/main.css */ "./resources/css/main.css");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var _components_dashboard_PieChart__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/dashboard/PieChart */ "./resources/js/pages/dashboard/components/dashboard/PieChart.jsx");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -10055,10 +10056,33 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
+
 var styleMain = {
   width: '100%',
   height: '98vh'
 };
+var valoresPieChart = [{
+  id: 'voltaje',
+  valor: 50,
+  color: 'cyan'
+}, {
+  id: 'voltaje',
+  valor: 80,
+  color: 'magenta'
+},, {
+  id: 'voltaje',
+  valor: 20,
+  color: 'yellow'
+}, {
+  id: 'voltaje',
+  valor: 10,
+  color: '#8D4899'
+}, {
+  id: 'voltaje',
+  valor: 10,
+  color: '#486C99'
+}];
 
 function Index() {
   var _React$useState = react__WEBPACK_IMPORTED_MODULE_0__.useState(''),
@@ -10069,16 +10093,121 @@ function Index() {
   window.Echo["private"]('prueba').listen('ListenerLineElectricEvent', function (e) {
     setMsg(e.msg);
   });
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)("div", {
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
     style: styleMain,
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_components_navMain_NavMain__WEBPACK_IMPORTED_MODULE_2__["default"], {})
+    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_navMain_NavMain__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_dashboard_PieChart__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      valoresPieChart: valoresPieChart
+    })]
   });
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Index);
 
 if (document.getElementById('viewMain')) {
-  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(Index, {}), document.getElementById('viewMain'));
+  react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(Index, {}), document.getElementById('viewMain'));
+}
+
+/***/ }),
+
+/***/ "./resources/js/pages/dashboard/components/dashboard/PieChart.jsx":
+/*!************************************************************************!*\
+  !*** ./resources/js/pages/dashboard/components/dashboard/PieChart.jsx ***!
+  \************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ PieChart)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+
+
+var stylePieChart = {
+  backgroundImage: 'conic-gradient(#000)'
+};
+
+var porcentajes = function porcentajes(array) {
+  var total = calcular_ni(array);
+  return calcular_fi(array, total);
+};
+
+var calcular_ni = function calcular_ni(array) {
+  var sumatoria = 0;
+  array.sort(function (a, b) {
+    if (a.valor > b.valor) {}
+
+    if (a.valor < b.valor) {
+      return -1;
+    }
+
+    return 0;
+  });
+  array.map(function (e) {
+    sumatoria = sumatoria + e.valor;
+  });
+  return sumatoria;
+};
+
+var calcular_fi = function calcular_fi(array, total) {
+  var porcentajeData = [];
+  array.map(function (e) {
+    porcentajeData = [].concat(_toConsumableArray(porcentajeData), [{
+      id: e.id,
+      valor: e.valor / total * 100,
+      color: e.color
+    }]);
+  });
+  return porcentajeData;
+};
+
+var convertir_gradian_text = function convertir_gradian_text(array) {
+  var text = 'conic-gradient(';
+  var valoranterior = 0;
+  array.map(function (e, Index) {
+    text = text + e.color + ' ' + (Index === 0 ? '0' : valoranterior) + '%' + ' ' + (valoranterior + e.valor) + '%' + (array.length - 1 === Index ? '' : ' , ');
+    valoranterior = valoranterior + e.valor;
+  });
+  text = text + ')';
+  return text;
+};
+
+function PieChart(props) {
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_0__.useState(porcentajes(props.valoresPieChart)),
+      _React$useState2 = _slicedToArray(_React$useState, 2),
+      valores = _React$useState2[0],
+      setValores = _React$useState2[1];
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
+    style: {
+      width: '150px',
+      height: '150px',
+      marginLeft: '100px',
+      backgroundImage: convertir_gradian_text(valores)
+    },
+    children: convertir_gradian_text(valores)
+  });
 }
 
 /***/ }),
