@@ -10062,27 +10062,6 @@ var styleMain = {
   width: '100%',
   height: '98vh'
 };
-var valoresPieChart = [{
-  id: 'voltaje',
-  valor: 50,
-  color: 'cyan'
-}, {
-  id: 'voltaje',
-  valor: 80,
-  color: 'magenta'
-},, {
-  id: 'voltaje',
-  valor: 20,
-  color: 'yellow'
-}, {
-  id: 'voltaje',
-  valor: 10,
-  color: '#8D4899'
-}, {
-  id: 'voltaje',
-  valor: 10,
-  color: '#486C99'
-}];
 
 function Index() {
   var _React$useState = react__WEBPACK_IMPORTED_MODULE_0__.useState(''),
@@ -10090,13 +10069,28 @@ function Index() {
       msg = _React$useState2[0],
       setMsg = _React$useState2[1];
 
+  var _React$useState3 = react__WEBPACK_IMPORTED_MODULE_0__.useState(100),
+      _React$useState4 = _slicedToArray(_React$useState3, 2),
+      voltaje = _React$useState4[0],
+      setvoltaje = _React$useState4[1];
+
+  var valoresPieChart = [{
+    id: 'voltaje',
+    valor: voltaje,
+    color: 'var(--color-primary)'
+  }, {
+    id: 'voltaje',
+    valor: 240 - voltaje,
+    color: 'var(--color-third)'
+  }];
   window.Echo["private"]('prueba').listen('ListenerLineElectricEvent', function (e) {
-    setMsg(e.msg);
+    setvoltaje(e.msg); //setMsg(e.msg);
   });
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
     style: styleMain,
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_navMain_NavMain__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_dashboard_PieChart__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      valoresPieChart: valoresPieChart
+      valoresPieChart: valoresPieChart,
+      size: 200
     })]
   });
 }
@@ -10122,14 +10116,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -10154,16 +10140,17 @@ var porcentajes = function porcentajes(array) {
 };
 
 var calcular_ni = function calcular_ni(array) {
-  var sumatoria = 0;
-  array.sort(function (a, b) {
-    if (a.valor > b.valor) {}
+  var sumatoria = 0; //metodo de ordenamiento
 
-    if (a.valor < b.valor) {
-      return -1;
-    }
+  /*array.sort((a, b) => {
+      if (a.valor > b.valor) {
+        }
+      if (a.valor < b.valor) {
+          return -1;
+      }
+      return 0;
+  });*/
 
-    return 0;
-  });
   array.map(function (e) {
     sumatoria = sumatoria + e.valor;
   });
@@ -10194,19 +10181,15 @@ var convertir_gradian_text = function convertir_gradian_text(array) {
 };
 
 function PieChart(props) {
-  var _React$useState = react__WEBPACK_IMPORTED_MODULE_0__.useState(porcentajes(props.valoresPieChart)),
-      _React$useState2 = _slicedToArray(_React$useState, 2),
-      valores = _React$useState2[0],
-      setValores = _React$useState2[1];
-
+  var valores = porcentajes(props.valoresPieChart);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
     style: {
-      width: '150px',
-      height: '150px',
+      width: props.size,
+      height: props.size,
+      borderRadius: '50%',
       marginLeft: '100px',
-      backgroundImage: convertir_gradian_text(valores)
-    },
-    children: convertir_gradian_text(valores)
+      backgroundImage: 'radial-gradient(white 55%, transparent 55%) , ' + convertir_gradian_text(valores)
+    }
   });
 }
 

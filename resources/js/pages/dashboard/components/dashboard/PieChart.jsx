@@ -11,7 +11,8 @@ const porcentajes = (array) => {
 
 const calcular_ni = (array) => {
     let sumatoria = 0;
-    array.sort((a, b) => {
+    //metodo de ordenamiento
+    /*array.sort((a, b) => {
         if (a.valor > b.valor) {
 
         }
@@ -19,7 +20,7 @@ const calcular_ni = (array) => {
             return -1;
         }
         return 0;
-    });
+    });*/
     array.map((e)=>{
         sumatoria = sumatoria + e.valor;
     });
@@ -50,16 +51,15 @@ const convertir_gradian_text = (array) =>{
 }
 
 export default function PieChart(props) {
-    const [valores, setValores] = React.useState(porcentajes(props.valoresPieChart));
+    const valores=porcentajes(props.valoresPieChart);
     return (
         <div style={{
-            width: '150px',
-            height: '150px',
+            width: props.size,
+            height: props.size,
+            borderRadius: '50%',
             marginLeft: '100px',
-            backgroundImage: convertir_gradian_text(valores),
-
+            backgroundImage: 'radial-gradient(white 55%, transparent 55%) , '+convertir_gradian_text(valores),
         }}>
-            {convertir_gradian_text(valores)}
         </div>
     );
 }

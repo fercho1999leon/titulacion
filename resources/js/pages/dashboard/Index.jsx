@@ -9,45 +9,29 @@ const styleMain = {
     height:'98vh',
 }
 
-const valoresPieChart = [
-    {
-        id:'voltaje',
-        valor:50,
-        color:'cyan'
-    },
-    {
-        id:'voltaje',
-        valor:80,
-        color:'magenta'
-    },
-    ,
-    {
-        id:'voltaje',
-        valor:20,
-        color:'yellow'
-    },
-    {
-        id:'voltaje',
-        valor:10,
-        color:'#8D4899'
-    },
-    {
-        id:'voltaje',
-        valor:10,
-        color:'#486C99'
-    }
-
-];
-
 function Index() {
     const [msg,setMsg] = React.useState('');
+    const [voltaje,setvoltaje] = React.useState(100);
+    const valoresPieChart = [
+        {
+            id:'voltaje',
+            valor:voltaje,
+            color:'var(--color-primary)'
+        },
+        {
+            id:'voltaje',
+            valor:240-voltaje,
+            color:'var(--color-third)'
+        }
+    ];
     window.Echo.private('prueba').listen('ListenerLineElectricEvent',(e)=>{
-        setMsg(e.msg);
+        setvoltaje(e.msg);
+        //setMsg(e.msg);
     });
     return (
         <div style={styleMain}>
             <NavMain></NavMain>
-            <PieChart valoresPieChart={valoresPieChart}></PieChart>
+            <PieChart valoresPieChart={valoresPieChart} size={200}></PieChart>
         </div>
     );
 }
