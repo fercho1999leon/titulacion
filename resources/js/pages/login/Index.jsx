@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import FormLogin from './components/FormLogin';
 import '../../../css/main.css';
 
@@ -13,16 +13,18 @@ const style = {
 
 function Index() {
     return (
-        <div className="container" style={style}>
-            <div>
-                <FormLogin/>
+        <React.StrictMode>
+            <div className="container" style={style}>
+                <div>
+                    <FormLogin />
+                </div>
             </div>
-        </div>
+        </React.StrictMode>
     );
 }
 
 export default Index;
 
 if (document.getElementById('viewLogin')) {
-    ReactDOM.render(<Index />, document.getElementById('viewLogin'));
+    createRoot(document.getElementById('viewLogin')).render(<Index />);
 }
