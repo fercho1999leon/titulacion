@@ -54,12 +54,19 @@ export default function PieChart(props) {
     const valores=porcentajes(props.valoresPieChart);
     return (
         <div style={{
+            display:'flex',
+            justifyContent:'center',
+            alignItems:'center',
+            color:props.showLabel.color,
+            fontSize:props.size/3.5,
+            fontWeight:500,
             width: props.size,
             height: props.size,
             borderRadius: '50%',
             marginLeft: '100px',
             backgroundImage: 'radial-gradient(white 55%, transparent 55%) , '+convertir_gradian_text(valores),
         }}>
+            {props.showLabel!=null?props.showLabel.valor:<></>}
         </div>
     );
 }

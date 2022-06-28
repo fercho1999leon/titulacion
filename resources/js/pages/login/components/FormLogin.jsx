@@ -101,7 +101,7 @@ export default function FormLogin() {
             }}
             animate={{
                 scale: [0, 1],
-                rotate: [360, 0],
+                rotate: [0, 0],
                 borderRadius: ["50%", "5%"],
             }}
         >

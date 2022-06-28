@@ -22095,7 +22095,7 @@ function FormLogin() {
     },
     animate: {
       scale: [0, 1],
-      rotate: [360, 0],
+      rotate: [0, 0],
       borderRadius: ["50%", "5%"]
     },
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsxs)(_mui_material_Box__WEBPACK_IMPORTED_MODULE_6__["default"], {
