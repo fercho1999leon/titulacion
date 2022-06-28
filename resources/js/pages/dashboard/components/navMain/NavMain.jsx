@@ -45,7 +45,7 @@ const arrayBtn = [
     }
 ];
 
-export default function NavMain() {
+export default function NavMain(props) {
     const [isOpen, setIsOpen] = React.useState(false);
     return (
         <Box
@@ -82,6 +82,7 @@ export default function NavMain() {
                         aria-label="menu"
                         onClick={(e) => {
                             setIsOpen(!isOpen);
+                            props.setShowNav(!isOpen);
                         }}
                     >
                         {isOpen ?
@@ -97,12 +98,13 @@ export default function NavMain() {
                 </Grid>
                 {isOpen ? arrayBtn.map((e, index) => (
                     <motion.button
+                        key={index}
                         transition={{ delay: 0.6 }}
                         initial="hidden"
                         animate="visible"
                         variants={variantsBtn}
                     >
-                        <Grid key={index} id={e['id']} item sx={styleBtn}>
+                        <Grid id={e['id']} item sx={styleBtn}>
                             {e['text']}
                         </Grid>
                     </motion.button>

@@ -10060,7 +10060,21 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_navMain_NavMain__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/navMain/NavMain */ "./resources/js/pages/dashboard/components/navMain/NavMain.jsx");
 /* harmony import */ var _css_main_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../css/main.css */ "./resources/css/main.css");
 /* harmony import */ var _components_dashboard_ViewDashboard__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/dashboard/ViewDashboard */ "./resources/js/pages/dashboard/components/dashboard/ViewDashboard.jsx");
+/* harmony import */ var _mui_material__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @mui/material */ "./node_modules/@mui/material/Grid/Grid.js");
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
 
 
 
@@ -10070,8 +10084,47 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function Index() {
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)((react__WEBPACK_IMPORTED_MODULE_0___default().StrictMode), {
-    children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_navMain_NavMain__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_dashboard_ViewDashboard__WEBPACK_IMPORTED_MODULE_4__["default"], {})]
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_0___default().useState(false),
+      _React$useState2 = _slicedToArray(_React$useState, 2),
+      showNav = _React$useState2[0],
+      setShowNav = _React$useState2[1];
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)((react__WEBPACK_IMPORTED_MODULE_0___default().StrictMode), {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      container: true,
+      direction: "row",
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        item: true,
+        xs: showNav ? 1 : 0,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_navMain_NavMain__WEBPACK_IMPORTED_MODULE_2__["default"], {
+          setShowNav: setShowNav
+        })
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], {
+        item: true,
+        xs: showNav ? 11 : 12,
+        children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], {
+          container: true,
+          direction: "row",
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            item: true,
+            xs: 3,
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_dashboard_ViewDashboard__WEBPACK_IMPORTED_MODULE_4__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            item: true,
+            xs: 3,
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_dashboard_ViewDashboard__WEBPACK_IMPORTED_MODULE_4__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            item: true,
+            xs: 3,
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_dashboard_ViewDashboard__WEBPACK_IMPORTED_MODULE_4__["default"], {})
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_mui_material__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            item: true,
+            xs: 3,
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)(_components_dashboard_ViewDashboard__WEBPACK_IMPORTED_MODULE_4__["default"], {})
+          })]
+        })
+      })]
+    })
   });
 }
 
@@ -10097,6 +10150,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"]; if (_i == null) return; var _arr = []; var _n = true; var _d = false; var _s, _e; try { for (_i = _i.call(arr); !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
@@ -10112,9 +10173,6 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 
 
-var stylePieChart = {
-  backgroundImage: 'conic-gradient(#000)'
-};
 
 var porcentajes = function porcentajes(array) {
   var total = calcular_ni(array);
@@ -10163,7 +10221,22 @@ var convertir_gradian_text = function convertir_gradian_text(array) {
 };
 
 function PieChart(props) {
-  var valores = porcentajes(props.valoresPieChart);
+  var datos = props.valoresPieChart;
+
+  var _React$useState = react__WEBPACK_IMPORTED_MODULE_0___default().useState(porcentajes(datos)),
+      _React$useState2 = _slicedToArray(_React$useState, 2),
+      valores = _React$useState2[0],
+      setValores = _React$useState2[1];
+
+  window.Echo["private"]('prueba').listen('ListenerLineElectricEvent', function (e) {
+    datos.find(function (e) {
+      return e.id === 'voltaje';
+    }).valor = e.msg;
+
+    var temp = _toConsumableArray(datos);
+
+    setValores(porcentajes(temp)); //setMsg(e.msg);
+  });
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("div", {
     style: {
       display: 'flex',
@@ -10174,9 +10247,10 @@ function PieChart(props) {
       fontWeight: 500,
       width: props.size,
       height: props.size,
+      border: 'solid 5px #B6B6B6',
       borderRadius: '50%',
       marginLeft: '100px',
-      backgroundImage: 'radial-gradient(white 55%, transparent 55%) , ' + convertir_gradian_text(valores)
+      backgroundImage: 'radial-gradient(white 0% 50%, #B6B6B6 50% 55%, transparent 55%) , ' + convertir_gradian_text(valores)
     },
     children: props.showLabel != null ? props.showLabel.valor : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {})
   });
@@ -10224,23 +10298,15 @@ function ViewDashboard() {
       msg = _React$useState2[0],
       setMsg = _React$useState2[1];
 
-  var _React$useState3 = react__WEBPACK_IMPORTED_MODULE_0___default().useState(100),
-      _React$useState4 = _slicedToArray(_React$useState3, 2),
-      voltaje = _React$useState4[0],
-      setvoltaje = _React$useState4[1];
-
   var valoresPieChart = [{
     id: 'voltaje',
-    valor: voltaje,
+    valor: 0,
     color: 'var(--color-primary)'
   }, {
     id: 'v-max',
-    valor: 240 - voltaje,
+    valor: 240 - 0,
     color: 'var(--color-third)'
   }];
-  window.Echo["private"]('prueba').listen('ListenerLineElectricEvent', function (e) {
-    setvoltaje(e.msg); //setMsg(e.msg);
-  });
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
     style: styleMain,
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)(_PieChart__WEBPACK_IMPORTED_MODULE_1__["default"], {
@@ -10334,7 +10400,7 @@ var arrayBtn = [{
   id: 4,
   text: 'Usuarios'
 }];
-function NavMain() {
+function NavMain(props) {
   var _React$useState = react__WEBPACK_IMPORTED_MODULE_0___default().useState(false),
       _React$useState2 = _slicedToArray(_React$useState, 2),
       isOpen = _React$useState2[0],
@@ -10374,6 +10440,7 @@ function NavMain() {
           "aria-label": "menu",
           onClick: function onClick(e) {
             setIsOpen(!isOpen);
+            props.setShowNav(!isOpen);
           },
           children: isOpen ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_mui_icons_material_Menu__WEBPACK_IMPORTED_MODULE_5__["default"], {
             sx: {
@@ -10398,8 +10465,8 @@ function NavMain() {
             item: true,
             sx: styleBtn,
             children: e['text']
-          }, index)
-        });
+          })
+        }, index);
       }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.Fragment, {})]
     })
   });

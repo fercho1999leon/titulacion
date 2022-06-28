@@ -1,9 +1,5 @@
 import React from "react";
 
-const stylePieChart = {
-    backgroundImage: 'conic-gradient(#000)'
-}
-
 const porcentajes = (array) => {
     const total = calcular_ni(array);
     return(calcular_fi(array,total));
@@ -51,7 +47,14 @@ const convertir_gradian_text = (array) =>{
 }
 
 export default function PieChart(props) {
-    const valores=porcentajes(props.valoresPieChart);
+    const datos = props.valoresPieChart;
+    const [valores,setValores]=React.useState(porcentajes(datos));
+    window.Echo.private('prueba').listen('ListenerLineElectricEvent',(e)=>{
+        (datos.find((e)=>e.id==='voltaje')).valor=e.msg;
+        const temp = [...datos];
+        setValores(porcentajes(temp));
+        //setMsg(e.msg);
+    });
     return (
         <div style={{
             display:'flex',
@@ -62,9 +65,10 @@ export default function PieChart(props) {
             fontWeight:500,
             width: props.size,
             height: props.size,
+            border:'solid 5px #B6B6B6',
             borderRadius: '50%',
             marginLeft: '100px',
-            backgroundImage: 'radial-gradient(white 55%, transparent 55%) , '+convertir_gradian_text(valores),
+            backgroundImage: 'radial-gradient(white 0% 50%, #B6B6B6 50% 55%, transparent 55%) , '+convertir_gradian_text(valores),
         }}>
             {props.showLabel!=null?props.showLabel.valor:<></>}
         </div>
