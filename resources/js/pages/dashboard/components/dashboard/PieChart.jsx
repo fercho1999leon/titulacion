@@ -24,7 +24,7 @@ const calcular_ni = (array) => {
 }
 
 const calcular_fi = (array,total) => {
-    let porcentajeData = []
+    let porcentajeData = [];
     array.map((e)=>{
         porcentajeData = [...porcentajeData,{
             id:e.id,
@@ -50,7 +50,14 @@ export default function PieChart(props) {
     const datos = props.valoresPieChart;
     const [valores,setValores]=React.useState(porcentajes(datos));
     window.Echo.private('prueba').listen('ListenerLineElectricEvent',(e)=>{
-        (datos.find((e)=>e.id==='voltaje')).valor=e.msg;
+        e.VoltajeyCorriente!=null?e.VoltajeyCorriente.map((elemento)=>{
+            const tempbusqueda = datos.find((datobusqueda)=>datobusqueda.id===elemento.id);
+            if(tempbusqueda){
+                tempbusqueda.valor=elemento.valor;
+            }
+            return 0;
+        }):null;
+        
         const temp = [...datos];
         setValores(porcentajes(temp));
         //setMsg(e.msg);
@@ -60,17 +67,17 @@ export default function PieChart(props) {
             display:'flex',
             justifyContent:'center',
             alignItems:'center',
-            color:props.showLabel.color,
-            fontSize:props.size/3.5,
+            color:props.showLabel,
+            fontSize:props.sizefont,
             fontWeight:500,
             width: props.size,
             height: props.size,
+            margin:'auto',
             border:'solid 5px #B6B6B6',
             borderRadius: '50%',
-            marginLeft: '100px',
             backgroundImage: 'radial-gradient(white 0% 50%, #B6B6B6 50% 55%, transparent 55%) , '+convertir_gradian_text(valores),
         }}>
-            {props.showLabel!=null?props.showLabel.valor:<></>}
+            {datos!=null?(datos.find((e)=>e.primary===true)).valor:null}
         </div>
     );
 }

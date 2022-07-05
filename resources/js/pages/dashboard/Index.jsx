@@ -15,43 +15,15 @@ function Index() {
             >
                 <Grid
                     item
-                    xs={showNav?1:0}
+                    xs={'auto'}
                 >
                     <NavMain setShowNav={setShowNav}></NavMain>
                 </Grid>
                 <Grid
                     item
-                    xs={showNav?11:12}
+                    xs
                 >
-                    <Grid
-                        container
-                        direction="row"
-                    >
-                        <Grid
-                            item
-                            xs={3}
-                        >
-                            <ViewDashboard></ViewDashboard>
-                        </Grid>
-                        <Grid
-                            item
-                            xs={3}
-                        >
-                            <ViewDashboard></ViewDashboard>
-                        </Grid>
-                        <Grid
-                            item
-                            xs={3}
-                        >
-                            <ViewDashboard></ViewDashboard>
-                        </Grid>
-                        <Grid
-                            item
-                            xs={3}
-                        >
-                            <ViewDashboard></ViewDashboard>
-                        </Grid>
-                    </Grid>
+                    <ViewDashboard showNav={showNav}></ViewDashboard>
                 </Grid>
 
             </Grid>

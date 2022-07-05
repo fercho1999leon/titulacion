@@ -5,7 +5,7 @@ import Alert from '@mui/material/Alert';
 import Stack from '@mui/material/Stack';
 import FormControl from '@mui/material/FormControl';
 import { duration, TextField } from "@mui/material";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 import ButtonLoad from "../../../components/botones/ButtonLoad";
 
 const style = {

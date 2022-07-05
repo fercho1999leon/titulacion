@@ -14,18 +14,21 @@ class ListenerLineElectricEvent implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
-    public $msg;
-    public $stateLine;
+    public $VoltajeyCorriente;
 
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct($stateLine, $msg)
+    public function __construct($V1 ,$V2 ,$A1 ,$A2)
     {
-        $this->msg=$msg;
-        $this->stateLine=$stateLine;
+        $this->VoltajeyCorriente=array(
+            array('id'=> 'voltaje1', 'valor' => $V1),
+            array('id'=> 'voltaje2', 'valor' => $V2),
+            array('id'=> 'corriente1', 'valor' => $A1),
+            array('id'=> 'corriente2', 'valor' => $A2),
+        );
     }
 
     /**

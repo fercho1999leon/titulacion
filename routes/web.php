@@ -1,7 +1,10 @@
 <?php
 
+use App\Events\ListenerLineElectricEvent;
 use App\Http\Controllers\ControllerLogin;
 use App\Http\Controllers\ControllerUsers;
+use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -27,3 +30,12 @@ Route::get('/main', function () {
     return view('/pages/dashboard/index');
 })->middleware(['auth'])->name('ViewDashboard');
 //Configuracion de parametros del microcontrolador
+
+
+Route::get('/prueba', function () {
+    //return Cache::remember();
+    return Artisan::call('websockets:serve');
+});
+Route::get('/evento', function () {
+    event(new ListenerLineElectricEvent(10,50,140,51));
+});
