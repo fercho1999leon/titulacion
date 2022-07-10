@@ -2,7 +2,7 @@
 
 namespace App\Demon;
 
-use Illuminate\Support\Facades\Artisan;
+use App\Events\ListenerLineElectricEvent;
 
 class DemonSocketServer
 {
@@ -20,9 +20,7 @@ class DemonSocketServer
 						$datos = stream_get_contents($conn);
 						if (DemonSocketServer::isJson($datos)) {
 							$datos = json_decode($datos);
-							Artisan::call('socketprivate:send "' . $datos->V1 . '" "' . $datos->V2 . '" "0" "0"');
-							//$cmd = 'php artisan socketprivate:send "' . $datos->V1 . '" "' . $datos->V2 . '" "0" "0"';
-							//exec('cd ' . dirname(__DIR__, 2) . '; ' . $cmd);
+							event(new ListenerLineElectricEvent($datos->V1,$datos->V2,$datos->A1,$datos->A2));
 						}
 						fclose($conn);
 					}

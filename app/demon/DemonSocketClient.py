@@ -7,10 +7,7 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(24, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 GPIO.setwarnings(False)
 
-d1 = json.dumps({"V1": 50, "V2": 100})
-d2 = json.dumps({"V1": 1, "V2": 2})
-
-state_old = False
+SData = json.dumps({"V1": 50, "V2": 100, "A1":50, "A2":100})
 
 while True:
     mi_socket = None
@@ -19,14 +16,8 @@ while True:
         mi_socket.connect(('192.168.2.13', 5478))
         Status = GPIO.input(24)
         if Status == False:
-            if state_old == True:
-                byt = d1.encode()
-                mi_socket.send(byt)
-                state_old=False
-            else:
-                byt=d2.encode()
-                mi_socket.send(byt)
-                state_old=True
+            byt = SData.encode()
+            mi_socket.send(byt)
         #-----------------------------------------------
         resp = mi_socket.recv(1024)
         print (resp)
