@@ -14,7 +14,8 @@ while (true) {
 				$datos = stream_get_contents($conn);
 				if (isJson($datos)) {
 					$datos = json_decode($datos);
-					$evento = new ListenerLineElectricEvent($datos['v1'],$datos['v1'],0,0);
+					echo $datos;
+					//$evento = new ListenerLineElectricEvent($datos['v1'],$datos['v1'],0,0);
 				}
 				echo $datos;
 				fclose($conn);
