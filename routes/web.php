@@ -1,6 +1,7 @@
 <?php
 
 use App\Events\ListenerLineElectricEvent;
+use App\Http\Controllers\ControllerDemonServer;
 use App\Http\Controllers\ControllerLogin;
 use App\Http\Controllers\ControllerUsers;
 use Illuminate\Support\Facades\Artisan;
@@ -31,7 +32,7 @@ Route::get('/main', function () {
 })->middleware(['auth'])->name('ViewDashboard');
 //Configuracion de parametros del microcontrolador
 
-
+Route::get('/server', [ControllerDemonServer::class,'start']);
 Route::get('/prueba', function () {
     //return Cache::remember();
     return Artisan::call('websockets:serve');
