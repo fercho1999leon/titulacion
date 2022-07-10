@@ -28,7 +28,5 @@ class StartCommand extends Command
     public function handle()
     {
         exec('php artisan websockets:serve');
-        exec('php '.__DIR__.'/../app/demon/DemonSocketServer.php');
-        exec('python3 '.__DIR__.'/../app/demon/DemonSocketClient.py');
     }
 }
