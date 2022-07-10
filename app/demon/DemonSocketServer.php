@@ -12,9 +12,8 @@ while (true) {
 				$datos = stream_get_contents($conn);
 				if (isJson($datos)) {
 					$datos = json_decode($datos);
-					$cmd = 'php artisan socketprivate:send "'.$datos->v1.'" "'.$datos->v2.'" "0" "0"';
-					echo $cmd;
-					exec('cd '.dirname(__DIR__, 2).$cmd);
+					$cmd = 'php artisan socketprivate:send "'.$datos->V1.'" "'.$datos->V2.'" "0" "0"';
+					exec('cd '.dirname(__DIR__, 2).'; '.$cmd);
 				}
 				fclose($conn);
 			}
