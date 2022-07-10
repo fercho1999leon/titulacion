@@ -5,7 +5,7 @@ use App\Events\ListenerLineElectricEvent;
 $socket = null;
 while (true) {
 	try {
-		$socket = stream_socket_server("tcp://192.168.2.2:5478", $errno, $errstr);
+		$socket = stream_socket_server("tcp://192.168.2.13:5478", $errno, $errstr);
 		if (!$socket) {
 			echo "$errstr ($errno)<br />\n";
 		} else {

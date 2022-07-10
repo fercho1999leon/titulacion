@@ -16,7 +16,7 @@ while True:
     mi_socket = None
     try:
         mi_socket = socket.socket()
-        mi_socket.connect(('192.168.2.2', 5478))
+        mi_socket.connect(('192.168.2.13', 5478))
         Status = GPIO.input(24)
         if Status == False:
             if state_old == True:
