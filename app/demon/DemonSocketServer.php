@@ -1,4 +1,7 @@
 <?php
+
+use Illuminate\Support\Facades\Artisan;
+
 $socket = null;
 while (true) {
 	try {
@@ -10,10 +13,9 @@ while (true) {
 				fwrite($conn, "\nBienvenido al Servidor De Prueba de PHP. \n");
 				$datos = stream_get_contents($conn);
 				//echo $datos;
-				echo ('php '.__DIR__.'/../app/demon/DemonSocketServer.php');
 				if (isJson($datos)) {
 					$datos = json_decode($datos);
-					exec('php artisan socketprivate:send "'.$datos->v1.'" "'.$datos->v2.'" "0" "0"');
+					Artisan::call('php artisan socketprivate:send "'.$datos->v1.'" "'.$datos->v2.'" "0" "0"');
 				}
 				//echo $datos;
 				fclose($conn);
