@@ -1,4 +1,5 @@
 <?php
+namespace App\Demon;
 
 use App\Events\ListenerLineElectricEvent;
 
@@ -12,17 +13,18 @@ while (true) {
 			while ($conn = stream_socket_accept($socket)) {
 				fwrite($conn, "\nBienvenido al Servidor De Prueba de PHP. \n");
 				$datos = stream_get_contents($conn);
+				echo $datos;
 				if (isJson($datos)) {
 					$datos = json_decode($datos);
-					echo $datos;
-					//$evento = new ListenerLineElectricEvent($datos['v1'],$datos['v1'],0,0);
+					//;
+					$evento = new ListenerLineElectricEvent($datos['v1'],$datos['v1'],0,0);
 				}
-				echo $datos;
+				//echo $datos;
 				fclose($conn);
 			}
 			fclose($socket);
 		}
-	} catch (Exception $e) {
+	} catch (\Exception $e) {
 		if (!$socket) fclose($socket);
 	}
 }
