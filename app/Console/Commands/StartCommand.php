@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use App\Demon\DemonSocketServer;
 use Illuminate\Console\Command;
 
 class StartCommand extends Command
@@ -27,6 +28,6 @@ class StartCommand extends Command
      */
     public function handle()
     {
-        exec('php artisan websockets:serve');
+        DemonSocketServer::start();
     }
 }
