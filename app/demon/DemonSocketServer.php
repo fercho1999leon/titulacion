@@ -12,7 +12,7 @@ while (true) {
 				$datos = stream_get_contents($conn);
 				if (isJson($datos)) {
 					$datos = json_decode($datos);
-					exec(dirname(__DIR__, 2).'\vendor\laravel\framework\src\Illuminate\Support\Facades\Artisan::call(socketprivate:send "'.$datos->v1.'" "'.$datos->v2.'" "0" "0")');
+					exec('cd '.dirname(__DIR__, 2).'; php artisan socketprivate:send "'.$datos->v1.'" "'.$datos->v2.'" "0" "0"');
 				}
 				fclose($conn);
 			}
