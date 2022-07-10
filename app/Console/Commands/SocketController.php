@@ -33,7 +33,7 @@ class SocketController extends Command
         $voltaje2 = $this->argument("V2");
         $corriente1 = $this->argument("A1");
         $corriente2 = $this->argument("A2");
-        //event(new ListenerLineElectricEvent($voltaje1,$voltaje2,$corriente1,$corriente2));
+        event(new ListenerLineElectricEvent($voltaje1,$voltaje2,$corriente1,$corriente2));
         $this->info('Comando ejecutado');
     }
 }

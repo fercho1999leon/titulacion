@@ -12,6 +12,7 @@ while (true) {
 				//echo $datos;
 				if (isJson($datos)) {
 					$datos = json_decode($datos);
+					echo ("\n");
 					echo ($datos->v1);
 					exec('php artisan socketprivate:send "'.$datos->v1.'" "'.$datos->v1.'" "0" "0"');
 				}
