@@ -12,7 +12,7 @@ class SocketController extends Command
      *
      * @var string
      */
-    protected $signature = 'socketprivate:send';
+    protected $signature = 'socketprivate:send {V1} {V2} {A1} {A2}';
 
     /**
      * The console command description.
