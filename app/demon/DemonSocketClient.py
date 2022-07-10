@@ -22,10 +22,11 @@ while True:
             if state_old == True:
                 byt = d1.encode()
                 mi_socket.send(byt)
+                state_old=False
             else:
                 byt=d2.encode()
                 mi_socket.send(byt)
-            state_old=(not state_old)
+                state_old=True
         #-----------------------------------------------
         resp = mi_socket.recv(1024)
         print (resp)
