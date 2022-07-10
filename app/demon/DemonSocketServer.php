@@ -9,7 +9,7 @@ while (true) {
 			while ($conn = stream_socket_accept($socket)) {
 				fwrite($conn, "\nBienvenido al Servidor De Prueba de PHP. \n");
 				$datos = stream_get_contents($conn);
-				echo $datos;
+				//echo $datos;
 				if (isJson($datos)) {
 					$datos = json_decode($datos);
 					echo ($datos->v1);
