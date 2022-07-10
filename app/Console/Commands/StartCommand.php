@@ -30,6 +30,5 @@ class StartCommand extends Command
         exec('php artisan websockets:serve');
         exec('php ../demon/DemonSocketServer.php');
         exec('python3 ../demon/DemonSocketClient.py ');
-
     }
 }
