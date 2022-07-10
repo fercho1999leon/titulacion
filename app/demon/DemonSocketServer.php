@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Artisan;
-
 $socket = null;
 while (true) {
 	try {
@@ -12,12 +10,10 @@ while (true) {
 			while ($conn = stream_socket_accept($socket)) {
 				fwrite($conn, "\nBienvenido al Servidor De Prueba de PHP. \n");
 				$datos = stream_get_contents($conn);
-				//echo $datos;
 				if (isJson($datos)) {
 					$datos = json_decode($datos);
-					Artisan::call('php artisan socketprivate:send "'.$datos->v1.'" "'.$datos->v2.'" "0" "0"');
+					exec(dirname(__DIR__, 2).'\vendor\laravel\framework\src\Illuminate\Support\Facades\Artisan::call(socketprivate:send "'.$datos->v1.'" "'.$datos->v2.'" "0" "0")');
 				}
-				//echo $datos;
 				fclose($conn);
 			}
 			fclose($socket);
