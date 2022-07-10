@@ -1,8 +1,4 @@
 <?php
-namespace App\Demon;
-
-use App\Events\ListenerLineElectricEvent;
-
 $socket = null;
 while (true) {
 	try {
@@ -16,15 +12,15 @@ while (true) {
 				echo $datos;
 				if (isJson($datos)) {
 					$datos = json_decode($datos);
-					//;
-					$evento = new ListenerLineElectricEvent($datos['v1'],$datos['v1'],0,0);
+					exec('php artisan socketprivate:send on');
+					//event(new ListenerLineElectricEvent($datos['v1'],$datos['v1'],0,0));
 				}
 				//echo $datos;
 				fclose($conn);
 			}
 			fclose($socket);
 		}
-	} catch (\Exception $e) {
+	} catch (Exception $e) {
 		if (!$socket) fclose($socket);
 	}
 }
