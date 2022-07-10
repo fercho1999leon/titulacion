@@ -29,10 +29,10 @@ class SocketController extends Command
 
     public function handle()
     {
-        $voltaje1 = $this->argument("V1");
-        $voltaje2 = $this->argument("V2");
-        $corriente1 = $this->argument("A1");
-        $corriente2 = $this->argument("A2");
+        $voltaje1 = intval( $this->argument("V1") );
+        $voltaje2 = intval( $this->argument("V2") );
+        $corriente1 = intval( $this->argument("A1") );
+        $corriente2 = intval( $this->argument("A2") );
         event(new ListenerLineElectricEvent($voltaje1,$voltaje2,$corriente1,$corriente2));
         $this->info('Comando ejecutado');
     }
