@@ -7,8 +7,8 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(24, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 GPIO.setwarnings(False)
 
-d1 = json.dumps({"v1": 50, "v2": 100})
-d2 = json.dumps({"v1": 1, "v2": 2})
+d1 = 'hola desde el cliente1'#"json.dumps({"v1": 50, "v2": 100})
+d2 = 'hola desde el cliente2'#json.dumps({"v1": 1, "v2": 2})
 
 state_old = False
 
@@ -32,7 +32,6 @@ while True:
         #st='Hola desde el cliente \n'
         #byt=st.encode()
         #mi_socket.send(byt);
-        mi_socket.close()
         time.sleep(3)
     except:
         if mi_socket is not None:

@@ -11,8 +11,8 @@ while (true) {
 				$datos = stream_get_contents($conn);
 				//echo $datos;
 				if (isJson($datos)) {
-					$datos = json_decode($datos);
-					echo ($datos->v1);
+					//$datos = json_decode($datos);
+					echo ($datos);
 					//exec('php artisan socketprivate:send');
 					//event(new ListenerLineElectricEvent($datos['v1'],$datos['v1'],0,0));
 				}
