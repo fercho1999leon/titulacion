@@ -12,7 +12,7 @@ class SocketController extends Command
      *
      * @var string
      */
-    protected $signature = 'socketprivate:send {activation=on}';
+    protected $signature = 'socketprivate:send';
 
     /**
      * The console command description.
@@ -29,7 +29,11 @@ class SocketController extends Command
 
     public function handle()
     {
-        event(new ListenerLineElectricEvent(10,20,0,0));
+        $voltaje1 = $this->argument("V1");
+        $voltaje2 = $this->argument("V2");
+        $corriente1 = $this->argument("A1");
+        $corriente2 = $this->argument("A2");
+        //event(new ListenerLineElectricEvent($voltaje1,$voltaje2,$corriente1,$corriente2));
         $this->info('Comando ejecutado');
     }
 }

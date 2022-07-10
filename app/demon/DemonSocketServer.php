@@ -12,7 +12,8 @@ while (true) {
 				echo $datos;
 				if (isJson($datos)) {
 					$datos = json_decode($datos);
-					exec('php artisan socketprivate:send on');
+					echo ($datos->v1);
+					//exec('php artisan socketprivate:send');
 					//event(new ListenerLineElectricEvent($datos['v1'],$datos['v1'],0,0));
 				}
 				//echo $datos;
