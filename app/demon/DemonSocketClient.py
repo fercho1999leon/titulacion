@@ -34,7 +34,7 @@ while True:
         #byt=st.encode()
         #mi_socket.send(byt);
         mi_socket.close()
-        time.sleep(3)
+        time.sleep(0.3)
     except:
         if mi_socket is not None:
             mi_socket.close()
