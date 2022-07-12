@@ -3,6 +3,7 @@ import { Grid } from '@mui/material';
 import { motion } from "framer-motion";
 import PieChart from './PieChart';
 import ViewLineOperation from "./ViewLineOperation";
+import DiagramOfBars from "./DiagramOfBars";
 
 const styleMain = {
     width: '98vw',
@@ -20,7 +21,7 @@ const variantesCard = {
     init: {
         borderRadius: 15,
         boxShadow: '0px 0px 20px 5px rgb(0 0 0 / 40%)',
-        padding: 10,
+        padding: 5,
         textAlign: 'center',
     }
 }
@@ -89,7 +90,7 @@ export default function ViewDashboard(props) {
             container
             direction="row"
             justifyContent="space-evenly"
-            spacing={3}
+            spacing={2}
         >
             <Grid
                 item
@@ -102,8 +103,8 @@ export default function ViewDashboard(props) {
             </Grid>
             <Grid
                 item
-                xs={props.showNav ? 12 : 6}
-                md={3}
+                xs={props.showNav ? 5 : 6}
+                md={1}
                 sx={centrarHorizontal}
             >
                 <motion.div
@@ -117,8 +118,8 @@ export default function ViewDashboard(props) {
             </Grid>
             <Grid
                 item
-                xs={props.showNav ? 12 : 6}
-                md={3}
+                xs={props.showNav ? 5 : 6}
+                md={1}
                 sx={centrarHorizontal}
             >
                 <motion.div
@@ -132,8 +133,8 @@ export default function ViewDashboard(props) {
             </Grid>
             <Grid
                 item
-                xs={props.showNav ? 12 : 6}
-                md={3}
+                xs={props.showNav ? 5 : 6}
+                md={1}
                 sx={centrarHorizontal}
             >
                 <motion.div
@@ -147,8 +148,8 @@ export default function ViewDashboard(props) {
             </Grid>
             <Grid
                 item
-                xs={props.showNav ? 12 : 6}
-                md={3}
+                xs={props.showNav ? 5 : 6}
+                md={1}
                 sx={centrarHorizontal}
             >
                 <motion.div
@@ -162,7 +163,8 @@ export default function ViewDashboard(props) {
             </Grid>
             <Grid
                 item
-                xs={12}
+                xs={props.showNav ? 12 : 6}
+                md={2.4}
                 sx={centrarHorizontal}
             >
                 <motion.div
@@ -188,11 +190,21 @@ export default function ViewDashboard(props) {
                         >
                             <ViewLineOperation id={2} />
                         </Grid>
-
                     </Grid>
-
-
-
+                </motion.div>
+            </Grid>
+            <Grid
+                item
+                xs={11}
+                sx={{
+                    marginTop:'20px'
+                }}
+            >
+                <motion.div
+                    initial={'init'}
+                    variants={variantesCard}
+                >
+                    <DiagramOfBars/>
                 </motion.div>
             </Grid>
         </Grid>

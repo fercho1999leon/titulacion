@@ -8,7 +8,7 @@ const centrarHorizontal = {
 }
 
 export default function ViewLineOperation(props) {
-    const [line, setLine] = React.useState(2);
+    const [line, setLine] = React.useState(0);
     /*window.Echo.private('LOperation').listen('ListenerLineOperation', (e) => {
         e.LineOperation ? setLine(e.LineOperation) : null;
     });*/
