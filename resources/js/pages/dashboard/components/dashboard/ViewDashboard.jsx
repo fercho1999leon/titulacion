@@ -197,14 +197,17 @@ export default function ViewDashboard(props) {
                 item
                 xs={11}
                 sx={{
-                    marginTop:'20px'
+                    marginTop: '20px'
                 }}
             >
                 <motion.div
                     initial={'init'}
                     variants={variantesCard}
                 >
-                    <DiagramOfBars/>
+                    <h2 style={{
+                        color: 'var(--color-primary)'
+                    }}>DIAGRAMA DE FALLOS</h2>
+                    <DiagramOfBars />
                 </motion.div>
             </Grid>
         </Grid>

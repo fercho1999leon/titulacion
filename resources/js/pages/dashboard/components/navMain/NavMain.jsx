@@ -104,7 +104,9 @@ export default function NavMain(props) {
                         animate="visible"
                         variants={variantsBtn}
                     >
-                        <Grid id={e['id']} item sx={styleBtn}>
+                        <Grid id={e['id']} item sx={styleBtn} onClick={(evento)=>{
+                            props.setIdSelect(e['id']);
+                        }}>
                             {e['text']}
                         </Grid>
                     </motion.button>

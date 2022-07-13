@@ -3,10 +3,24 @@ import { createRoot } from 'react-dom/client';
 import NavMain from './components/navMain/NavMain';
 import '../../../css/main.css';
 import ViewDashboard from './components/dashboard/ViewDashboard';
+import ViewNotificaciones from './components/notificaciones/ViewNotificaciones';
 import { Grid } from '@mui/material';
 
 function Index() {
     const [showNav,setShowNav] = React.useState(false);
+    const [idSelect,setIdSelect] = React.useState(1);
+    const selectView = () =>{
+        if(idSelect === 1){
+            return (<ViewDashboard showNav={showNav} />);
+        }else if(idSelect === 2){
+            return null;
+        }
+        else if(idSelect === 3){
+            return <ViewNotificaciones />
+        }else{
+            return null;
+        }
+    }
     return (
         <React.StrictMode>
             <Grid
@@ -17,13 +31,13 @@ function Index() {
                     item
                     xs={'auto'}
                 >
-                    <NavMain setShowNav={setShowNav}></NavMain>
+                    <NavMain setShowNav={setShowNav} setIdSelect={setIdSelect}></NavMain>
                 </Grid>
                 <Grid
                     item
                     xs
                 >
-                    <ViewDashboard showNav={showNav}></ViewDashboard>
+                    {selectView()}
                 </Grid>
 
             </Grid>

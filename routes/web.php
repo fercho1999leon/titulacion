@@ -3,6 +3,7 @@
 use App\Events\ListenerLineElectricEvent;
 use App\Http\Controllers\ControllerDemonServer;
 use App\Http\Controllers\ControllerLogin;
+use App\Http\Controllers\ControllerNotify;
 use App\Http\Controllers\ControllerUsers;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Cache;
@@ -28,9 +29,15 @@ Route::post('/new-user',[ControllerUsers::class,'store'])->middleware('guest','v
 //Rutas despues del login
 //Dashboard
 Route::get('/main', function () {
+    setcookie("__token", csrf_token());
     return view('/pages/dashboard/index');
 })->middleware(['auth'])->name('ViewDashboard');
 //Configuracion de parametros del microcontrolador
+
+//Notificaciones
+Route::post('/import/notify',[ControllerNotify::class,'store'])->middleware(['auth']);
+Route::post('/remove/notify', [ControllerNotify::class,'remove'])->middleware(['auth']);
+
 
 Route::get('/server', [ControllerDemonServer::class,'start']);
 Route::get('/prueba', function () {
