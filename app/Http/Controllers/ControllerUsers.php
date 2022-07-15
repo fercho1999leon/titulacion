@@ -22,21 +22,36 @@ class ControllerUsers extends Controller
         $user->save();
         $respuesta = array(
             'code' => 0,
-            'body' => null
+            'body' => User::select('id','username','name','email')->get()
         );
         return json_encode($respuesta);
     }
 
     public function read(){
-        $user = User::select('username','name','email')->get();
+        $user = User::select('id','username','name','email')->get();
         return $user;
     }
 
-    public function delete(){
-
+    public function delete(Request $request){
+        User::where('id',$request->id)->delete();
+        return json_encode(User::select('id','username','name','email')->get());
     }
 
-    public function update(){
+    public function update(Request $request){
+        User::where('id',$request->id)->update(
+            [
+                'username'=>$request->username,
+                'name'=>$request->name,
+                'email'=>$request->email,
+                'active'=>1,
+                'password'=>Hash::make($request->password)
+            ]
+        );
+        $respuesta = array(
+            'code' => 0,
+            'body' => User::select('id','username','name','email')->get()
+        );
+        return json_encode($respuesta);
 
     }
 }

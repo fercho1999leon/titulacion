@@ -38,6 +38,13 @@ Route::get('/main', function () {
 Route::post('/import/notify',[ControllerNotify::class,'store'])->middleware(['auth']);
 Route::post('/remove/notify', [ControllerNotify::class,'remove'])->middleware(['auth']);
 
+//Usuarios actions CRUD
+Route::post('/user/new',[ControllerUsers::class,'store'])->middleware(['auth']);
+Route::post('/user/import',[ControllerUsers::class,'read'])->middleware(['auth']);
+Route::post('/user/update',[ControllerUsers::class,'update'])->middleware(['auth']);
+Route::post('/user/delete',[ControllerUsers::class,'delete'])->middleware(['auth']);
+
+
 
 Route::get('/server', [ControllerDemonServer::class,'start']);
 Route::get('/prueba', function () {
