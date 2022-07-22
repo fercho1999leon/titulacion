@@ -30,6 +30,7 @@ Route::post('/new-user',[ControllerUsers::class,'store'])->middleware('guest','v
 //Dashboard
 Route::get('/main', function () {
     setcookie("__token", csrf_token());
+    setcookie("XSRF", csrf_token());
     return view('/pages/dashboard/index');
 })->middleware(['auth'])->name('ViewDashboard');
 //Configuracion de parametros del microcontrolador
