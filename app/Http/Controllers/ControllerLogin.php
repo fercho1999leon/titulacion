@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Models\User;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Validation\ValidationException;
 
 class ControllerLogin extends Controller
 {
@@ -24,8 +27,42 @@ class ControllerLogin extends Controller
         );
         return json_encode($respuesta);
     }
+
+    public function apiLogin(Request $request){
+        $fields = $request->validate([
+            'username' => 'required|string',
+            'password' => 'required|string'
+        ]);
+        $user = User::where('username', $fields['username'])->first();
+        if (! $user || ! Hash::check($fields['password'], $user->password)) {
+            throw ValidationException::withMessages([
+                'message' => ['Unauthorized']
+            ]);
+        }
+        $token = $user->createToken('raspberry')->plainTextToken;
+        $response = [
+            'user' => $user,
+            'token' => $token
+        ];
+        return response($response, 201);
+    }
+
+    public function apiLogout(Request $request) {
+        Auth::user()->tokens()->delete();
+        return [
+            'message' => 'Logged out'
+        ];
+    }
+
+    public function prueba(Request $request) {
+        return [
+            'message' => 'PETICION ACEPTADA'
+        ];
+    }
+
     public function destroy(Request $request)
     {
+        
         Auth::guard('web')->logout();
 
         $request->session()->invalidate();

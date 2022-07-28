@@ -8,6 +8,7 @@ use App\Http\Controllers\ControllerUsers;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -27,31 +28,41 @@ Route::get('/logout',[ControllerLogin::class,'destroy'])->name('Logout');
 Route::get('/new-user',[ControllerUsers::class,'create'])->middleware('guest','verifyusersroute')->name('FormsNewUsers');
 Route::post('/new-user',[ControllerUsers::class,'store'])->middleware('guest','verifyusersroute')->name('FormsNewUsers');
 //Rutas despues del login
-//Dashboard
-Route::get('/main', function () {
-    setcookie("__token", csrf_token());
-    setcookie("XSRF", csrf_token());
-    return view('/pages/dashboard/index');
-})->middleware(['auth'])->name('ViewDashboard');
-//Configuracion de parametros del microcontrolador
+Route::group(['middleware' => ['auth']],function(){
+    //Dashboard
+    Route::get('/main', function () {
+        setcookie("__token", csrf_token());
+        setcookie("XSRF", csrf_token());
+        return view('/pages/dashboard/index');
+    })->middleware(['auth'])->name('ViewDashboard');
+    //Configuracion de parametros del microcontrolador
 
-//Notificaciones
-Route::post('/import/notify',[ControllerNotify::class,'store'])->middleware(['auth']);
-Route::post('/remove/notify', [ControllerNotify::class,'remove'])->middleware(['auth']);
+    //Notificaciones
+    Route::post('/import/notify',[ControllerNotify::class,'store'])->middleware(['auth']);
+    Route::post('/remove/notify', [ControllerNotify::class,'remove'])->middleware(['auth']);
 
-//Usuarios actions CRUD
-Route::post('/user/new',[ControllerUsers::class,'store'])->middleware(['auth']);
-Route::post('/user/import',[ControllerUsers::class,'read'])->middleware(['auth']);
-Route::post('/user/update',[ControllerUsers::class,'update'])->middleware(['auth']);
-Route::post('/user/delete',[ControllerUsers::class,'delete'])->middleware(['auth']);
-
-
-
+    //Usuarios actions CRUD
+    Route::post('/user/new',[ControllerUsers::class,'store'])->middleware(['auth']);
+    Route::post('/user/import',[ControllerUsers::class,'read'])->middleware(['auth']);
+    Route::post('/user/update',[ControllerUsers::class,'update'])->middleware(['auth']);
+    Route::post('/user/delete',[ControllerUsers::class,'delete'])->middleware(['auth']);
+});
 Route::get('/server', [ControllerDemonServer::class,'start']);
 Route::get('/prueba', function () {
     //return Cache::remember();
     return Artisan::call('websockets:serve');
 });
-Route::get('/evento', function () {
-    event(new ListenerLineElectricEvent(10,50,140,51));
+
+Route::get('/auth/api/login',[ControllerLogin::class,'apiLogin']);
+
+Route::group(['middleware' => ['auth:sanctum']], function () {
+    Route::get('/auth/api/logout',[ControllerLogin::class,'apiLogout']);
+    Route::get('/auth/api/prueba',[ControllerLogin::class,'prueba']);
+    Route::get('/evento', function (Request $request) {
+        event(new ListenerLineElectricEvent(intval($request->v1),intval($request->v4),intval($request->v3),intval($request->v3)));
+        $response = [
+            'msg' => "EVENTO ENVIADO",
+        ];
+        return response($response, 201);
+    });
 });
