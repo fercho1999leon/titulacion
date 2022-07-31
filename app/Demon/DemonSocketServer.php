@@ -9,9 +9,10 @@ class DemonSocketServer
 	public static function start()
 	{
 		$socket = null;
+		$conn = null;
 		while (true) {
 			try {
-				$socket = stream_socket_server("tcp://192.168.2.13:5478", $errno, $errstr);
+				$socket = stream_socket_server("tcp://144.126.143.111:5478", $errno, $errstr);
 				if (!$socket) {
 					echo "$errstr ($errno)<br />\n";
 				} else {
@@ -27,7 +28,10 @@ class DemonSocketServer
 					fclose($socket);
 				}
 			} catch (\Exception $e) {
-				if (!$socket) fclose($socket);
+				if ($conn){
+					fclose($conn);
+					fclose($socket);
+				}
 			}
 		}
 	}
