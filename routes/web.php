@@ -59,7 +59,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::get('/auth/api/logout',[ControllerLogin::class,'apiLogout']);
     Route::get('/auth/api/prueba',[ControllerLogin::class,'prueba']);
     Route::get('/evento', function (Request $request) {
-        event(new ListenerLineElectricEvent(intval($request->v1),intval($request->v4),intval($request->v3),intval($request->v3)));
+        event(new ListenerLineElectricEvent(intval($request->v1),intval($request->v2),round(floatval($request->a1), 2),intval($request->a2)));
         $response = [
             'msg' => "EVENTO ENVIADO",
         ];
