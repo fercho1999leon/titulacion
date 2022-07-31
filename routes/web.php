@@ -10,6 +10,9 @@ use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
 
+use App\Mail\NotifyError;
+use Illuminate\Support\Facades\Mail;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -54,6 +57,12 @@ Route::get('/prueba', function () {
 });
 
 Route::get('/auth/api/login',[ControllerLogin::class,'apiLogin']);
+
+Route::get('correo',function(){
+    $correo = new NotifyError();
+    Mail::to('fercho1999_w@hotmail.com')->send($correo);
+    return "mensaje enviado";
+});
 
 Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::get('/auth/api/logout',[ControllerLogin::class,'apiLogout']);
