@@ -1,6 +1,5 @@
 <?php
 
-use App\Events\ListenerLineElectricEvent;
 use App\Http\Controllers\ControllerDemonServer;
 use App\Http\Controllers\ControllerLogin;
 use App\Http\Controllers\ControllerNotify;
@@ -9,9 +8,6 @@ use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
-
-use App\Mail\NotifyError;
-use Illuminate\Support\Facades\Mail;
 
 /*
 |--------------------------------------------------------------------------
@@ -66,8 +62,7 @@ Route::get('correo',function(){
 
 Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::get('/auth/api/logout',[ControllerLogin::class,'apiLogout']);
-    Route::get('/auth/api/prueba',[ControllerLogin::class,'prueba']);
-    Route::get('/evento', function (Request $request) {
+    Route::get('/evento/dashboard', function (Request $request) {
         event(new ListenerLineElectricEvent(intval($request->v1),intval($request->v2),round(floatval($request->a1), 2),intval($request->a2)));
         $response = [
             'msg' => "EVENTO ENVIADO",

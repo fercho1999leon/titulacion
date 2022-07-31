@@ -54,12 +54,6 @@ class ControllerLogin extends Controller
         ];
     }
 
-    public function prueba(Request $request) {
-        return [
-            'message' => 'PETICION ACEPTADA'
-        ];
-    }
-
     public function destroy(Request $request)
     {
         
