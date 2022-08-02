@@ -2362,26 +2362,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
-/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/useForkRef.js");
-/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/ownerDocument.js");
-/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/useEventCallback.js");
-/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/createChainedFunction.js");
-/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/elementAcceptingRef.js");
-/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/HTMLElementType.js");
-/* harmony import */ var _composeClasses__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../composeClasses */ "./node_modules/@mui/utils/esm/composeClasses/composeClasses.js");
-/* harmony import */ var _utils_appendOwnerState__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../utils/appendOwnerState */ "./node_modules/@mui/base/utils/appendOwnerState.js");
-/* harmony import */ var _Portal__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../Portal */ "./node_modules/@mui/base/Portal/Portal.js");
-/* harmony import */ var _ModalManager__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ModalManager */ "./node_modules/@mui/base/ModalUnstyled/ModalManager.js");
-/* harmony import */ var _TrapFocus__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../TrapFocus */ "./node_modules/@mui/base/TrapFocus/TrapFocus.js");
-/* harmony import */ var _modalUnstyledClasses__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./modalUnstyledClasses */ "./node_modules/@mui/base/ModalUnstyled/modalUnstyledClasses.js");
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/useForkRef.js");
+/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/ownerDocument.js");
+/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/useEventCallback.js");
+/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/createChainedFunction.js");
+/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/elementAcceptingRef.js");
+/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/HTMLElementType.js");
+/* harmony import */ var _composeClasses__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../composeClasses */ "./node_modules/@mui/utils/esm/composeClasses/composeClasses.js");
+/* harmony import */ var _Portal__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../Portal */ "./node_modules/@mui/base/Portal/Portal.js");
+/* harmony import */ var _ModalManager__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ModalManager */ "./node_modules/@mui/base/ModalUnstyled/ModalManager.js");
+/* harmony import */ var _TrapFocus__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../TrapFocus */ "./node_modules/@mui/base/TrapFocus/TrapFocus.js");
+/* harmony import */ var _modalUnstyledClasses__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./modalUnstyledClasses */ "./node_modules/@mui/base/ModalUnstyled/modalUnstyledClasses.js");
+/* harmony import */ var _utils__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../utils */ "./node_modules/@mui/base/utils/useSlotProps.js");
+/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
-const _excluded = ["children", "classes", "className", "closeAfterTransition", "component", "components", "componentsProps", "container", "disableAutoFocus", "disableEnforceFocus", "disableEscapeKeyDown", "disablePortal", "disableRestoreFocus", "disableScrollLock", "hideBackdrop", "keepMounted", "manager", "onBackdropClick", "onClose", "onKeyDown", "open", "onTransitionEnter", "onTransitionExited"];
-
+const _excluded = ["children", "classes", "closeAfterTransition", "component", "components", "componentsProps", "container", "disableAutoFocus", "disableEnforceFocus", "disableEscapeKeyDown", "disablePortal", "disableRestoreFocus", "disableScrollLock", "hideBackdrop", "keepMounted", "manager", "onBackdropClick", "onClose", "onKeyDown", "open", "onTransitionEnter", "onTransitionExited"];
 
 
 
@@ -2403,7 +2401,7 @@ const useUtilityClasses = ownerState => {
   const slots = {
     root: ['root', !open && exited && 'hidden']
   };
-  return (0,_composeClasses__WEBPACK_IMPORTED_MODULE_5__["default"])(slots, _modalUnstyledClasses__WEBPACK_IMPORTED_MODULE_6__.getModalUtilityClass, classes);
+  return (0,_composeClasses__WEBPACK_IMPORTED_MODULE_4__["default"])(slots, _modalUnstyledClasses__WEBPACK_IMPORTED_MODULE_5__.getModalUtilityClass, classes);
 };
 
 function getContainer(container) {
@@ -2416,7 +2414,7 @@ function getHasTransition(props) {
 // Modals don't open on the server so this won't conflict with concurrent requests.
 
 
-const defaultManager = new _ModalManager__WEBPACK_IMPORTED_MODULE_7__["default"]();
+const defaultManager = new _ModalManager__WEBPACK_IMPORTED_MODULE_6__["default"]();
 /**
  * Modal is a lower-level construct that is leveraged by the following components:
  *
@@ -2432,12 +2430,11 @@ const defaultManager = new _ModalManager__WEBPACK_IMPORTED_MODULE_7__["default"]
  */
 
 const ModalUnstyled = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(function ModalUnstyled(props, ref) {
-  var _props$ariaHidden, _componentsProps$root;
+  var _props$ariaHidden;
 
   const {
     children,
     classes: classesProp,
-    className,
     closeAfterTransition = false,
     component = 'div',
     components = {},
@@ -2469,11 +2466,11 @@ const ModalUnstyled = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef
   const modal = react__WEBPACK_IMPORTED_MODULE_2__.useRef({});
   const mountNodeRef = react__WEBPACK_IMPORTED_MODULE_2__.useRef(null);
   const modalRef = react__WEBPACK_IMPORTED_MODULE_2__.useRef(null);
-  const handleRef = (0,_mui_utils__WEBPACK_IMPORTED_MODULE_8__["default"])(modalRef, ref);
+  const handleRef = (0,_mui_utils__WEBPACK_IMPORTED_MODULE_7__["default"])(modalRef, ref);
   const hasTransition = getHasTransition(props);
   const ariaHiddenProp = (_props$ariaHidden = props['aria-hidden']) != null ? _props$ariaHidden : true;
 
-  const getDoc = () => (0,_mui_utils__WEBPACK_IMPORTED_MODULE_9__["default"])(mountNodeRef.current);
+  const getDoc = () => (0,_mui_utils__WEBPACK_IMPORTED_MODULE_8__["default"])(mountNodeRef.current);
 
   const getModal = () => {
     modal.current.modalRef = modalRef.current;
@@ -2489,7 +2486,7 @@ const ModalUnstyled = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef
     modalRef.current.scrollTop = 0;
   };
 
-  const handleOpen = (0,_mui_utils__WEBPACK_IMPORTED_MODULE_10__["default"])(() => {
+  const handleOpen = (0,_mui_utils__WEBPACK_IMPORTED_MODULE_9__["default"])(() => {
     const resolvedContainer = getContainer(container) || getDoc().body;
     manager.add(getModal(), resolvedContainer); // The element was already mounted.
 
@@ -2498,7 +2495,7 @@ const ModalUnstyled = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef
     }
   });
   const isTopModal = react__WEBPACK_IMPORTED_MODULE_2__.useCallback(() => manager.isTopModal(getModal()), [manager]);
-  const handlePortalRef = (0,_mui_utils__WEBPACK_IMPORTED_MODULE_10__["default"])(node => {
+  const handlePortalRef = (0,_mui_utils__WEBPACK_IMPORTED_MODULE_9__["default"])(node => {
     mountNodeRef.current = node;
 
     if (!node) {
@@ -2508,7 +2505,7 @@ const ModalUnstyled = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef
     if (open && isTopModal()) {
       handleMounted();
     } else {
-      (0,_ModalManager__WEBPACK_IMPORTED_MODULE_7__.ariaHidden)(modalRef.current, ariaHiddenProp);
+      (0,_ModalManager__WEBPACK_IMPORTED_MODULE_6__.ariaHidden)(modalRef.current, ariaHiddenProp);
     }
   });
   const handleClose = react__WEBPACK_IMPORTED_MODULE_2__.useCallback(() => {
@@ -2542,10 +2539,6 @@ const ModalUnstyled = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef
   });
 
   const classes = useUtilityClasses(ownerState);
-
-  if (!keepMounted && !open && (!hasTransition || exited)) {
-    return null;
-  }
 
   const handleEnter = () => {
     setExited(false);
@@ -2614,30 +2607,45 @@ const ModalUnstyled = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef
 
 
   if (hasTransition) {
-    childProps.onEnter = (0,_mui_utils__WEBPACK_IMPORTED_MODULE_11__["default"])(handleEnter, children.props.onEnter);
-    childProps.onExited = (0,_mui_utils__WEBPACK_IMPORTED_MODULE_11__["default"])(handleExited, children.props.onExited);
+    childProps.onEnter = (0,_mui_utils__WEBPACK_IMPORTED_MODULE_10__["default"])(handleEnter, children.props.onEnter);
+    childProps.onExited = (0,_mui_utils__WEBPACK_IMPORTED_MODULE_10__["default"])(handleExited, children.props.onExited);
   }
 
   const Root = components.Root || component;
-  const rootProps = (0,_utils_appendOwnerState__WEBPACK_IMPORTED_MODULE_12__["default"])(Root, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    role: 'presentation'
-  }, other, componentsProps.root, {
-    ref: handleRef,
-    onKeyDown: handleKeyDown,
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(classes.root, (_componentsProps$root = componentsProps.root) == null ? void 0 : _componentsProps$root.className, className)
-  }), ownerState);
+  const rootProps = (0,_utils__WEBPACK_IMPORTED_MODULE_11__["default"])({
+    elementType: Root,
+    externalSlotProps: componentsProps.root,
+    externalForwardedProps: other,
+    additionalProps: {
+      ref: handleRef,
+      role: 'presentation',
+      onKeyDown: handleKeyDown
+    },
+    className: classes.root,
+    ownerState
+  });
   const BackdropComponent = components.Backdrop;
-  const backdropProps = (0,_utils_appendOwnerState__WEBPACK_IMPORTED_MODULE_12__["default"])(BackdropComponent, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    'aria-hidden': true,
-    open,
-    onClick: handleBackdropClick
-  }, componentsProps.backdrop), ownerState);
-  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_Portal__WEBPACK_IMPORTED_MODULE_13__["default"], {
+  const backdropProps = (0,_utils__WEBPACK_IMPORTED_MODULE_11__["default"])({
+    elementType: BackdropComponent,
+    externalSlotProps: componentsProps.backdrop,
+    additionalProps: {
+      'aria-hidden': true,
+      onClick: handleBackdropClick,
+      open
+    },
+    ownerState
+  });
+
+  if (!keepMounted && !open && (!hasTransition || exited)) {
+    return null;
+  }
+
+  return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Portal__WEBPACK_IMPORTED_MODULE_12__["default"], {
     ref: handlePortalRef,
     container: container,
     disablePortal: disablePortal,
-    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(Root, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, rootProps, {
-      children: [!hideBackdrop && BackdropComponent ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(BackdropComponent, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, backdropProps)) : null, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(_TrapFocus__WEBPACK_IMPORTED_MODULE_14__["default"], {
+    children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsxs)(Root, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, rootProps, {
+      children: [!hideBackdrop && BackdropComponent ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(BackdropComponent, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, backdropProps)) : null, /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_TrapFocus__WEBPACK_IMPORTED_MODULE_13__["default"], {
         disableEnforceFocus: disableEnforceFocus,
         disableAutoFocus: disableAutoFocus,
         disableRestoreFocus: disableRestoreFocus,
@@ -2659,47 +2667,42 @@ const ModalUnstyled = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef
   /**
    * A single child content element.
    */
-  children: _mui_utils__WEBPACK_IMPORTED_MODULE_15__["default"].isRequired,
+  children: _mui_utils__WEBPACK_IMPORTED_MODULE_14__["default"].isRequired,
 
   /**
    * Override or extend the styles applied to the component.
    */
-  classes: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().object),
-
-  /**
-   * @ignore
-   */
-  className: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().string),
+  classes: (prop_types__WEBPACK_IMPORTED_MODULE_15___default().object),
 
   /**
    * When set to true the Modal waits until a nested Transition is completed before closing.
    * @default false
    */
-  closeAfterTransition: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().bool),
+  closeAfterTransition: (prop_types__WEBPACK_IMPORTED_MODULE_15___default().bool),
 
   /**
    * The component used for the root node.
    * Either a string to use a HTML element or a component.
    */
-  component: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().elementType),
+  component: (prop_types__WEBPACK_IMPORTED_MODULE_15___default().elementType),
 
   /**
    * The components used for each slot inside the Modal.
    * Either a string to use a HTML element or a component.
    * @default {}
    */
-  components: prop_types__WEBPACK_IMPORTED_MODULE_16___default().shape({
-    Backdrop: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().elementType),
-    Root: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().elementType)
+  components: prop_types__WEBPACK_IMPORTED_MODULE_15___default().shape({
+    Backdrop: (prop_types__WEBPACK_IMPORTED_MODULE_15___default().elementType),
+    Root: (prop_types__WEBPACK_IMPORTED_MODULE_15___default().elementType)
   }),
 
   /**
    * The props used for each slot inside the Modal.
    * @default {}
    */
-  componentsProps: prop_types__WEBPACK_IMPORTED_MODULE_16___default().shape({
-    backdrop: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().object),
-    root: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().object)
+  componentsProps: prop_types__WEBPACK_IMPORTED_MODULE_15___default().shape({
+    backdrop: prop_types__WEBPACK_IMPORTED_MODULE_15___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_15___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_15___default().object)]),
+    root: prop_types__WEBPACK_IMPORTED_MODULE_15___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_15___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_15___default().object)])
   }),
 
   /**
@@ -2709,7 +2712,7 @@ const ModalUnstyled = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef
    * By default, it uses the body of the top-level document object,
    * so it's simply `document.body` most of the time.
    */
-  container: prop_types__WEBPACK_IMPORTED_MODULE_16___default().oneOfType([_mui_utils__WEBPACK_IMPORTED_MODULE_17__["default"], (prop_types__WEBPACK_IMPORTED_MODULE_16___default().func)]),
+  container: prop_types__WEBPACK_IMPORTED_MODULE_15___default().oneOfType([_mui_utils__WEBPACK_IMPORTED_MODULE_16__["default"], (prop_types__WEBPACK_IMPORTED_MODULE_15___default().func)]),
 
   /**
    * If `true`, the modal will not automatically shift focus to itself when it opens, and
@@ -2720,7 +2723,7 @@ const ModalUnstyled = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef
    * accessible to assistive technologies, like screen readers.
    * @default false
    */
-  disableAutoFocus: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().bool),
+  disableAutoFocus: (prop_types__WEBPACK_IMPORTED_MODULE_15___default().bool),
 
   /**
    * If `true`, the modal will not prevent focus from leaving the modal while open.
@@ -2729,38 +2732,38 @@ const ModalUnstyled = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef
    * accessible to assistive technologies, like screen readers.
    * @default false
    */
-  disableEnforceFocus: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().bool),
+  disableEnforceFocus: (prop_types__WEBPACK_IMPORTED_MODULE_15___default().bool),
 
   /**
    * If `true`, hitting escape will not fire the `onClose` callback.
    * @default false
    */
-  disableEscapeKeyDown: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().bool),
+  disableEscapeKeyDown: (prop_types__WEBPACK_IMPORTED_MODULE_15___default().bool),
 
   /**
    * The `children` will be under the DOM hierarchy of the parent component.
    * @default false
    */
-  disablePortal: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().bool),
+  disablePortal: (prop_types__WEBPACK_IMPORTED_MODULE_15___default().bool),
 
   /**
    * If `true`, the modal will not restore focus to previously focused element once
    * modal is hidden or unmounted.
    * @default false
    */
-  disableRestoreFocus: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().bool),
+  disableRestoreFocus: (prop_types__WEBPACK_IMPORTED_MODULE_15___default().bool),
 
   /**
    * Disable the scroll lock behavior.
    * @default false
    */
-  disableScrollLock: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().bool),
+  disableScrollLock: (prop_types__WEBPACK_IMPORTED_MODULE_15___default().bool),
 
   /**
    * If `true`, the backdrop is not rendered.
    * @default false
    */
-  hideBackdrop: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().bool),
+  hideBackdrop: (prop_types__WEBPACK_IMPORTED_MODULE_15___default().bool),
 
   /**
    * Always keep the children in the DOM.
@@ -2768,13 +2771,13 @@ const ModalUnstyled = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef
    * when you want to maximize the responsiveness of the Modal.
    * @default false
    */
-  keepMounted: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().bool),
+  keepMounted: (prop_types__WEBPACK_IMPORTED_MODULE_15___default().bool),
 
   /**
    * Callback fired when the backdrop is clicked.
    * @deprecated Use the `onClose` prop with the `reason` argument to handle the `backdropClick` events.
    */
-  onBackdropClick: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().func),
+  onBackdropClick: (prop_types__WEBPACK_IMPORTED_MODULE_15___default().func),
 
   /**
    * Callback fired when the component requests to be closed.
@@ -2783,17 +2786,17 @@ const ModalUnstyled = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef
    * @param {object} event The event source of the callback.
    * @param {string} reason Can be: `"escapeKeyDown"`, `"backdropClick"`.
    */
-  onClose: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().func),
+  onClose: (prop_types__WEBPACK_IMPORTED_MODULE_15___default().func),
 
   /**
    * @ignore
    */
-  onKeyDown: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().func),
+  onKeyDown: (prop_types__WEBPACK_IMPORTED_MODULE_15___default().func),
 
   /**
    * If `true`, the component is shown.
    */
-  open: (prop_types__WEBPACK_IMPORTED_MODULE_16___default().bool.isRequired)
+  open: (prop_types__WEBPACK_IMPORTED_MODULE_15___default().bool.isRequired)
 } : 0;
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ModalUnstyled);
 
@@ -3660,6 +3663,38 @@ function appendOwnerState(elementType, otherProps = {}, ownerState) {
 
 /***/ }),
 
+/***/ "./node_modules/@mui/base/utils/extractEventHandlers.js":
+/*!**************************************************************!*\
+  !*** ./node_modules/@mui/base/utils/extractEventHandlers.js ***!
+  \**************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ extractEventHandlers)
+/* harmony export */ });
+/**
+ * Extracts event handlers from a given object.
+ * A prop is considered an event handler if it is a function and its name starts with `on`.
+ *
+ * @param object An object to extract event handlers from.
+ * @param excludeKeys An array of keys to exclude from the returned object.
+ */
+function extractEventHandlers(object, excludeKeys = []) {
+  if (object === undefined) {
+    return {};
+  }
+
+  const result = {};
+  Object.keys(object).filter(prop => prop.match(/^on[A-Z]/) && typeof object[prop] === 'function' && !excludeKeys.includes(prop)).forEach(prop => {
+    result[prop] = object[prop];
+  });
+  return result;
+}
+
+/***/ }),
+
 /***/ "./node_modules/@mui/base/utils/isHostComponent.js":
 /*!*********************************************************!*\
   !*** ./node_modules/@mui/base/utils/isHostComponent.js ***!
@@ -3679,6 +3714,218 @@ function isHostComponent(element) {
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (isHostComponent);
+
+/***/ }),
+
+/***/ "./node_modules/@mui/base/utils/mergeSlotProps.js":
+/*!********************************************************!*\
+  !*** ./node_modules/@mui/base/utils/mergeSlotProps.js ***!
+  \********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ mergeSlotProps)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
+/* harmony import */ var _extractEventHandlers__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./extractEventHandlers */ "./node_modules/@mui/base/utils/extractEventHandlers.js");
+/* harmony import */ var _omitEventHandlers__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./omitEventHandlers */ "./node_modules/@mui/base/utils/omitEventHandlers.js");
+
+
+
+
+
+/**
+ * Merges the slot component internal props (usually coming from a hook)
+ * with the externally provided ones.
+ *
+ * The merge order is (the latter overrides the former):
+ * 1. The internal props (specified as a getter function to work with get*Props hook result)
+ * 2. Additional props (specified internally on an unstyled component)
+ * 3. External props specified on the owner component. These should only be used on a root slot.
+ * 4. External props specified in the `componentsProps.*` prop.
+ * 5. The `className` prop - combined from all the above.
+ * @param parameters
+ * @returns
+ */
+function mergeSlotProps(parameters) {
+  const {
+    getSlotProps,
+    additionalProps,
+    externalSlotProps,
+    externalForwardedProps,
+    className
+  } = parameters;
+
+  if (!getSlotProps) {
+    // The simpler case - getSlotProps is not defined, so no internal event handlers are defined,
+    // so we can simply merge all the props without having to worry about extracting event handlers.
+    const joinedClasses = (0,clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(externalForwardedProps == null ? void 0 : externalForwardedProps.className, externalSlotProps == null ? void 0 : externalSlotProps.className, className, additionalProps == null ? void 0 : additionalProps.className);
+
+    const mergedStyle = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, additionalProps == null ? void 0 : additionalProps.style, externalForwardedProps == null ? void 0 : externalForwardedProps.style, externalSlotProps == null ? void 0 : externalSlotProps.style);
+
+    const props = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, additionalProps, externalForwardedProps, externalSlotProps);
+
+    if (joinedClasses.length > 0) {
+      props.className = joinedClasses;
+    }
+
+    if (Object.keys(mergedStyle).length > 0) {
+      props.style = mergedStyle;
+    }
+
+    return {
+      props,
+      internalRef: undefined
+    };
+  } // In this case, getSlotProps is responsible for calling the external event handlers.
+  // We don't need to include them in the merged props because of this.
+
+
+  const eventHandlers = (0,_extractEventHandlers__WEBPACK_IMPORTED_MODULE_2__["default"])((0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, externalForwardedProps, externalSlotProps));
+  const componentsPropsWithoutEventHandlers = (0,_omitEventHandlers__WEBPACK_IMPORTED_MODULE_3__["default"])(externalSlotProps);
+  const otherPropsWithoutEventHandlers = (0,_omitEventHandlers__WEBPACK_IMPORTED_MODULE_3__["default"])(externalForwardedProps);
+  const internalSlotProps = getSlotProps(eventHandlers); // The order of classes is important here.
+  // Emotion (that we use in libraries consuming MUI Base) depends on this order
+  // to properly override style. It requires the most important classes to be last
+  // (see https://github.com/mui/material-ui/pull/33205) for the related discussion.
+
+  const joinedClasses = (0,clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(internalSlotProps == null ? void 0 : internalSlotProps.className, additionalProps == null ? void 0 : additionalProps.className, className, externalForwardedProps == null ? void 0 : externalForwardedProps.className, externalSlotProps == null ? void 0 : externalSlotProps.className);
+
+  const mergedStyle = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, internalSlotProps == null ? void 0 : internalSlotProps.style, additionalProps == null ? void 0 : additionalProps.style, externalForwardedProps == null ? void 0 : externalForwardedProps.style, externalSlotProps == null ? void 0 : externalSlotProps.style);
+
+  const props = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, internalSlotProps, additionalProps, otherPropsWithoutEventHandlers, componentsPropsWithoutEventHandlers);
+
+  if (joinedClasses.length > 0) {
+    props.className = joinedClasses;
+  }
+
+  if (Object.keys(mergedStyle).length > 0) {
+    props.style = mergedStyle;
+  }
+
+  return {
+    props,
+    internalRef: internalSlotProps.ref
+  };
+}
+
+/***/ }),
+
+/***/ "./node_modules/@mui/base/utils/omitEventHandlers.js":
+/*!***********************************************************!*\
+  !*** ./node_modules/@mui/base/utils/omitEventHandlers.js ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ omitEventHandlers)
+/* harmony export */ });
+/**
+ * Removes event handlers from the given object.
+ * A field is considered an event handler if it is a function with a name beginning with `on`.
+ *
+ * @param object Object to remove event handlers from.
+ * @returns Object with event handlers removed.
+ */
+function omitEventHandlers(object) {
+  if (object === undefined) {
+    return {};
+  }
+
+  const result = {};
+  Object.keys(object).filter(prop => !(prop.match(/^on[A-Z]/) && typeof object[prop] === 'function')).forEach(prop => {
+    result[prop] = object[prop];
+  });
+  return result;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@mui/base/utils/resolveComponentProps.js":
+/*!***************************************************************!*\
+  !*** ./node_modules/@mui/base/utils/resolveComponentProps.js ***!
+  \***************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ resolveComponentProps)
+/* harmony export */ });
+/**
+ * If `componentProps` is a function, calls it with the provided `ownerState`.
+ * Otherwise, just returns `componentProps`.
+ */
+function resolveComponentProps(componentProps, ownerState) {
+  if (typeof componentProps === 'function') {
+    return componentProps(ownerState);
+  }
+
+  return componentProps;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@mui/base/utils/useSlotProps.js":
+/*!******************************************************!*\
+  !*** ./node_modules/@mui/base/utils/useSlotProps.js ***!
+  \******************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ useSlotProps)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
+/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/useForkRef.js");
+/* harmony import */ var _appendOwnerState__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./appendOwnerState */ "./node_modules/@mui/base/utils/appendOwnerState.js");
+/* harmony import */ var _mergeSlotProps__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./mergeSlotProps */ "./node_modules/@mui/base/utils/mergeSlotProps.js");
+/* harmony import */ var _resolveComponentProps__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./resolveComponentProps */ "./node_modules/@mui/base/utils/resolveComponentProps.js");
+
+
+const _excluded = ["elementType", "externalSlotProps", "ownerState"];
+
+
+
+
+
+/**
+ * Builds the props to be passed into the slot of an unstyled component.
+ * It merges the internal props of the component with the ones supplied by the user, allowing to customize the behavior.
+ * If the slot component is not a host component, it also merges in the `ownerState`.
+ *
+ * @param parameters.getSlotProps - A function that returns the props to be passed to the slot component.
+ */
+function useSlotProps(parameters) {
+  var _parameters$additiona;
+
+  const {
+    elementType,
+    externalSlotProps,
+    ownerState
+  } = parameters,
+        rest = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(parameters, _excluded);
+
+  const resolvedComponentsProps = (0,_resolveComponentProps__WEBPACK_IMPORTED_MODULE_2__["default"])(externalSlotProps, ownerState);
+  const {
+    props: mergedProps,
+    internalRef
+  } = (0,_mergeSlotProps__WEBPACK_IMPORTED_MODULE_3__["default"])((0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, rest, {
+    externalSlotProps: resolvedComponentsProps
+  }));
+  const ref = (0,_mui_utils__WEBPACK_IMPORTED_MODULE_4__["default"])(internalRef, (0,_mui_utils__WEBPACK_IMPORTED_MODULE_4__["default"])(resolvedComponentsProps == null ? void 0 : resolvedComponentsProps.ref, (_parameters$additiona = parameters.additionalProps) == null ? void 0 : _parameters$additiona.ref));
+  const props = (0,_appendOwnerState__WEBPACK_IMPORTED_MODULE_5__["default"])(elementType, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, mergedProps, {
+    ref
+  }), ownerState);
+  return props;
+}
 
 /***/ }),
 
@@ -5016,7 +5263,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var react_transition_group__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-transition-group */ "./node_modules/react-transition-group/esm/TransitionGroup.js");
+/* harmony import */ var react_transition_group__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react-transition-group */ "./node_modules/@mui/material/node_modules/react-transition-group/esm/TransitionGroup.js");
 /* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
 /* harmony import */ var _mui_system__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @mui/system */ "./node_modules/@emotion/react/dist/emotion-react.browser.esm.js");
 /* harmony import */ var _styles_styled__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../styles/styled */ "./node_modules/@mui/material/styles/styled.js");
@@ -5253,7 +5500,7 @@ const TouchRipple = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(f
       const {
         clientX,
         clientY
-      } = event.touches ? event.touches[0] : event;
+      } = event.touches && event.touches.length > 0 ? event.touches[0] : event;
       rippleX = Math.round(clientX - rect.left);
       rippleY = Math.round(clientY - rect.top);
     }
@@ -5339,7 +5586,7 @@ const TouchRipple = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(f
     stop
   }), [pulsate, start, stop]);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(TouchRippleRoot, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(classes.root, _touchRippleClasses__WEBPACK_IMPORTED_MODULE_8__["default"].root, className),
+    className: (0,clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(_touchRippleClasses__WEBPACK_IMPORTED_MODULE_8__["default"].root, classes.root, className),
     ref: container
   }, other, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(react_transition_group__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -5475,7 +5722,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react/jsx-runtime */ "./node_modules/react/jsx-runtime.js");
 
 
-const _excluded = ["children", "color", "component", "className", "disabled", "disableElevation", "disableFocusRipple", "endIcon", "focusVisibleClassName", "fullWidth", "size", "startIcon", "type", "variant"];
+const _excluded = ["children", "color", "component", "className", "disabled", "disableElevation", "disableFocusRipple", "endIcon", "focusVisibleClassName", "fullWidth", "size", "startIcon", "type", "variant"],
+      _excluded2 = ["root"];
 
 
 
@@ -5733,7 +5981,11 @@ const Button = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(functi
     variant
   });
 
-  const classes = useUtilityClasses(ownerState);
+  const _useUtilityClasses = useUtilityClasses(ownerState),
+        {
+    root: classesRoot
+  } = _useUtilityClasses,
+        classes = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(_useUtilityClasses, _excluded2);
 
   const startIcon = startIconProp && /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(ButtonStartIcon, {
     className: classes.startIcon,
@@ -5749,7 +6001,7 @@ const Button = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(functi
 
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsxs)(ButtonRoot, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
     ownerState: ownerState,
-    className: (0,clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(className, contextProps.className),
+    className: (0,clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(contextProps.className, classesRoot, className),
     component: component,
     disabled: disabled,
     focusRipple: !disableFocusRipple,
@@ -6244,7 +6496,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var react_transition_group__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-transition-group */ "./node_modules/react-transition-group/esm/Transition.js");
+/* harmony import */ var react_transition_group__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-transition-group */ "./node_modules/@mui/material/node_modules/react-transition-group/esm/Transition.js");
 /* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/elementAcceptingRef.js");
 /* harmony import */ var _styles_useTheme__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/useTheme */ "./node_modules/@mui/material/styles/useTheme.js");
 /* harmony import */ var _transitions_utils__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../transitions/utils */ "./node_modules/@mui/material/transitions/utils.js");
@@ -7630,7 +7882,7 @@ const FormHelperText = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRe
   /**
    * The variant to use.
    */
-  variant: prop_types__WEBPACK_IMPORTED_MODULE_12___default().oneOf(['filled', 'outlined', 'standard'])
+  variant: prop_types__WEBPACK_IMPORTED_MODULE_12___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_12___default().oneOf(['filled', 'outlined', 'standard']), (prop_types__WEBPACK_IMPORTED_MODULE_12___default().string)])
 } : 0;
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (FormHelperText);
 
@@ -8112,6 +8364,32 @@ function generateDirection({
     return output;
   });
 }
+/**
+ * Extracts zero value breakpoint keys before a non-zero value breakpoint key.
+ * @example { xs: 0, sm: 0, md: 2, lg: 0, xl: 0 } or [0, 0, 2, 0, 0]
+ * @returns [xs, sm]
+ */
+
+function extractZeroValueBreakpointKeys({
+  breakpoints,
+  values
+}) {
+  let nonZeroKey = '';
+  Object.keys(values).forEach(key => {
+    if (nonZeroKey !== '') {
+      return;
+    }
+
+    if (values[key] !== 0) {
+      nonZeroKey = key;
+    }
+  });
+  const sortedBreakpointKeysByValue = Object.keys(breakpoints).sort((a, b) => {
+    return breakpoints[a] - breakpoints[b];
+  });
+  return sortedBreakpointKeysByValue.slice(0, sortedBreakpointKeysByValue.indexOf(nonZeroKey));
+}
+
 function generateRowGap({
   theme,
   ownerState
@@ -8127,9 +8405,18 @@ function generateRowGap({
       values: rowSpacing,
       breakpoints: theme.breakpoints.values
     });
+    let zeroValueBreakpointKeys;
+
+    if (typeof rowSpacingValues === 'object') {
+      zeroValueBreakpointKeys = extractZeroValueBreakpointKeys({
+        breakpoints: theme.breakpoints.values,
+        values: rowSpacingValues
+      });
+    }
+
     styles = (0,_mui_system__WEBPACK_IMPORTED_MODULE_5__.handleBreakpoints)({
       theme
-    }, rowSpacingValues, propValue => {
+    }, rowSpacingValues, (propValue, breakpoint) => {
       const themeSpacing = theme.spacing(propValue);
 
       if (themeSpacing !== '0px') {
@@ -8141,7 +8428,16 @@ function generateRowGap({
         };
       }
 
-      return {};
+      if (zeroValueBreakpointKeys.includes(breakpoint)) {
+        return {};
+      }
+
+      return {
+        marginTop: 0,
+        [`& > .${_gridClasses__WEBPACK_IMPORTED_MODULE_6__["default"].item}`]: {
+          paddingTop: 0
+        }
+      };
     });
   }
 
@@ -8162,9 +8458,18 @@ function generateColumnGap({
       values: columnSpacing,
       breakpoints: theme.breakpoints.values
     });
+    let zeroValueBreakpointKeys;
+
+    if (typeof columnSpacingValues === 'object') {
+      zeroValueBreakpointKeys = extractZeroValueBreakpointKeys({
+        breakpoints: theme.breakpoints.values,
+        values: columnSpacingValues
+      });
+    }
+
     styles = (0,_mui_system__WEBPACK_IMPORTED_MODULE_5__.handleBreakpoints)({
       theme
-    }, columnSpacingValues, propValue => {
+    }, columnSpacingValues, (propValue, breakpoint) => {
       const themeSpacing = theme.spacing(propValue);
 
       if (themeSpacing !== '0px') {
@@ -8177,7 +8482,17 @@ function generateColumnGap({
         };
       }
 
-      return {};
+      if (zeroValueBreakpointKeys.includes(breakpoint)) {
+        return {};
+      }
+
+      return {
+        width: '100%',
+        marginLeft: 0,
+        [`& > .${_gridClasses__WEBPACK_IMPORTED_MODULE_6__["default"].item}`]: {
+          paddingLeft: 0
+        }
+      };
     });
   }
 
@@ -8626,7 +8941,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/elementAcceptingRef.js");
-/* harmony import */ var react_transition_group__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-transition-group */ "./node_modules/react-transition-group/esm/Transition.js");
+/* harmony import */ var react_transition_group__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-transition-group */ "./node_modules/@mui/material/node_modules/react-transition-group/esm/Transition.js");
 /* harmony import */ var _styles_useTheme__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/useTheme */ "./node_modules/@mui/material/styles/useTheme.js");
 /* harmony import */ var _transitions_utils__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../transitions/utils */ "./node_modules/@mui/material/transitions/utils.js");
 /* harmony import */ var _utils_useForkRef__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/useForkRef */ "./node_modules/@mui/material/utils/useForkRef.js");
@@ -9276,13 +9591,14 @@ const useUtilityClasses = ownerState => {
     fullWidth,
     hiddenLabel,
     multiline,
+    readOnly,
     size,
     startAdornment,
     type
   } = ownerState;
   const slots = {
-    root: ['root', `color${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(color)}`, disabled && 'disabled', error && 'error', fullWidth && 'fullWidth', focused && 'focused', formControl && 'formControl', size === 'small' && 'sizeSmall', multiline && 'multiline', startAdornment && 'adornedStart', endAdornment && 'adornedEnd', hiddenLabel && 'hiddenLabel'],
-    input: ['input', disabled && 'disabled', type === 'search' && 'inputTypeSearch', multiline && 'inputMultiline', size === 'small' && 'inputSizeSmall', hiddenLabel && 'inputHiddenLabel', startAdornment && 'inputAdornedStart', endAdornment && 'inputAdornedEnd']
+    root: ['root', `color${(0,_utils_capitalize__WEBPACK_IMPORTED_MODULE_5__["default"])(color)}`, disabled && 'disabled', error && 'error', fullWidth && 'fullWidth', focused && 'focused', formControl && 'formControl', size === 'small' && 'sizeSmall', multiline && 'multiline', startAdornment && 'adornedStart', endAdornment && 'adornedEnd', hiddenLabel && 'hiddenLabel', readOnly && 'readOnly'],
+    input: ['input', disabled && 'disabled', type === 'search' && 'inputTypeSearch', multiline && 'inputMultiline', size === 'small' && 'inputSizeSmall', hiddenLabel && 'inputHiddenLabel', startAdornment && 'inputAdornedStart', endAdornment && 'inputAdornedEnd', readOnly && 'readOnly']
   };
   return (0,_mui_base__WEBPACK_IMPORTED_MODULE_6__["default"])(slots, _inputBaseClasses__WEBPACK_IMPORTED_MODULE_7__.getInputBaseUtilityClass, classes);
 };
@@ -9992,7 +10308,7 @@ __webpack_require__.r(__webpack_exports__);
 function getInputBaseUtilityClass(slot) {
   return (0,_mui_base__WEBPACK_IMPORTED_MODULE_0__["default"])('MuiInputBase', slot);
 }
-const inputBaseClasses = (0,_mui_base__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiInputBase', ['root', 'formControl', 'focused', 'disabled', 'adornedStart', 'adornedEnd', 'error', 'sizeSmall', 'multiline', 'colorSecondary', 'fullWidth', 'hiddenLabel', 'input', 'inputSizeSmall', 'inputMultiline', 'inputTypeSearch', 'inputAdornedStart', 'inputAdornedEnd', 'inputHiddenLabel']);
+const inputBaseClasses = (0,_mui_base__WEBPACK_IMPORTED_MODULE_1__["default"])('MuiInputBase', ['root', 'formControl', 'focused', 'disabled', 'adornedStart', 'adornedEnd', 'error', 'sizeSmall', 'multiline', 'colorSecondary', 'fullWidth', 'hiddenLabel', 'readOnly', 'input', 'inputSizeSmall', 'inputMultiline', 'inputTypeSearch', 'inputAdornedStart', 'inputAdornedEnd', 'inputHiddenLabel']);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (inputBaseClasses);
 
 /***/ }),
@@ -10954,7 +11270,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-is */ "./node_modules/@mui/material/node_modules/react-is/index.js");
+/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var _utils_ownerDocument__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../utils/ownerDocument */ "./node_modules/@mui/material/utils/ownerDocument.js");
@@ -11293,7 +11609,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-is */ "./node_modules/@mui/material/node_modules/react-is/index.js");
+/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_14__);
 /* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
@@ -11641,13 +11957,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _mui_base__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/base */ "./node_modules/@mui/base/utils/isHostComponent.js");
-/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/elementAcceptingRef.js");
-/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/HTMLElementType.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_11__);
 /* harmony import */ var _mui_base_ModalUnstyled__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @mui/base/ModalUnstyled */ "./node_modules/@mui/base/ModalUnstyled/modalUnstyledClasses.js");
 /* harmony import */ var _mui_base_ModalUnstyled__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @mui/base/ModalUnstyled */ "./node_modules/@mui/base/ModalUnstyled/ModalUnstyled.js");
+/* harmony import */ var _mui_base_utils__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @mui/base/utils */ "./node_modules/@mui/base/utils/resolveComponentProps.js");
+/* harmony import */ var _mui_base_utils__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @mui/base/utils */ "./node_modules/@mui/base/utils/isHostComponent.js");
+/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/elementAcceptingRef.js");
+/* harmony import */ var _mui_utils__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @mui/utils */ "./node_modules/@mui/utils/esm/HTMLElementType.js");
 /* harmony import */ var _styles_styled__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/styled */ "./node_modules/@mui/material/styles/styled.js");
 /* harmony import */ var _styles_useThemeProps__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../styles/useThemeProps */ "./node_modules/@mui/material/styles/useThemeProps.js");
 /* harmony import */ var _Backdrop__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../Backdrop */ "./node_modules/@mui/material/Backdrop/Backdrop.js");
@@ -11769,11 +12086,11 @@ const Modal = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(functio
       Backdrop: BackdropComponent
     }, components),
     componentsProps: {
-      root: (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, componentsProps.root, !(0,_mui_base__WEBPACK_IMPORTED_MODULE_9__["default"])(Root) && {
+      root: () => (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, (0,_mui_base_utils__WEBPACK_IMPORTED_MODULE_9__["default"])(componentsProps.root, ownerState), !(0,_mui_base_utils__WEBPACK_IMPORTED_MODULE_10__["default"])(Root) && {
         as: component,
         theme
       }),
-      backdrop: (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, BackdropProps, componentsProps.backdrop)
+      backdrop: () => (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, BackdropProps, (0,_mui_base_utils__WEBPACK_IMPORTED_MODULE_9__["default"])(componentsProps.backdrop, ownerState))
     },
     onTransitionEnter: () => setExited(false),
     onTransitionExited: () => setExited(true),
@@ -11794,7 +12111,8 @@ const Modal = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(functio
 
   /**
    * A backdrop component. This prop enables custom backdrop rendering.
-   * @deprecated Use `components.Backdrop` instead.
+   * @deprecated Use `components.Backdrop` instead. While this prop currently works, it will be removed in the next major version.
+   * Use the `components.Backdrop` prop to make your application ready for the next version of Material UI.
    * @default styled(Backdrop, {
    *   name: 'MuiModal',
    *   slot: 'Backdrop',
@@ -11805,53 +12123,53 @@ const Modal = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(functio
    *   zIndex: -1,
    * })
    */
-  BackdropComponent: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().elementType),
+  BackdropComponent: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().elementType),
 
   /**
    * Props applied to the [`Backdrop`](/material-ui/api/backdrop/) element.
    * @deprecated Use `componentsProps.backdrop` instead.
    */
-  BackdropProps: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().object),
+  BackdropProps: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().object),
 
   /**
    * A single child content element.
    */
-  children: _mui_utils__WEBPACK_IMPORTED_MODULE_11__["default"].isRequired,
+  children: _mui_utils__WEBPACK_IMPORTED_MODULE_12__["default"].isRequired,
 
   /**
    * Override or extend the styles applied to the component.
    */
-  classes: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().object),
+  classes: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().object),
 
   /**
    * When set to true the Modal waits until a nested Transition is completed before closing.
    * @default false
    */
-  closeAfterTransition: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().bool),
+  closeAfterTransition: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().bool),
 
   /**
    * The component used for the root node.
    * Either a string to use a HTML element or a component.
    */
-  component: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().elementType),
+  component: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().elementType),
 
   /**
    * The components used for each slot inside the Modal.
    * Either a string to use a HTML element or a component.
    * @default {}
    */
-  components: prop_types__WEBPACK_IMPORTED_MODULE_10___default().shape({
-    Backdrop: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().elementType),
-    Root: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().elementType)
+  components: prop_types__WEBPACK_IMPORTED_MODULE_11___default().shape({
+    Backdrop: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().elementType),
+    Root: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().elementType)
   }),
 
   /**
    * The props used for each slot inside the Modal.
    * @default {}
    */
-  componentsProps: prop_types__WEBPACK_IMPORTED_MODULE_10___default().shape({
-    backdrop: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().object),
-    root: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().object)
+  componentsProps: prop_types__WEBPACK_IMPORTED_MODULE_11___default().shape({
+    backdrop: prop_types__WEBPACK_IMPORTED_MODULE_11___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_11___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_11___default().object)]),
+    root: prop_types__WEBPACK_IMPORTED_MODULE_11___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_11___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_11___default().object)])
   }),
 
   /**
@@ -11861,7 +12179,7 @@ const Modal = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(functio
    * By default, it uses the body of the top-level document object,
    * so it's simply `document.body` most of the time.
    */
-  container: prop_types__WEBPACK_IMPORTED_MODULE_10___default().oneOfType([_mui_utils__WEBPACK_IMPORTED_MODULE_12__["default"], (prop_types__WEBPACK_IMPORTED_MODULE_10___default().func)]),
+  container: prop_types__WEBPACK_IMPORTED_MODULE_11___default().oneOfType([_mui_utils__WEBPACK_IMPORTED_MODULE_13__["default"], (prop_types__WEBPACK_IMPORTED_MODULE_11___default().func)]),
 
   /**
    * If `true`, the modal will not automatically shift focus to itself when it opens, and
@@ -11872,7 +12190,7 @@ const Modal = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(functio
    * accessible to assistive technologies, like screen readers.
    * @default false
    */
-  disableAutoFocus: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().bool),
+  disableAutoFocus: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().bool),
 
   /**
    * If `true`, the modal will not prevent focus from leaving the modal while open.
@@ -11881,38 +12199,38 @@ const Modal = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(functio
    * accessible to assistive technologies, like screen readers.
    * @default false
    */
-  disableEnforceFocus: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().bool),
+  disableEnforceFocus: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().bool),
 
   /**
    * If `true`, hitting escape will not fire the `onClose` callback.
    * @default false
    */
-  disableEscapeKeyDown: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().bool),
+  disableEscapeKeyDown: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().bool),
 
   /**
    * The `children` will be under the DOM hierarchy of the parent component.
    * @default false
    */
-  disablePortal: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().bool),
+  disablePortal: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().bool),
 
   /**
    * If `true`, the modal will not restore focus to previously focused element once
    * modal is hidden or unmounted.
    * @default false
    */
-  disableRestoreFocus: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().bool),
+  disableRestoreFocus: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().bool),
 
   /**
    * Disable the scroll lock behavior.
    * @default false
    */
-  disableScrollLock: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().bool),
+  disableScrollLock: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().bool),
 
   /**
    * If `true`, the backdrop is not rendered.
    * @default false
    */
-  hideBackdrop: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().bool),
+  hideBackdrop: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().bool),
 
   /**
    * Always keep the children in the DOM.
@@ -11920,13 +12238,13 @@ const Modal = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(functio
    * when you want to maximize the responsiveness of the Modal.
    * @default false
    */
-  keepMounted: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().bool),
+  keepMounted: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().bool),
 
   /**
    * Callback fired when the backdrop is clicked.
    * @deprecated Use the `onClose` prop with the `reason` argument to handle the `backdropClick` events.
    */
-  onBackdropClick: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().func),
+  onBackdropClick: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().func),
 
   /**
    * Callback fired when the component requests to be closed.
@@ -11935,17 +12253,17 @@ const Modal = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(functio
    * @param {object} event The event source of the callback.
    * @param {string} reason Can be: `"escapeKeyDown"`, `"backdropClick"`.
    */
-  onClose: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().func),
+  onClose: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().func),
 
   /**
    * If `true`, the component is shown.
    */
-  open: (prop_types__WEBPACK_IMPORTED_MODULE_10___default().bool.isRequired),
+  open: (prop_types__WEBPACK_IMPORTED_MODULE_11___default().bool.isRequired),
 
   /**
    * The system prop that allows defining system overrides as well as additional CSS styles.
    */
-  sx: prop_types__WEBPACK_IMPORTED_MODULE_10___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_10___default().arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_10___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_10___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_10___default().object), (prop_types__WEBPACK_IMPORTED_MODULE_10___default().bool)])), (prop_types__WEBPACK_IMPORTED_MODULE_10___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_10___default().object)])
+  sx: prop_types__WEBPACK_IMPORTED_MODULE_11___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_11___default().arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_11___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_11___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_11___default().object), (prop_types__WEBPACK_IMPORTED_MODULE_11___default().bool)])), (prop_types__WEBPACK_IMPORTED_MODULE_11___default().func), (prop_types__WEBPACK_IMPORTED_MODULE_11___default().object)])
 } : 0;
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Modal);
 
@@ -13938,7 +14256,7 @@ const Select = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(functi
    * If the value is an object it must have reference equality with the option in order to be selected.
    * If the value is not an object, the string representation must match with the string representation of the option in order to be selected.
    */
-  value: (prop_types__WEBPACK_IMPORTED_MODULE_17___default().any),
+  value: prop_types__WEBPACK_IMPORTED_MODULE_17___default().oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_17___default().oneOf(['']), (prop_types__WEBPACK_IMPORTED_MODULE_17___default().any)]),
 
   /**
    * The variant to use.
@@ -13966,7 +14284,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-is */ "./node_modules/@mui/material/node_modules/react-is/index.js");
+/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_16__);
 /* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
@@ -14491,7 +14809,7 @@ const SelectInput = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_2__.forwardRef(f
       onFocus: onFocus
     }, SelectDisplayProps, {
       ownerState: ownerState,
-      className: (0,clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(classes.select, className, SelectDisplayProps.className) // The id is required for proper a11y
+      className: (0,clsx__WEBPACK_IMPORTED_MODULE_4__["default"])(SelectDisplayProps.className, classes.select, className) // The id is required for proper a11y
       ,
       id: buttonId,
       children: isEmpty(display) ? // notranslate needed while Google Translate will not fix zero-width space issue
@@ -14812,7 +15130,8 @@ const style = ({
   theme
 }) => {
   let styles = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({
-    display: 'flex'
+    display: 'flex',
+    flexDirection: 'column'
   }, (0,_mui_system__WEBPACK_IMPORTED_MODULE_4__.handleBreakpoints)({
     theme
   }, (0,_mui_system__WEBPACK_IMPORTED_MODULE_4__.resolveBreakpointValues)({
@@ -14840,6 +15159,17 @@ const style = ({
       base
     });
 
+    if (typeof directionValues === 'object') {
+      Object.keys(directionValues).forEach((breakpoint, index, breakpoints) => {
+        const directionValue = directionValues[breakpoint];
+
+        if (!directionValue) {
+          const previousDirectionValue = index > 0 ? directionValues[breakpoints[index - 1]] : 'column';
+          directionValues[breakpoint] = previousDirectionValue;
+        }
+      });
+    }
+
     const styleFromPropValue = (propValue, breakpoint) => {
       return {
         '& > :not(style) + :not(style)': {
@@ -14854,6 +15184,7 @@ const style = ({
     }, spacingValues, styleFromPropValue));
   }
 
+  styles = (0,_mui_system__WEBPACK_IMPORTED_MODULE_4__.mergeBreakpointsInOrder)(theme.breakpoints, styles);
   return styles;
 };
 const StackRoot = (0,_styles_styled__WEBPACK_IMPORTED_MODULE_7__["default"])('div', {
@@ -16079,256 +16410,1117 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/@mui/material/node_modules/react-is/cjs/react-is.development.js":
-/*!**************************************************************************************!*\
-  !*** ./node_modules/@mui/material/node_modules/react-is/cjs/react-is.development.js ***!
-  \**************************************************************************************/
-/***/ ((__unused_webpack_module, exports) => {
+/***/ "./node_modules/@mui/material/node_modules/react-transition-group/esm/Transition.js":
+/*!******************************************************************************************!*\
+  !*** ./node_modules/@mui/material/node_modules/react-transition-group/esm/Transition.js ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-/** @license React v17.0.2
- * react-is.development.js
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ENTERED": () => (/* binding */ ENTERED),
+/* harmony export */   "ENTERING": () => (/* binding */ ENTERING),
+/* harmony export */   "EXITED": () => (/* binding */ EXITED),
+/* harmony export */   "EXITING": () => (/* binding */ EXITING),
+/* harmony export */   "UNMOUNTED": () => (/* binding */ UNMOUNTED),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inheritsLoose */ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./config */ "./node_modules/@mui/material/node_modules/react-transition-group/esm/config.js");
+/* harmony import */ var _utils_PropTypes__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./utils/PropTypes */ "./node_modules/@mui/material/node_modules/react-transition-group/esm/utils/PropTypes.js");
+/* harmony import */ var _TransitionGroupContext__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./TransitionGroupContext */ "./node_modules/@mui/material/node_modules/react-transition-group/esm/TransitionGroupContext.js");
+/* harmony import */ var _utils_reflow__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./utils/reflow */ "./node_modules/@mui/material/node_modules/react-transition-group/esm/utils/reflow.js");
+
+
+
+
+
+
+
+
+
+var UNMOUNTED = 'unmounted';
+var EXITED = 'exited';
+var ENTERING = 'entering';
+var ENTERED = 'entered';
+var EXITING = 'exiting';
+/**
+ * The Transition component lets you describe a transition from one component
+ * state to another _over time_ with a simple declarative API. Most commonly
+ * it's used to animate the mounting and unmounting of a component, but can also
+ * be used to describe in-place transition states as well.
  *
- * Copyright (c) Facebook, Inc. and its affiliates.
+ * ---
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * **Note**: `Transition` is a platform-agnostic base component. If you're using
+ * transitions in CSS, you'll probably want to use
+ * [`CSSTransition`](https://reactcommunity.org/react-transition-group/css-transition)
+ * instead. It inherits all the features of `Transition`, but contains
+ * additional features necessary to play nice with CSS transitions (hence the
+ * name of the component).
+ *
+ * ---
+ *
+ * By default the `Transition` component does not alter the behavior of the
+ * component it renders, it only tracks "enter" and "exit" states for the
+ * components. It's up to you to give meaning and effect to those states. For
+ * example we can add styles to a component when it enters or exits:
+ *
+ * ```jsx
+ * import { Transition } from 'react-transition-group';
+ *
+ * const duration = 300;
+ *
+ * const defaultStyle = {
+ *   transition: `opacity ${duration}ms ease-in-out`,
+ *   opacity: 0,
+ * }
+ *
+ * const transitionStyles = {
+ *   entering: { opacity: 1 },
+ *   entered:  { opacity: 1 },
+ *   exiting:  { opacity: 0 },
+ *   exited:  { opacity: 0 },
+ * };
+ *
+ * const Fade = ({ in: inProp }) => (
+ *   <Transition in={inProp} timeout={duration}>
+ *     {state => (
+ *       <div style={{
+ *         ...defaultStyle,
+ *         ...transitionStyles[state]
+ *       }}>
+ *         I'm a fade Transition!
+ *       </div>
+ *     )}
+ *   </Transition>
+ * );
+ * ```
+ *
+ * There are 4 main states a Transition can be in:
+ *  - `'entering'`
+ *  - `'entered'`
+ *  - `'exiting'`
+ *  - `'exited'`
+ *
+ * Transition state is toggled via the `in` prop. When `true` the component
+ * begins the "Enter" stage. During this stage, the component will shift from
+ * its current transition state, to `'entering'` for the duration of the
+ * transition and then to the `'entered'` stage once it's complete. Let's take
+ * the following example (we'll use the
+ * [useState](https://reactjs.org/docs/hooks-reference.html#usestate) hook):
+ *
+ * ```jsx
+ * function App() {
+ *   const [inProp, setInProp] = useState(false);
+ *   return (
+ *     <div>
+ *       <Transition in={inProp} timeout={500}>
+ *         {state => (
+ *           // ...
+ *         )}
+ *       </Transition>
+ *       <button onClick={() => setInProp(true)}>
+ *         Click to Enter
+ *       </button>
+ *     </div>
+ *   );
+ * }
+ * ```
+ *
+ * When the button is clicked the component will shift to the `'entering'` state
+ * and stay there for 500ms (the value of `timeout`) before it finally switches
+ * to `'entered'`.
+ *
+ * When `in` is `false` the same thing happens except the state moves from
+ * `'exiting'` to `'exited'`.
  */
 
+var Transition = /*#__PURE__*/function (_React$Component) {
+  (0,_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(Transition, _React$Component);
 
+  function Transition(props, context) {
+    var _this;
 
-if (true) {
-  (function() {
-'use strict';
+    _this = _React$Component.call(this, props, context) || this;
+    var parentGroup = context; // In the context of a TransitionGroup all enters are really appears
 
-// ATTENTION
-// When adding new symbols to this file,
-// Please consider also adding to 'react-devtools-shared/src/backend/ReactSymbols'
-// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
-// nor polyfill, then a plain number is used for performance.
-var REACT_ELEMENT_TYPE = 0xeac7;
-var REACT_PORTAL_TYPE = 0xeaca;
-var REACT_FRAGMENT_TYPE = 0xeacb;
-var REACT_STRICT_MODE_TYPE = 0xeacc;
-var REACT_PROFILER_TYPE = 0xead2;
-var REACT_PROVIDER_TYPE = 0xeacd;
-var REACT_CONTEXT_TYPE = 0xeace;
-var REACT_FORWARD_REF_TYPE = 0xead0;
-var REACT_SUSPENSE_TYPE = 0xead1;
-var REACT_SUSPENSE_LIST_TYPE = 0xead8;
-var REACT_MEMO_TYPE = 0xead3;
-var REACT_LAZY_TYPE = 0xead4;
-var REACT_BLOCK_TYPE = 0xead9;
-var REACT_SERVER_BLOCK_TYPE = 0xeada;
-var REACT_FUNDAMENTAL_TYPE = 0xead5;
-var REACT_SCOPE_TYPE = 0xead7;
-var REACT_OPAQUE_ID_TYPE = 0xeae0;
-var REACT_DEBUG_TRACING_MODE_TYPE = 0xeae1;
-var REACT_OFFSCREEN_TYPE = 0xeae2;
-var REACT_LEGACY_HIDDEN_TYPE = 0xeae3;
+    var appear = parentGroup && !parentGroup.isMounting ? props.enter : props.appear;
+    var initialStatus;
+    _this.appearStatus = null;
 
-if (typeof Symbol === 'function' && Symbol.for) {
-  var symbolFor = Symbol.for;
-  REACT_ELEMENT_TYPE = symbolFor('react.element');
-  REACT_PORTAL_TYPE = symbolFor('react.portal');
-  REACT_FRAGMENT_TYPE = symbolFor('react.fragment');
-  REACT_STRICT_MODE_TYPE = symbolFor('react.strict_mode');
-  REACT_PROFILER_TYPE = symbolFor('react.profiler');
-  REACT_PROVIDER_TYPE = symbolFor('react.provider');
-  REACT_CONTEXT_TYPE = symbolFor('react.context');
-  REACT_FORWARD_REF_TYPE = symbolFor('react.forward_ref');
-  REACT_SUSPENSE_TYPE = symbolFor('react.suspense');
-  REACT_SUSPENSE_LIST_TYPE = symbolFor('react.suspense_list');
-  REACT_MEMO_TYPE = symbolFor('react.memo');
-  REACT_LAZY_TYPE = symbolFor('react.lazy');
-  REACT_BLOCK_TYPE = symbolFor('react.block');
-  REACT_SERVER_BLOCK_TYPE = symbolFor('react.server.block');
-  REACT_FUNDAMENTAL_TYPE = symbolFor('react.fundamental');
-  REACT_SCOPE_TYPE = symbolFor('react.scope');
-  REACT_OPAQUE_ID_TYPE = symbolFor('react.opaque.id');
-  REACT_DEBUG_TRACING_MODE_TYPE = symbolFor('react.debug_trace_mode');
-  REACT_OFFSCREEN_TYPE = symbolFor('react.offscreen');
-  REACT_LEGACY_HIDDEN_TYPE = symbolFor('react.legacy_hidden');
-}
-
-// Filter certain DOM attributes (e.g. src, href) if their values are empty strings.
-
-var enableScopeAPI = false; // Experimental Create Event Handle API.
-
-function isValidElementType(type) {
-  if (typeof type === 'string' || typeof type === 'function') {
-    return true;
-  } // Note: typeof might be other than 'symbol' or 'number' (e.g. if it's a polyfill).
-
-
-  if (type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || type === REACT_DEBUG_TRACING_MODE_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || type === REACT_LEGACY_HIDDEN_TYPE || enableScopeAPI ) {
-    return true;
-  }
-
-  if (typeof type === 'object' && type !== null) {
-    if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_BLOCK_TYPE || type[0] === REACT_SERVER_BLOCK_TYPE) {
-      return true;
+    if (props.in) {
+      if (appear) {
+        initialStatus = EXITED;
+        _this.appearStatus = ENTERING;
+      } else {
+        initialStatus = ENTERED;
+      }
+    } else {
+      if (props.unmountOnExit || props.mountOnEnter) {
+        initialStatus = UNMOUNTED;
+      } else {
+        initialStatus = EXITED;
+      }
     }
+
+    _this.state = {
+      status: initialStatus
+    };
+    _this.nextCallback = null;
+    return _this;
   }
 
-  return false;
-}
+  Transition.getDerivedStateFromProps = function getDerivedStateFromProps(_ref, prevState) {
+    var nextIn = _ref.in;
 
-function typeOf(object) {
-  if (typeof object === 'object' && object !== null) {
-    var $$typeof = object.$$typeof;
+    if (nextIn && prevState.status === UNMOUNTED) {
+      return {
+        status: EXITED
+      };
+    }
 
-    switch ($$typeof) {
-      case REACT_ELEMENT_TYPE:
-        var type = object.type;
+    return null;
+  } // getSnapshotBeforeUpdate(prevProps) {
+  //   let nextStatus = null
+  //   if (prevProps !== this.props) {
+  //     const { status } = this.state
+  //     if (this.props.in) {
+  //       if (status !== ENTERING && status !== ENTERED) {
+  //         nextStatus = ENTERING
+  //       }
+  //     } else {
+  //       if (status === ENTERING || status === ENTERED) {
+  //         nextStatus = EXITING
+  //       }
+  //     }
+  //   }
+  //   return { nextStatus }
+  // }
+  ;
 
-        switch (type) {
-          case REACT_FRAGMENT_TYPE:
-          case REACT_PROFILER_TYPE:
-          case REACT_STRICT_MODE_TYPE:
-          case REACT_SUSPENSE_TYPE:
-          case REACT_SUSPENSE_LIST_TYPE:
-            return type;
+  var _proto = Transition.prototype;
 
-          default:
-            var $$typeofType = type && type.$$typeof;
+  _proto.componentDidMount = function componentDidMount() {
+    this.updateStatus(true, this.appearStatus);
+  };
 
-            switch ($$typeofType) {
-              case REACT_CONTEXT_TYPE:
-              case REACT_FORWARD_REF_TYPE:
-              case REACT_LAZY_TYPE:
-              case REACT_MEMO_TYPE:
-              case REACT_PROVIDER_TYPE:
-                return $$typeofType;
+  _proto.componentDidUpdate = function componentDidUpdate(prevProps) {
+    var nextStatus = null;
 
-              default:
-                return $$typeof;
-            }
+    if (prevProps !== this.props) {
+      var status = this.state.status;
 
+      if (this.props.in) {
+        if (status !== ENTERING && status !== ENTERED) {
+          nextStatus = ENTERING;
+        }
+      } else {
+        if (status === ENTERING || status === ENTERED) {
+          nextStatus = EXITING;
+        }
+      }
+    }
+
+    this.updateStatus(false, nextStatus);
+  };
+
+  _proto.componentWillUnmount = function componentWillUnmount() {
+    this.cancelNextCallback();
+  };
+
+  _proto.getTimeouts = function getTimeouts() {
+    var timeout = this.props.timeout;
+    var exit, enter, appear;
+    exit = enter = appear = timeout;
+
+    if (timeout != null && typeof timeout !== 'number') {
+      exit = timeout.exit;
+      enter = timeout.enter; // TODO: remove fallback for next major
+
+      appear = timeout.appear !== undefined ? timeout.appear : enter;
+    }
+
+    return {
+      exit: exit,
+      enter: enter,
+      appear: appear
+    };
+  };
+
+  _proto.updateStatus = function updateStatus(mounting, nextStatus) {
+    if (mounting === void 0) {
+      mounting = false;
+    }
+
+    if (nextStatus !== null) {
+      // nextStatus will always be ENTERING or EXITING.
+      this.cancelNextCallback();
+
+      if (nextStatus === ENTERING) {
+        if (this.props.unmountOnExit || this.props.mountOnEnter) {
+          var node = this.props.nodeRef ? this.props.nodeRef.current : react_dom__WEBPACK_IMPORTED_MODULE_3__.findDOMNode(this); // https://github.com/reactjs/react-transition-group/pull/749
+          // With unmountOnExit or mountOnEnter, the enter animation should happen at the transition between `exited` and `entering`.
+          // To make the animation happen,  we have to separate each rendering and avoid being processed as batched.
+
+          if (node) (0,_utils_reflow__WEBPACK_IMPORTED_MODULE_4__.forceReflow)(node);
         }
 
-      case REACT_PORTAL_TYPE:
-        return $$typeof;
+        this.performEnter(mounting);
+      } else {
+        this.performExit();
+      }
+    } else if (this.props.unmountOnExit && this.state.status === EXITED) {
+      this.setState({
+        status: UNMOUNTED
+      });
     }
-  }
+  };
 
-  return undefined;
-}
-var ContextConsumer = REACT_CONTEXT_TYPE;
-var ContextProvider = REACT_PROVIDER_TYPE;
-var Element = REACT_ELEMENT_TYPE;
-var ForwardRef = REACT_FORWARD_REF_TYPE;
-var Fragment = REACT_FRAGMENT_TYPE;
-var Lazy = REACT_LAZY_TYPE;
-var Memo = REACT_MEMO_TYPE;
-var Portal = REACT_PORTAL_TYPE;
-var Profiler = REACT_PROFILER_TYPE;
-var StrictMode = REACT_STRICT_MODE_TYPE;
-var Suspense = REACT_SUSPENSE_TYPE;
-var hasWarnedAboutDeprecatedIsAsyncMode = false;
-var hasWarnedAboutDeprecatedIsConcurrentMode = false; // AsyncMode should be deprecated
+  _proto.performEnter = function performEnter(mounting) {
+    var _this2 = this;
 
-function isAsyncMode(object) {
-  {
-    if (!hasWarnedAboutDeprecatedIsAsyncMode) {
-      hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
+    var enter = this.props.enter;
+    var appearing = this.context ? this.context.isMounting : mounting;
 
-      console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 18+.');
+    var _ref2 = this.props.nodeRef ? [appearing] : [react_dom__WEBPACK_IMPORTED_MODULE_3__.findDOMNode(this), appearing],
+        maybeNode = _ref2[0],
+        maybeAppearing = _ref2[1];
+
+    var timeouts = this.getTimeouts();
+    var enterTimeout = appearing ? timeouts.appear : timeouts.enter; // no enter animation skip right to ENTERED
+    // if we are mounting and running this it means appear _must_ be set
+
+    if (!mounting && !enter || _config__WEBPACK_IMPORTED_MODULE_5__["default"].disabled) {
+      this.safeSetState({
+        status: ENTERED
+      }, function () {
+        _this2.props.onEntered(maybeNode);
+      });
+      return;
     }
-  }
 
-  return false;
-}
-function isConcurrentMode(object) {
-  {
-    if (!hasWarnedAboutDeprecatedIsConcurrentMode) {
-      hasWarnedAboutDeprecatedIsConcurrentMode = true; // Using console['warn'] to evade Babel and ESLint
+    this.props.onEnter(maybeNode, maybeAppearing);
+    this.safeSetState({
+      status: ENTERING
+    }, function () {
+      _this2.props.onEntering(maybeNode, maybeAppearing);
 
-      console['warn']('The ReactIs.isConcurrentMode() alias has been deprecated, ' + 'and will be removed in React 18+.');
+      _this2.onTransitionEnd(enterTimeout, function () {
+        _this2.safeSetState({
+          status: ENTERED
+        }, function () {
+          _this2.props.onEntered(maybeNode, maybeAppearing);
+        });
+      });
+    });
+  };
+
+  _proto.performExit = function performExit() {
+    var _this3 = this;
+
+    var exit = this.props.exit;
+    var timeouts = this.getTimeouts();
+    var maybeNode = this.props.nodeRef ? undefined : react_dom__WEBPACK_IMPORTED_MODULE_3__.findDOMNode(this); // no exit animation skip right to EXITED
+
+    if (!exit || _config__WEBPACK_IMPORTED_MODULE_5__["default"].disabled) {
+      this.safeSetState({
+        status: EXITED
+      }, function () {
+        _this3.props.onExited(maybeNode);
+      });
+      return;
     }
-  }
 
-  return false;
-}
-function isContextConsumer(object) {
-  return typeOf(object) === REACT_CONTEXT_TYPE;
-}
-function isContextProvider(object) {
-  return typeOf(object) === REACT_PROVIDER_TYPE;
-}
-function isElement(object) {
-  return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
-}
-function isForwardRef(object) {
-  return typeOf(object) === REACT_FORWARD_REF_TYPE;
-}
-function isFragment(object) {
-  return typeOf(object) === REACT_FRAGMENT_TYPE;
-}
-function isLazy(object) {
-  return typeOf(object) === REACT_LAZY_TYPE;
-}
-function isMemo(object) {
-  return typeOf(object) === REACT_MEMO_TYPE;
-}
-function isPortal(object) {
-  return typeOf(object) === REACT_PORTAL_TYPE;
-}
-function isProfiler(object) {
-  return typeOf(object) === REACT_PROFILER_TYPE;
-}
-function isStrictMode(object) {
-  return typeOf(object) === REACT_STRICT_MODE_TYPE;
-}
-function isSuspense(object) {
-  return typeOf(object) === REACT_SUSPENSE_TYPE;
-}
+    this.props.onExit(maybeNode);
+    this.safeSetState({
+      status: EXITING
+    }, function () {
+      _this3.props.onExiting(maybeNode);
 
-exports.ContextConsumer = ContextConsumer;
-exports.ContextProvider = ContextProvider;
-exports.Element = Element;
-exports.ForwardRef = ForwardRef;
-exports.Fragment = Fragment;
-exports.Lazy = Lazy;
-exports.Memo = Memo;
-exports.Portal = Portal;
-exports.Profiler = Profiler;
-exports.StrictMode = StrictMode;
-exports.Suspense = Suspense;
-exports.isAsyncMode = isAsyncMode;
-exports.isConcurrentMode = isConcurrentMode;
-exports.isContextConsumer = isContextConsumer;
-exports.isContextProvider = isContextProvider;
-exports.isElement = isElement;
-exports.isForwardRef = isForwardRef;
-exports.isFragment = isFragment;
-exports.isLazy = isLazy;
-exports.isMemo = isMemo;
-exports.isPortal = isPortal;
-exports.isProfiler = isProfiler;
-exports.isStrictMode = isStrictMode;
-exports.isSuspense = isSuspense;
-exports.isValidElementType = isValidElementType;
-exports.typeOf = typeOf;
-  })();
-}
+      _this3.onTransitionEnd(timeouts.exit, function () {
+        _this3.safeSetState({
+          status: EXITED
+        }, function () {
+          _this3.props.onExited(maybeNode);
+        });
+      });
+    });
+  };
 
+  _proto.cancelNextCallback = function cancelNextCallback() {
+    if (this.nextCallback !== null) {
+      this.nextCallback.cancel();
+      this.nextCallback = null;
+    }
+  };
+
+  _proto.safeSetState = function safeSetState(nextState, callback) {
+    // This shouldn't be necessary, but there are weird race conditions with
+    // setState callbacks and unmounting in testing, so always make sure that
+    // we can cancel any pending setState callbacks after we unmount.
+    callback = this.setNextCallback(callback);
+    this.setState(nextState, callback);
+  };
+
+  _proto.setNextCallback = function setNextCallback(callback) {
+    var _this4 = this;
+
+    var active = true;
+
+    this.nextCallback = function (event) {
+      if (active) {
+        active = false;
+        _this4.nextCallback = null;
+        callback(event);
+      }
+    };
+
+    this.nextCallback.cancel = function () {
+      active = false;
+    };
+
+    return this.nextCallback;
+  };
+
+  _proto.onTransitionEnd = function onTransitionEnd(timeout, handler) {
+    this.setNextCallback(handler);
+    var node = this.props.nodeRef ? this.props.nodeRef.current : react_dom__WEBPACK_IMPORTED_MODULE_3__.findDOMNode(this);
+    var doesNotHaveTimeoutOrListener = timeout == null && !this.props.addEndListener;
+
+    if (!node || doesNotHaveTimeoutOrListener) {
+      setTimeout(this.nextCallback, 0);
+      return;
+    }
+
+    if (this.props.addEndListener) {
+      var _ref3 = this.props.nodeRef ? [this.nextCallback] : [node, this.nextCallback],
+          maybeNode = _ref3[0],
+          maybeNextCallback = _ref3[1];
+
+      this.props.addEndListener(maybeNode, maybeNextCallback);
+    }
+
+    if (timeout != null) {
+      setTimeout(this.nextCallback, timeout);
+    }
+  };
+
+  _proto.render = function render() {
+    var status = this.state.status;
+
+    if (status === UNMOUNTED) {
+      return null;
+    }
+
+    var _this$props = this.props,
+        children = _this$props.children,
+        _in = _this$props.in,
+        _mountOnEnter = _this$props.mountOnEnter,
+        _unmountOnExit = _this$props.unmountOnExit,
+        _appear = _this$props.appear,
+        _enter = _this$props.enter,
+        _exit = _this$props.exit,
+        _timeout = _this$props.timeout,
+        _addEndListener = _this$props.addEndListener,
+        _onEnter = _this$props.onEnter,
+        _onEntering = _this$props.onEntering,
+        _onEntered = _this$props.onEntered,
+        _onExit = _this$props.onExit,
+        _onExiting = _this$props.onExiting,
+        _onExited = _this$props.onExited,
+        _nodeRef = _this$props.nodeRef,
+        childProps = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(_this$props, ["children", "in", "mountOnEnter", "unmountOnExit", "appear", "enter", "exit", "timeout", "addEndListener", "onEnter", "onEntering", "onEntered", "onExit", "onExiting", "onExited", "nodeRef"]);
+
+    return (
+      /*#__PURE__*/
+      // allows for nested Transitions
+      react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_TransitionGroupContext__WEBPACK_IMPORTED_MODULE_6__["default"].Provider, {
+        value: null
+      }, typeof children === 'function' ? children(status, childProps) : react__WEBPACK_IMPORTED_MODULE_2___default().cloneElement(react__WEBPACK_IMPORTED_MODULE_2___default().Children.only(children), childProps))
+    );
+  };
+
+  return Transition;
+}((react__WEBPACK_IMPORTED_MODULE_2___default().Component));
+
+Transition.contextType = _TransitionGroupContext__WEBPACK_IMPORTED_MODULE_6__["default"];
+Transition.propTypes =  true ? {
+  /**
+   * A React reference to DOM element that need to transition:
+   * https://stackoverflow.com/a/51127130/4671932
+   *
+   *   - When `nodeRef` prop is used, `node` is not passed to callback functions
+   *      (e.g. `onEnter`) because user already has direct access to the node.
+   *   - When changing `key` prop of `Transition` in a `TransitionGroup` a new
+   *     `nodeRef` need to be provided to `Transition` with changed `key` prop
+   *     (see
+   *     [test/CSSTransition-test.js](https://github.com/reactjs/react-transition-group/blob/13435f897b3ab71f6e19d724f145596f5910581c/test/CSSTransition-test.js#L362-L437)).
+   */
+  nodeRef: prop_types__WEBPACK_IMPORTED_MODULE_7___default().shape({
+    current: typeof Element === 'undefined' ? (prop_types__WEBPACK_IMPORTED_MODULE_7___default().any) : function (propValue, key, componentName, location, propFullName, secret) {
+      var value = propValue[key];
+      return prop_types__WEBPACK_IMPORTED_MODULE_7___default().instanceOf(value && 'ownerDocument' in value ? value.ownerDocument.defaultView.Element : Element)(propValue, key, componentName, location, propFullName, secret);
+    }
+  }),
+
+  /**
+   * A `function` child can be used instead of a React element. This function is
+   * called with the current transition status (`'entering'`, `'entered'`,
+   * `'exiting'`, `'exited'`), which can be used to apply context
+   * specific props to a component.
+   *
+   * ```jsx
+   * <Transition in={this.state.in} timeout={150}>
+   *   {state => (
+   *     <MyComponent className={`fade fade-${state}`} />
+   *   )}
+   * </Transition>
+   * ```
+   */
+  children: prop_types__WEBPACK_IMPORTED_MODULE_7___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_7___default().func.isRequired), (prop_types__WEBPACK_IMPORTED_MODULE_7___default().element.isRequired)]).isRequired,
+
+  /**
+   * Show the component; triggers the enter or exit states
+   */
+  in: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().bool),
+
+  /**
+   * By default the child component is mounted immediately along with
+   * the parent `Transition` component. If you want to "lazy mount" the component on the
+   * first `in={true}` you can set `mountOnEnter`. After the first enter transition the component will stay
+   * mounted, even on "exited", unless you also specify `unmountOnExit`.
+   */
+  mountOnEnter: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().bool),
+
+  /**
+   * By default the child component stays mounted after it reaches the `'exited'` state.
+   * Set `unmountOnExit` if you'd prefer to unmount the component after it finishes exiting.
+   */
+  unmountOnExit: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().bool),
+
+  /**
+   * By default the child component does not perform the enter transition when
+   * it first mounts, regardless of the value of `in`. If you want this
+   * behavior, set both `appear` and `in` to `true`.
+   *
+   * > **Note**: there are no special appear states like `appearing`/`appeared`, this prop
+   * > only adds an additional enter transition. However, in the
+   * > `<CSSTransition>` component that first enter transition does result in
+   * > additional `.appear-*` classes, that way you can choose to style it
+   * > differently.
+   */
+  appear: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().bool),
+
+  /**
+   * Enable or disable enter transitions.
+   */
+  enter: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().bool),
+
+  /**
+   * Enable or disable exit transitions.
+   */
+  exit: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().bool),
+
+  /**
+   * The duration of the transition, in milliseconds.
+   * Required unless `addEndListener` is provided.
+   *
+   * You may specify a single timeout for all transitions:
+   *
+   * ```jsx
+   * timeout={500}
+   * ```
+   *
+   * or individually:
+   *
+   * ```jsx
+   * timeout={{
+   *  appear: 500,
+   *  enter: 300,
+   *  exit: 500,
+   * }}
+   * ```
+   *
+   * - `appear` defaults to the value of `enter`
+   * - `enter` defaults to `0`
+   * - `exit` defaults to `0`
+   *
+   * @type {number | { enter?: number, exit?: number, appear?: number }}
+   */
+  timeout: function timeout(props) {
+    var pt = _utils_PropTypes__WEBPACK_IMPORTED_MODULE_8__.timeoutsShape;
+    if (!props.addEndListener) pt = pt.isRequired;
+
+    for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+      args[_key - 1] = arguments[_key];
+    }
+
+    return pt.apply(void 0, [props].concat(args));
+  },
+
+  /**
+   * Add a custom transition end trigger. Called with the transitioning
+   * DOM node and a `done` callback. Allows for more fine grained transition end
+   * logic. Timeouts are still used as a fallback if provided.
+   *
+   * **Note**: when `nodeRef` prop is passed, `node` is not passed.
+   *
+   * ```jsx
+   * addEndListener={(node, done) => {
+   *   // use the css transitionend event to mark the finish of a transition
+   *   node.addEventListener('transitionend', done, false);
+   * }}
+   * ```
+   */
+  addEndListener: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().func),
+
+  /**
+   * Callback fired before the "entering" status is applied. An extra parameter
+   * `isAppearing` is supplied to indicate if the enter stage is occurring on the initial mount
+   *
+   * **Note**: when `nodeRef` prop is passed, `node` is not passed.
+   *
+   * @type Function(node: HtmlElement, isAppearing: bool) -> void
+   */
+  onEnter: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().func),
+
+  /**
+   * Callback fired after the "entering" status is applied. An extra parameter
+   * `isAppearing` is supplied to indicate if the enter stage is occurring on the initial mount
+   *
+   * **Note**: when `nodeRef` prop is passed, `node` is not passed.
+   *
+   * @type Function(node: HtmlElement, isAppearing: bool)
+   */
+  onEntering: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().func),
+
+  /**
+   * Callback fired after the "entered" status is applied. An extra parameter
+   * `isAppearing` is supplied to indicate if the enter stage is occurring on the initial mount
+   *
+   * **Note**: when `nodeRef` prop is passed, `node` is not passed.
+   *
+   * @type Function(node: HtmlElement, isAppearing: bool) -> void
+   */
+  onEntered: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().func),
+
+  /**
+   * Callback fired before the "exiting" status is applied.
+   *
+   * **Note**: when `nodeRef` prop is passed, `node` is not passed.
+   *
+   * @type Function(node: HtmlElement) -> void
+   */
+  onExit: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().func),
+
+  /**
+   * Callback fired after the "exiting" status is applied.
+   *
+   * **Note**: when `nodeRef` prop is passed, `node` is not passed.
+   *
+   * @type Function(node: HtmlElement) -> void
+   */
+  onExiting: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().func),
+
+  /**
+   * Callback fired after the "exited" status is applied.
+   *
+   * **Note**: when `nodeRef` prop is passed, `node` is not passed
+   *
+   * @type Function(node: HtmlElement) -> void
+   */
+  onExited: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().func)
+} : 0; // Name the function so it is clearer in the documentation
+
+function noop() {}
+
+Transition.defaultProps = {
+  in: false,
+  mountOnEnter: false,
+  unmountOnExit: false,
+  appear: false,
+  enter: true,
+  exit: true,
+  onEnter: noop,
+  onEntering: noop,
+  onEntered: noop,
+  onExit: noop,
+  onExiting: noop,
+  onExited: noop
+};
+Transition.UNMOUNTED = UNMOUNTED;
+Transition.EXITED = EXITED;
+Transition.ENTERING = ENTERING;
+Transition.ENTERED = ENTERED;
+Transition.EXITING = EXITING;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Transition);
 
 /***/ }),
 
-/***/ "./node_modules/@mui/material/node_modules/react-is/index.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/@mui/material/node_modules/react-is/index.js ***!
-  \*******************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+/***/ "./node_modules/@mui/material/node_modules/react-transition-group/esm/TransitionGroup.js":
+/*!***********************************************************************************************!*\
+  !*** ./node_modules/@mui/material/node_modules/react-transition-group/esm/TransitionGroup.js ***!
+  \***********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inheritsLoose */ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _TransitionGroupContext__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./TransitionGroupContext */ "./node_modules/@mui/material/node_modules/react-transition-group/esm/TransitionGroupContext.js");
+/* harmony import */ var _utils_ChildMapping__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./utils/ChildMapping */ "./node_modules/@mui/material/node_modules/react-transition-group/esm/utils/ChildMapping.js");
 
 
-if (false) {} else {
-  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/@mui/material/node_modules/react-is/cjs/react-is.development.js");
+
+
+
+
+
+
+
+var values = Object.values || function (obj) {
+  return Object.keys(obj).map(function (k) {
+    return obj[k];
+  });
+};
+
+var defaultProps = {
+  component: 'div',
+  childFactory: function childFactory(child) {
+    return child;
+  }
+};
+/**
+ * The `<TransitionGroup>` component manages a set of transition components
+ * (`<Transition>` and `<CSSTransition>`) in a list. Like with the transition
+ * components, `<TransitionGroup>` is a state machine for managing the mounting
+ * and unmounting of components over time.
+ *
+ * Consider the example below. As items are removed or added to the TodoList the
+ * `in` prop is toggled automatically by the `<TransitionGroup>`.
+ *
+ * Note that `<TransitionGroup>`  does not define any animation behavior!
+ * Exactly _how_ a list item animates is up to the individual transition
+ * component. This means you can mix and match animations across different list
+ * items.
+ */
+
+var TransitionGroup = /*#__PURE__*/function (_React$Component) {
+  (0,_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_3__["default"])(TransitionGroup, _React$Component);
+
+  function TransitionGroup(props, context) {
+    var _this;
+
+    _this = _React$Component.call(this, props, context) || this;
+
+    var handleExited = _this.handleExited.bind((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__["default"])(_this)); // Initial children should all be entering, dependent on appear
+
+
+    _this.state = {
+      contextValue: {
+        isMounting: true
+      },
+      handleExited: handleExited,
+      firstRender: true
+    };
+    return _this;
+  }
+
+  var _proto = TransitionGroup.prototype;
+
+  _proto.componentDidMount = function componentDidMount() {
+    this.mounted = true;
+    this.setState({
+      contextValue: {
+        isMounting: false
+      }
+    });
+  };
+
+  _proto.componentWillUnmount = function componentWillUnmount() {
+    this.mounted = false;
+  };
+
+  TransitionGroup.getDerivedStateFromProps = function getDerivedStateFromProps(nextProps, _ref) {
+    var prevChildMapping = _ref.children,
+        handleExited = _ref.handleExited,
+        firstRender = _ref.firstRender;
+    return {
+      children: firstRender ? (0,_utils_ChildMapping__WEBPACK_IMPORTED_MODULE_5__.getInitialChildMapping)(nextProps, handleExited) : (0,_utils_ChildMapping__WEBPACK_IMPORTED_MODULE_5__.getNextChildMapping)(nextProps, prevChildMapping, handleExited),
+      firstRender: false
+    };
+  } // node is `undefined` when user provided `nodeRef` prop
+  ;
+
+  _proto.handleExited = function handleExited(child, node) {
+    var currentChildMapping = (0,_utils_ChildMapping__WEBPACK_IMPORTED_MODULE_5__.getChildMapping)(this.props.children);
+    if (child.key in currentChildMapping) return;
+
+    if (child.props.onExited) {
+      child.props.onExited(node);
+    }
+
+    if (this.mounted) {
+      this.setState(function (state) {
+        var children = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, state.children);
+
+        delete children[child.key];
+        return {
+          children: children
+        };
+      });
+    }
+  };
+
+  _proto.render = function render() {
+    var _this$props = this.props,
+        Component = _this$props.component,
+        childFactory = _this$props.childFactory,
+        props = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(_this$props, ["component", "childFactory"]);
+
+    var contextValue = this.state.contextValue;
+    var children = values(this.state.children).map(childFactory);
+    delete props.appear;
+    delete props.enter;
+    delete props.exit;
+
+    if (Component === null) {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default().createElement(_TransitionGroupContext__WEBPACK_IMPORTED_MODULE_6__["default"].Provider, {
+        value: contextValue
+      }, children);
+    }
+
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default().createElement(_TransitionGroupContext__WEBPACK_IMPORTED_MODULE_6__["default"].Provider, {
+      value: contextValue
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default().createElement(Component, props, children));
+  };
+
+  return TransitionGroup;
+}((react__WEBPACK_IMPORTED_MODULE_4___default().Component));
+
+TransitionGroup.propTypes =  true ? {
+  /**
+   * `<TransitionGroup>` renders a `<div>` by default. You can change this
+   * behavior by providing a `component` prop.
+   * If you use React v16+ and would like to avoid a wrapping `<div>` element
+   * you can pass in `component={null}`. This is useful if the wrapping div
+   * borks your css styles.
+   */
+  component: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().any),
+
+  /**
+   * A set of `<Transition>` components, that are toggled `in` and out as they
+   * leave. the `<TransitionGroup>` will inject specific transition props, so
+   * remember to spread them through if you are wrapping the `<Transition>` as
+   * with our `<Fade>` example.
+   *
+   * While this component is meant for multiple `Transition` or `CSSTransition`
+   * children, sometimes you may want to have a single transition child with
+   * content that you want to be transitioned out and in when you change it
+   * (e.g. routes, images etc.) In that case you can change the `key` prop of
+   * the transition child as you change its content, this will cause
+   * `TransitionGroup` to transition the child out and back in.
+   */
+  children: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().node),
+
+  /**
+   * A convenience prop that enables or disables appear animations
+   * for all children. Note that specifying this will override any defaults set
+   * on individual children Transitions.
+   */
+  appear: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().bool),
+
+  /**
+   * A convenience prop that enables or disables enter animations
+   * for all children. Note that specifying this will override any defaults set
+   * on individual children Transitions.
+   */
+  enter: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().bool),
+
+  /**
+   * A convenience prop that enables or disables exit animations
+   * for all children. Note that specifying this will override any defaults set
+   * on individual children Transitions.
+   */
+  exit: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().bool),
+
+  /**
+   * You may need to apply reactive updates to a child as it is exiting.
+   * This is generally done by using `cloneElement` however in the case of an exiting
+   * child the element has already been removed and not accessible to the consumer.
+   *
+   * If you do need to update a child as it leaves you can provide a `childFactory`
+   * to wrap every child, even the ones that are leaving.
+   *
+   * @type Function(child: ReactElement) -> ReactElement
+   */
+  childFactory: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().func)
+} : 0;
+TransitionGroup.defaultProps = defaultProps;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TransitionGroup);
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/node_modules/react-transition-group/esm/TransitionGroupContext.js":
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/@mui/material/node_modules/react-transition-group/esm/TransitionGroupContext.js ***!
+  \******************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (react__WEBPACK_IMPORTED_MODULE_0___default().createContext(null));
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/node_modules/react-transition-group/esm/config.js":
+/*!**************************************************************************************!*\
+  !*** ./node_modules/@mui/material/node_modules/react-transition-group/esm/config.js ***!
+  \**************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  disabled: false
+});
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/node_modules/react-transition-group/esm/utils/ChildMapping.js":
+/*!**************************************************************************************************!*\
+  !*** ./node_modules/@mui/material/node_modules/react-transition-group/esm/utils/ChildMapping.js ***!
+  \**************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getChildMapping": () => (/* binding */ getChildMapping),
+/* harmony export */   "getInitialChildMapping": () => (/* binding */ getInitialChildMapping),
+/* harmony export */   "getNextChildMapping": () => (/* binding */ getNextChildMapping),
+/* harmony export */   "mergeChildMappings": () => (/* binding */ mergeChildMappings)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+/**
+ * Given `this.props.children`, return an object mapping key to child.
+ *
+ * @param {*} children `this.props.children`
+ * @return {object} Mapping of key to child
+ */
+
+function getChildMapping(children, mapFn) {
+  var mapper = function mapper(child) {
+    return mapFn && (0,react__WEBPACK_IMPORTED_MODULE_0__.isValidElement)(child) ? mapFn(child) : child;
+  };
+
+  var result = Object.create(null);
+  if (children) react__WEBPACK_IMPORTED_MODULE_0__.Children.map(children, function (c) {
+    return c;
+  }).forEach(function (child) {
+    // run the map function here instead so that the key is the computed one
+    result[child.key] = mapper(child);
+  });
+  return result;
+}
+/**
+ * When you're adding or removing children some may be added or removed in the
+ * same render pass. We want to show *both* since we want to simultaneously
+ * animate elements in and out. This function takes a previous set of keys
+ * and a new set of keys and merges them with its best guess of the correct
+ * ordering. In the future we may expose some of the utilities in
+ * ReactMultiChild to make this easy, but for now React itself does not
+ * directly have this concept of the union of prevChildren and nextChildren
+ * so we implement it here.
+ *
+ * @param {object} prev prev children as returned from
+ * `ReactTransitionChildMapping.getChildMapping()`.
+ * @param {object} next next children as returned from
+ * `ReactTransitionChildMapping.getChildMapping()`.
+ * @return {object} a key set that contains all keys in `prev` and all keys
+ * in `next` in a reasonable order.
+ */
+
+function mergeChildMappings(prev, next) {
+  prev = prev || {};
+  next = next || {};
+
+  function getValueForKey(key) {
+    return key in next ? next[key] : prev[key];
+  } // For each key of `next`, the list of keys to insert before that key in
+  // the combined list
+
+
+  var nextKeysPending = Object.create(null);
+  var pendingKeys = [];
+
+  for (var prevKey in prev) {
+    if (prevKey in next) {
+      if (pendingKeys.length) {
+        nextKeysPending[prevKey] = pendingKeys;
+        pendingKeys = [];
+      }
+    } else {
+      pendingKeys.push(prevKey);
+    }
+  }
+
+  var i;
+  var childMapping = {};
+
+  for (var nextKey in next) {
+    if (nextKeysPending[nextKey]) {
+      for (i = 0; i < nextKeysPending[nextKey].length; i++) {
+        var pendingNextKey = nextKeysPending[nextKey][i];
+        childMapping[nextKeysPending[nextKey][i]] = getValueForKey(pendingNextKey);
+      }
+    }
+
+    childMapping[nextKey] = getValueForKey(nextKey);
+  } // Finally, add the keys which didn't appear before any key in `next`
+
+
+  for (i = 0; i < pendingKeys.length; i++) {
+    childMapping[pendingKeys[i]] = getValueForKey(pendingKeys[i]);
+  }
+
+  return childMapping;
 }
 
+function getProp(child, prop, props) {
+  return props[prop] != null ? props[prop] : child.props[prop];
+}
+
+function getInitialChildMapping(props, onExited) {
+  return getChildMapping(props.children, function (child) {
+    return (0,react__WEBPACK_IMPORTED_MODULE_0__.cloneElement)(child, {
+      onExited: onExited.bind(null, child),
+      in: true,
+      appear: getProp(child, 'appear', props),
+      enter: getProp(child, 'enter', props),
+      exit: getProp(child, 'exit', props)
+    });
+  });
+}
+function getNextChildMapping(nextProps, prevChildMapping, onExited) {
+  var nextChildMapping = getChildMapping(nextProps.children);
+  var children = mergeChildMappings(prevChildMapping, nextChildMapping);
+  Object.keys(children).forEach(function (key) {
+    var child = children[key];
+    if (!(0,react__WEBPACK_IMPORTED_MODULE_0__.isValidElement)(child)) return;
+    var hasPrev = (key in prevChildMapping);
+    var hasNext = (key in nextChildMapping);
+    var prevChild = prevChildMapping[key];
+    var isLeaving = (0,react__WEBPACK_IMPORTED_MODULE_0__.isValidElement)(prevChild) && !prevChild.props.in; // item is new (entering)
+
+    if (hasNext && (!hasPrev || isLeaving)) {
+      // console.log('entering', key)
+      children[key] = (0,react__WEBPACK_IMPORTED_MODULE_0__.cloneElement)(child, {
+        onExited: onExited.bind(null, child),
+        in: true,
+        exit: getProp(child, 'exit', nextProps),
+        enter: getProp(child, 'enter', nextProps)
+      });
+    } else if (!hasNext && hasPrev && !isLeaving) {
+      // item is old (exiting)
+      // console.log('leaving', key)
+      children[key] = (0,react__WEBPACK_IMPORTED_MODULE_0__.cloneElement)(child, {
+        in: false
+      });
+    } else if (hasNext && hasPrev && (0,react__WEBPACK_IMPORTED_MODULE_0__.isValidElement)(prevChild)) {
+      // item hasn't changed transition states
+      // copy over the last transition props;
+      // console.log('unchanged', key)
+      children[key] = (0,react__WEBPACK_IMPORTED_MODULE_0__.cloneElement)(child, {
+        onExited: onExited.bind(null, child),
+        in: prevChild.props.in,
+        exit: getProp(child, 'exit', nextProps),
+        enter: getProp(child, 'enter', nextProps)
+      });
+    }
+  });
+  return children;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/node_modules/react-transition-group/esm/utils/PropTypes.js":
+/*!***********************************************************************************************!*\
+  !*** ./node_modules/@mui/material/node_modules/react-transition-group/esm/utils/PropTypes.js ***!
+  \***********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "classNamesShape": () => (/* binding */ classNamesShape),
+/* harmony export */   "timeoutsShape": () => (/* binding */ timeoutsShape)
+/* harmony export */ });
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_0__);
+
+var timeoutsShape =  true ? prop_types__WEBPACK_IMPORTED_MODULE_0___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_0___default().number), prop_types__WEBPACK_IMPORTED_MODULE_0___default().shape({
+  enter: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().number),
+  exit: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().number),
+  appear: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().number)
+}).isRequired]) : 0;
+var classNamesShape =  true ? prop_types__WEBPACK_IMPORTED_MODULE_0___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_0___default().string), prop_types__WEBPACK_IMPORTED_MODULE_0___default().shape({
+  enter: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().string),
+  exit: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().string),
+  active: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().string)
+}), prop_types__WEBPACK_IMPORTED_MODULE_0___default().shape({
+  enter: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().string),
+  enterDone: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().string),
+  enterActive: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().string),
+  exit: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().string),
+  exitDone: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().string),
+  exitActive: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().string)
+})]) : 0;
+
+/***/ }),
+
+/***/ "./node_modules/@mui/material/node_modules/react-transition-group/esm/utils/reflow.js":
+/*!********************************************************************************************!*\
+  !*** ./node_modules/@mui/material/node_modules/react-transition-group/esm/utils/reflow.js ***!
+  \********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "forceReflow": () => (/* binding */ forceReflow)
+/* harmony export */ });
+var forceReflow = function forceReflow(node) {
+  return node.scrollTop;
+};
 
 /***/ }),
 
@@ -16749,6 +17941,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _zIndex__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./zIndex */ "./node_modules/@mui/material/styles/zIndex.js");
 
 
+
 const _excluded = ["breakpoints", "mixins", "spacing", "palette", "transitions", "typography", "shape"];
 
 
@@ -16768,6 +17961,11 @@ function createTheme(options = {}, ...args) {
     typography: typographyInput = {}
   } = options,
         other = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(options, _excluded);
+
+  if (options.vars) {
+    throw new Error( true ? `MUI: \`vars\` is a private field used for CSS variables support.
+Please use another name.` : 0);
+  }
 
   const palette = (0,_createPalette__WEBPACK_IMPORTED_MODULE_2__["default"])(paletteInput);
   const systemTheme = (0,_mui_system__WEBPACK_IMPORTED_MODULE_3__["default"])(options);
@@ -17665,7 +18863,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _emotion_react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @emotion/react */ "./node_modules/@emotion/react/dist/emotion-react.browser.esm.js");
 /* harmony import */ var _StyledEngineProvider__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./StyledEngineProvider */ "./node_modules/@mui/styled-engine/StyledEngineProvider/StyledEngineProvider.js");
 /* harmony import */ var _GlobalStyles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./GlobalStyles */ "./node_modules/@mui/styled-engine/GlobalStyles/GlobalStyles.js");
-/** @license MUI v5.8.0
+/** @license MUI v5.8.7
  *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
@@ -17914,7 +19112,7 @@ function breakpoints(styleFunction) {
 function createEmptyBreakpointObject(breakpointsInput = {}) {
   var _breakpointsInput$key;
 
-  const breakpointsInOrder = breakpointsInput == null ? void 0 : (_breakpointsInput$key = breakpointsInput.keys) == null ? void 0 : _breakpointsInput$key.reduce((acc, key) => {
+  const breakpointsInOrder = (_breakpointsInput$key = breakpointsInput.keys) == null ? void 0 : _breakpointsInput$key.reduce((acc, key) => {
     const breakpointStyleKey = breakpointsInput.up(key);
     acc[breakpointStyleKey] = {};
     return acc;
@@ -18906,6 +20104,122 @@ const shape = {
 
 /***/ }),
 
+/***/ "./node_modules/@mui/system/esm/cssGrid.js":
+/*!*************************************************!*\
+  !*** ./node_modules/@mui/system/esm/cssGrid.js ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "columnGap": () => (/* binding */ columnGap),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "gap": () => (/* binding */ gap),
+/* harmony export */   "gridArea": () => (/* binding */ gridArea),
+/* harmony export */   "gridAutoColumns": () => (/* binding */ gridAutoColumns),
+/* harmony export */   "gridAutoFlow": () => (/* binding */ gridAutoFlow),
+/* harmony export */   "gridAutoRows": () => (/* binding */ gridAutoRows),
+/* harmony export */   "gridColumn": () => (/* binding */ gridColumn),
+/* harmony export */   "gridRow": () => (/* binding */ gridRow),
+/* harmony export */   "gridTemplateAreas": () => (/* binding */ gridTemplateAreas),
+/* harmony export */   "gridTemplateColumns": () => (/* binding */ gridTemplateColumns),
+/* harmony export */   "gridTemplateRows": () => (/* binding */ gridTemplateRows),
+/* harmony export */   "rowGap": () => (/* binding */ rowGap)
+/* harmony export */ });
+/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style */ "./node_modules/@mui/system/esm/style.js");
+/* harmony import */ var _compose__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./compose */ "./node_modules/@mui/system/esm/compose.js");
+/* harmony import */ var _spacing__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./spacing */ "./node_modules/@mui/system/esm/spacing.js");
+/* harmony import */ var _breakpoints__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./breakpoints */ "./node_modules/@mui/system/esm/breakpoints.js");
+/* harmony import */ var _responsivePropType__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./responsivePropType */ "./node_modules/@mui/system/esm/responsivePropType.js");
+
+
+
+
+
+const gap = props => {
+  if (props.gap !== undefined && props.gap !== null) {
+    const transformer = (0,_spacing__WEBPACK_IMPORTED_MODULE_0__.createUnaryUnit)(props.theme, 'spacing', 8, 'gap');
+
+    const styleFromPropValue = propValue => ({
+      gap: (0,_spacing__WEBPACK_IMPORTED_MODULE_0__.getValue)(transformer, propValue)
+    });
+
+    return (0,_breakpoints__WEBPACK_IMPORTED_MODULE_1__.handleBreakpoints)(props, props.gap, styleFromPropValue);
+  }
+
+  return null;
+};
+gap.propTypes =  true ? {
+  gap: _responsivePropType__WEBPACK_IMPORTED_MODULE_2__["default"]
+} : 0;
+gap.filterProps = ['gap'];
+const columnGap = props => {
+  if (props.columnGap !== undefined && props.columnGap !== null) {
+    const transformer = (0,_spacing__WEBPACK_IMPORTED_MODULE_0__.createUnaryUnit)(props.theme, 'spacing', 8, 'columnGap');
+
+    const styleFromPropValue = propValue => ({
+      columnGap: (0,_spacing__WEBPACK_IMPORTED_MODULE_0__.getValue)(transformer, propValue)
+    });
+
+    return (0,_breakpoints__WEBPACK_IMPORTED_MODULE_1__.handleBreakpoints)(props, props.columnGap, styleFromPropValue);
+  }
+
+  return null;
+};
+columnGap.propTypes =  true ? {
+  columnGap: _responsivePropType__WEBPACK_IMPORTED_MODULE_2__["default"]
+} : 0;
+columnGap.filterProps = ['columnGap'];
+const rowGap = props => {
+  if (props.rowGap !== undefined && props.rowGap !== null) {
+    const transformer = (0,_spacing__WEBPACK_IMPORTED_MODULE_0__.createUnaryUnit)(props.theme, 'spacing', 8, 'rowGap');
+
+    const styleFromPropValue = propValue => ({
+      rowGap: (0,_spacing__WEBPACK_IMPORTED_MODULE_0__.getValue)(transformer, propValue)
+    });
+
+    return (0,_breakpoints__WEBPACK_IMPORTED_MODULE_1__.handleBreakpoints)(props, props.rowGap, styleFromPropValue);
+  }
+
+  return null;
+};
+rowGap.propTypes =  true ? {
+  rowGap: _responsivePropType__WEBPACK_IMPORTED_MODULE_2__["default"]
+} : 0;
+rowGap.filterProps = ['rowGap'];
+const gridColumn = (0,_style__WEBPACK_IMPORTED_MODULE_3__["default"])({
+  prop: 'gridColumn'
+});
+const gridRow = (0,_style__WEBPACK_IMPORTED_MODULE_3__["default"])({
+  prop: 'gridRow'
+});
+const gridAutoFlow = (0,_style__WEBPACK_IMPORTED_MODULE_3__["default"])({
+  prop: 'gridAutoFlow'
+});
+const gridAutoColumns = (0,_style__WEBPACK_IMPORTED_MODULE_3__["default"])({
+  prop: 'gridAutoColumns'
+});
+const gridAutoRows = (0,_style__WEBPACK_IMPORTED_MODULE_3__["default"])({
+  prop: 'gridAutoRows'
+});
+const gridTemplateColumns = (0,_style__WEBPACK_IMPORTED_MODULE_3__["default"])({
+  prop: 'gridTemplateColumns'
+});
+const gridTemplateRows = (0,_style__WEBPACK_IMPORTED_MODULE_3__["default"])({
+  prop: 'gridTemplateRows'
+});
+const gridTemplateAreas = (0,_style__WEBPACK_IMPORTED_MODULE_3__["default"])({
+  prop: 'gridTemplateAreas'
+});
+const gridArea = (0,_style__WEBPACK_IMPORTED_MODULE_3__["default"])({
+  prop: 'gridArea'
+});
+const grid = (0,_compose__WEBPACK_IMPORTED_MODULE_4__["default"])(gap, columnGap, rowGap, gridColumn, gridRow, gridAutoFlow, gridAutoColumns, gridAutoRows, gridTemplateColumns, gridTemplateRows, gridTemplateAreas, gridArea);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (grid);
+
+/***/ }),
+
 /***/ "./node_modules/@mui/system/esm/display.js":
 /*!*************************************************!*\
   !*** ./node_modules/@mui/system/esm/display.js ***!
@@ -19043,7 +20357,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _borders__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./borders */ "./node_modules/@mui/system/esm/borders.js");
 /* harmony import */ var _display__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./display */ "./node_modules/@mui/system/esm/display.js");
 /* harmony import */ var _flexbox__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./flexbox */ "./node_modules/@mui/system/esm/flexbox.js");
-/* harmony import */ var _grid__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./grid */ "./node_modules/@mui/system/esm/grid.js");
+/* harmony import */ var _cssGrid__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./cssGrid */ "./node_modules/@mui/system/esm/cssGrid.js");
 /* harmony import */ var _positions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./positions */ "./node_modules/@mui/system/esm/positions.js");
 /* harmony import */ var _palette__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./palette */ "./node_modules/@mui/system/esm/palette.js");
 /* harmony import */ var _shadows__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./shadows */ "./node_modules/@mui/system/esm/shadows.js");
@@ -19064,7 +20378,7 @@ const filterPropsMapping = {
   borders: _borders__WEBPACK_IMPORTED_MODULE_0__["default"].filterProps,
   display: _display__WEBPACK_IMPORTED_MODULE_1__["default"].filterProps,
   flexbox: _flexbox__WEBPACK_IMPORTED_MODULE_2__["default"].filterProps,
-  grid: _grid__WEBPACK_IMPORTED_MODULE_3__["default"].filterProps,
+  grid: _cssGrid__WEBPACK_IMPORTED_MODULE_3__["default"].filterProps,
   positions: _positions__WEBPACK_IMPORTED_MODULE_4__["default"].filterProps,
   palette: _palette__WEBPACK_IMPORTED_MODULE_5__["default"].filterProps,
   shadows: _shadows__WEBPACK_IMPORTED_MODULE_6__["default"].filterProps,
@@ -19076,7 +20390,7 @@ const styleFunctionMapping = {
   borders: _borders__WEBPACK_IMPORTED_MODULE_0__["default"],
   display: _display__WEBPACK_IMPORTED_MODULE_1__["default"],
   flexbox: _flexbox__WEBPACK_IMPORTED_MODULE_2__["default"],
-  grid: _grid__WEBPACK_IMPORTED_MODULE_3__["default"],
+  grid: _cssGrid__WEBPACK_IMPORTED_MODULE_3__["default"],
   positions: _positions__WEBPACK_IMPORTED_MODULE_4__["default"],
   palette: _palette__WEBPACK_IMPORTED_MODULE_5__["default"],
   shadows: _shadows__WEBPACK_IMPORTED_MODULE_6__["default"],
@@ -19103,122 +20417,6 @@ function getThemeValue(prop, value, theme) {
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (getThemeValue);
-
-/***/ }),
-
-/***/ "./node_modules/@mui/system/esm/grid.js":
-/*!**********************************************!*\
-  !*** ./node_modules/@mui/system/esm/grid.js ***!
-  \**********************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "columnGap": () => (/* binding */ columnGap),
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
-/* harmony export */   "gap": () => (/* binding */ gap),
-/* harmony export */   "gridArea": () => (/* binding */ gridArea),
-/* harmony export */   "gridAutoColumns": () => (/* binding */ gridAutoColumns),
-/* harmony export */   "gridAutoFlow": () => (/* binding */ gridAutoFlow),
-/* harmony export */   "gridAutoRows": () => (/* binding */ gridAutoRows),
-/* harmony export */   "gridColumn": () => (/* binding */ gridColumn),
-/* harmony export */   "gridRow": () => (/* binding */ gridRow),
-/* harmony export */   "gridTemplateAreas": () => (/* binding */ gridTemplateAreas),
-/* harmony export */   "gridTemplateColumns": () => (/* binding */ gridTemplateColumns),
-/* harmony export */   "gridTemplateRows": () => (/* binding */ gridTemplateRows),
-/* harmony export */   "rowGap": () => (/* binding */ rowGap)
-/* harmony export */ });
-/* harmony import */ var _style__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style */ "./node_modules/@mui/system/esm/style.js");
-/* harmony import */ var _compose__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./compose */ "./node_modules/@mui/system/esm/compose.js");
-/* harmony import */ var _spacing__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./spacing */ "./node_modules/@mui/system/esm/spacing.js");
-/* harmony import */ var _breakpoints__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./breakpoints */ "./node_modules/@mui/system/esm/breakpoints.js");
-/* harmony import */ var _responsivePropType__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./responsivePropType */ "./node_modules/@mui/system/esm/responsivePropType.js");
-
-
-
-
-
-const gap = props => {
-  if (props.gap !== undefined && props.gap !== null) {
-    const transformer = (0,_spacing__WEBPACK_IMPORTED_MODULE_0__.createUnaryUnit)(props.theme, 'spacing', 8, 'gap');
-
-    const styleFromPropValue = propValue => ({
-      gap: (0,_spacing__WEBPACK_IMPORTED_MODULE_0__.getValue)(transformer, propValue)
-    });
-
-    return (0,_breakpoints__WEBPACK_IMPORTED_MODULE_1__.handleBreakpoints)(props, props.gap, styleFromPropValue);
-  }
-
-  return null;
-};
-gap.propTypes =  true ? {
-  gap: _responsivePropType__WEBPACK_IMPORTED_MODULE_2__["default"]
-} : 0;
-gap.filterProps = ['gap'];
-const columnGap = props => {
-  if (props.columnGap !== undefined && props.columnGap !== null) {
-    const transformer = (0,_spacing__WEBPACK_IMPORTED_MODULE_0__.createUnaryUnit)(props.theme, 'spacing', 8, 'columnGap');
-
-    const styleFromPropValue = propValue => ({
-      columnGap: (0,_spacing__WEBPACK_IMPORTED_MODULE_0__.getValue)(transformer, propValue)
-    });
-
-    return (0,_breakpoints__WEBPACK_IMPORTED_MODULE_1__.handleBreakpoints)(props, props.columnGap, styleFromPropValue);
-  }
-
-  return null;
-};
-columnGap.propTypes =  true ? {
-  columnGap: _responsivePropType__WEBPACK_IMPORTED_MODULE_2__["default"]
-} : 0;
-columnGap.filterProps = ['columnGap'];
-const rowGap = props => {
-  if (props.rowGap !== undefined && props.rowGap !== null) {
-    const transformer = (0,_spacing__WEBPACK_IMPORTED_MODULE_0__.createUnaryUnit)(props.theme, 'spacing', 8, 'rowGap');
-
-    const styleFromPropValue = propValue => ({
-      rowGap: (0,_spacing__WEBPACK_IMPORTED_MODULE_0__.getValue)(transformer, propValue)
-    });
-
-    return (0,_breakpoints__WEBPACK_IMPORTED_MODULE_1__.handleBreakpoints)(props, props.rowGap, styleFromPropValue);
-  }
-
-  return null;
-};
-rowGap.propTypes =  true ? {
-  rowGap: _responsivePropType__WEBPACK_IMPORTED_MODULE_2__["default"]
-} : 0;
-rowGap.filterProps = ['rowGap'];
-const gridColumn = (0,_style__WEBPACK_IMPORTED_MODULE_3__["default"])({
-  prop: 'gridColumn'
-});
-const gridRow = (0,_style__WEBPACK_IMPORTED_MODULE_3__["default"])({
-  prop: 'gridRow'
-});
-const gridAutoFlow = (0,_style__WEBPACK_IMPORTED_MODULE_3__["default"])({
-  prop: 'gridAutoFlow'
-});
-const gridAutoColumns = (0,_style__WEBPACK_IMPORTED_MODULE_3__["default"])({
-  prop: 'gridAutoColumns'
-});
-const gridAutoRows = (0,_style__WEBPACK_IMPORTED_MODULE_3__["default"])({
-  prop: 'gridAutoRows'
-});
-const gridTemplateColumns = (0,_style__WEBPACK_IMPORTED_MODULE_3__["default"])({
-  prop: 'gridTemplateColumns'
-});
-const gridTemplateRows = (0,_style__WEBPACK_IMPORTED_MODULE_3__["default"])({
-  prop: 'gridTemplateRows'
-});
-const gridTemplateAreas = (0,_style__WEBPACK_IMPORTED_MODULE_3__["default"])({
-  prop: 'gridTemplateAreas'
-});
-const gridArea = (0,_style__WEBPACK_IMPORTED_MODULE_3__["default"])({
-  prop: 'gridArea'
-});
-const grid = (0,_compose__WEBPACK_IMPORTED_MODULE_4__["default"])(gap, columnGap, rowGap, gridColumn, gridRow, gridAutoFlow, gridAutoColumns, gridAutoRows, gridTemplateColumns, gridTemplateRows, gridTemplateAreas, gridArea);
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (grid);
 
 /***/ }),
 
@@ -20326,11 +21524,11 @@ function composeClasses(slots, getUtilityClass, classes) {
   slot => {
     output[slot] = slots[slot].reduce((acc, key) => {
       if (key) {
+        acc.push(getUtilityClass(key));
+
         if (classes && classes[key]) {
           acc.push(classes[key]);
         }
-
-        acc.push(getUtilityClass(key));
       }
 
       return acc;
@@ -20681,7 +21879,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (/* binding */ getDisplayName),
 /* harmony export */   "getFunctionName": () => (/* binding */ getFunctionName)
 /* harmony export */ });
-/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-is */ "./node_modules/@mui/utils/node_modules/react-is/index.js");
+/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
  // Simplified polyfill for IE11 support
 // https://github.com/JamesMGreene/Function.name/blob/58b314d4a983110c3682f1228f845d39ccca1817/Function.name.js#L3
 
@@ -21412,259 +22610,6 @@ function useIsFocusVisible() {
     ref
   };
 }
-
-/***/ }),
-
-/***/ "./node_modules/@mui/utils/node_modules/react-is/cjs/react-is.development.js":
-/*!***********************************************************************************!*\
-  !*** ./node_modules/@mui/utils/node_modules/react-is/cjs/react-is.development.js ***!
-  \***********************************************************************************/
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-/** @license React v17.0.2
- * react-is.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-if (true) {
-  (function() {
-'use strict';
-
-// ATTENTION
-// When adding new symbols to this file,
-// Please consider also adding to 'react-devtools-shared/src/backend/ReactSymbols'
-// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
-// nor polyfill, then a plain number is used for performance.
-var REACT_ELEMENT_TYPE = 0xeac7;
-var REACT_PORTAL_TYPE = 0xeaca;
-var REACT_FRAGMENT_TYPE = 0xeacb;
-var REACT_STRICT_MODE_TYPE = 0xeacc;
-var REACT_PROFILER_TYPE = 0xead2;
-var REACT_PROVIDER_TYPE = 0xeacd;
-var REACT_CONTEXT_TYPE = 0xeace;
-var REACT_FORWARD_REF_TYPE = 0xead0;
-var REACT_SUSPENSE_TYPE = 0xead1;
-var REACT_SUSPENSE_LIST_TYPE = 0xead8;
-var REACT_MEMO_TYPE = 0xead3;
-var REACT_LAZY_TYPE = 0xead4;
-var REACT_BLOCK_TYPE = 0xead9;
-var REACT_SERVER_BLOCK_TYPE = 0xeada;
-var REACT_FUNDAMENTAL_TYPE = 0xead5;
-var REACT_SCOPE_TYPE = 0xead7;
-var REACT_OPAQUE_ID_TYPE = 0xeae0;
-var REACT_DEBUG_TRACING_MODE_TYPE = 0xeae1;
-var REACT_OFFSCREEN_TYPE = 0xeae2;
-var REACT_LEGACY_HIDDEN_TYPE = 0xeae3;
-
-if (typeof Symbol === 'function' && Symbol.for) {
-  var symbolFor = Symbol.for;
-  REACT_ELEMENT_TYPE = symbolFor('react.element');
-  REACT_PORTAL_TYPE = symbolFor('react.portal');
-  REACT_FRAGMENT_TYPE = symbolFor('react.fragment');
-  REACT_STRICT_MODE_TYPE = symbolFor('react.strict_mode');
-  REACT_PROFILER_TYPE = symbolFor('react.profiler');
-  REACT_PROVIDER_TYPE = symbolFor('react.provider');
-  REACT_CONTEXT_TYPE = symbolFor('react.context');
-  REACT_FORWARD_REF_TYPE = symbolFor('react.forward_ref');
-  REACT_SUSPENSE_TYPE = symbolFor('react.suspense');
-  REACT_SUSPENSE_LIST_TYPE = symbolFor('react.suspense_list');
-  REACT_MEMO_TYPE = symbolFor('react.memo');
-  REACT_LAZY_TYPE = symbolFor('react.lazy');
-  REACT_BLOCK_TYPE = symbolFor('react.block');
-  REACT_SERVER_BLOCK_TYPE = symbolFor('react.server.block');
-  REACT_FUNDAMENTAL_TYPE = symbolFor('react.fundamental');
-  REACT_SCOPE_TYPE = symbolFor('react.scope');
-  REACT_OPAQUE_ID_TYPE = symbolFor('react.opaque.id');
-  REACT_DEBUG_TRACING_MODE_TYPE = symbolFor('react.debug_trace_mode');
-  REACT_OFFSCREEN_TYPE = symbolFor('react.offscreen');
-  REACT_LEGACY_HIDDEN_TYPE = symbolFor('react.legacy_hidden');
-}
-
-// Filter certain DOM attributes (e.g. src, href) if their values are empty strings.
-
-var enableScopeAPI = false; // Experimental Create Event Handle API.
-
-function isValidElementType(type) {
-  if (typeof type === 'string' || typeof type === 'function') {
-    return true;
-  } // Note: typeof might be other than 'symbol' or 'number' (e.g. if it's a polyfill).
-
-
-  if (type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || type === REACT_DEBUG_TRACING_MODE_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || type === REACT_LEGACY_HIDDEN_TYPE || enableScopeAPI ) {
-    return true;
-  }
-
-  if (typeof type === 'object' && type !== null) {
-    if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_BLOCK_TYPE || type[0] === REACT_SERVER_BLOCK_TYPE) {
-      return true;
-    }
-  }
-
-  return false;
-}
-
-function typeOf(object) {
-  if (typeof object === 'object' && object !== null) {
-    var $$typeof = object.$$typeof;
-
-    switch ($$typeof) {
-      case REACT_ELEMENT_TYPE:
-        var type = object.type;
-
-        switch (type) {
-          case REACT_FRAGMENT_TYPE:
-          case REACT_PROFILER_TYPE:
-          case REACT_STRICT_MODE_TYPE:
-          case REACT_SUSPENSE_TYPE:
-          case REACT_SUSPENSE_LIST_TYPE:
-            return type;
-
-          default:
-            var $$typeofType = type && type.$$typeof;
-
-            switch ($$typeofType) {
-              case REACT_CONTEXT_TYPE:
-              case REACT_FORWARD_REF_TYPE:
-              case REACT_LAZY_TYPE:
-              case REACT_MEMO_TYPE:
-              case REACT_PROVIDER_TYPE:
-                return $$typeofType;
-
-              default:
-                return $$typeof;
-            }
-
-        }
-
-      case REACT_PORTAL_TYPE:
-        return $$typeof;
-    }
-  }
-
-  return undefined;
-}
-var ContextConsumer = REACT_CONTEXT_TYPE;
-var ContextProvider = REACT_PROVIDER_TYPE;
-var Element = REACT_ELEMENT_TYPE;
-var ForwardRef = REACT_FORWARD_REF_TYPE;
-var Fragment = REACT_FRAGMENT_TYPE;
-var Lazy = REACT_LAZY_TYPE;
-var Memo = REACT_MEMO_TYPE;
-var Portal = REACT_PORTAL_TYPE;
-var Profiler = REACT_PROFILER_TYPE;
-var StrictMode = REACT_STRICT_MODE_TYPE;
-var Suspense = REACT_SUSPENSE_TYPE;
-var hasWarnedAboutDeprecatedIsAsyncMode = false;
-var hasWarnedAboutDeprecatedIsConcurrentMode = false; // AsyncMode should be deprecated
-
-function isAsyncMode(object) {
-  {
-    if (!hasWarnedAboutDeprecatedIsAsyncMode) {
-      hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
-
-      console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 18+.');
-    }
-  }
-
-  return false;
-}
-function isConcurrentMode(object) {
-  {
-    if (!hasWarnedAboutDeprecatedIsConcurrentMode) {
-      hasWarnedAboutDeprecatedIsConcurrentMode = true; // Using console['warn'] to evade Babel and ESLint
-
-      console['warn']('The ReactIs.isConcurrentMode() alias has been deprecated, ' + 'and will be removed in React 18+.');
-    }
-  }
-
-  return false;
-}
-function isContextConsumer(object) {
-  return typeOf(object) === REACT_CONTEXT_TYPE;
-}
-function isContextProvider(object) {
-  return typeOf(object) === REACT_PROVIDER_TYPE;
-}
-function isElement(object) {
-  return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
-}
-function isForwardRef(object) {
-  return typeOf(object) === REACT_FORWARD_REF_TYPE;
-}
-function isFragment(object) {
-  return typeOf(object) === REACT_FRAGMENT_TYPE;
-}
-function isLazy(object) {
-  return typeOf(object) === REACT_LAZY_TYPE;
-}
-function isMemo(object) {
-  return typeOf(object) === REACT_MEMO_TYPE;
-}
-function isPortal(object) {
-  return typeOf(object) === REACT_PORTAL_TYPE;
-}
-function isProfiler(object) {
-  return typeOf(object) === REACT_PROFILER_TYPE;
-}
-function isStrictMode(object) {
-  return typeOf(object) === REACT_STRICT_MODE_TYPE;
-}
-function isSuspense(object) {
-  return typeOf(object) === REACT_SUSPENSE_TYPE;
-}
-
-exports.ContextConsumer = ContextConsumer;
-exports.ContextProvider = ContextProvider;
-exports.Element = Element;
-exports.ForwardRef = ForwardRef;
-exports.Fragment = Fragment;
-exports.Lazy = Lazy;
-exports.Memo = Memo;
-exports.Portal = Portal;
-exports.Profiler = Profiler;
-exports.StrictMode = StrictMode;
-exports.Suspense = Suspense;
-exports.isAsyncMode = isAsyncMode;
-exports.isConcurrentMode = isConcurrentMode;
-exports.isContextConsumer = isContextConsumer;
-exports.isContextProvider = isContextProvider;
-exports.isElement = isElement;
-exports.isForwardRef = isForwardRef;
-exports.isFragment = isFragment;
-exports.isLazy = isLazy;
-exports.isMemo = isMemo;
-exports.isPortal = isPortal;
-exports.isProfiler = isProfiler;
-exports.isStrictMode = isStrictMode;
-exports.isSuspense = isSuspense;
-exports.isValidElementType = isValidElementType;
-exports.typeOf = typeOf;
-  })();
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/@mui/utils/node_modules/react-is/index.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/@mui/utils/node_modules/react-is/index.js ***!
-  \****************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-if (false) {} else {
-  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/@mui/utils/node_modules/react-is/cjs/react-is.development.js");
-}
-
 
 /***/ }),
 
@@ -22411,49 +23356,10 @@ __webpack_require__(/*! ./pages/login/Index.jsx */ "./resources/js/pages/login/I
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* export default binding */ __WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */   "clsx": () => (/* binding */ clsx),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-function toVal(mix) {
-	var k, y, str='';
-
-	if (typeof mix === 'string' || typeof mix === 'number') {
-		str += mix;
-	} else if (typeof mix === 'object') {
-		if (Array.isArray(mix)) {
-			for (k=0; k < mix.length; k++) {
-				if (mix[k]) {
-					if (y = toVal(mix[k])) {
-						str && (str += ' ');
-						str += y;
-					}
-				}
-			}
-		} else {
-			for (k in mix) {
-				if (mix[k]) {
-					str && (str += ' ');
-					str += k;
-				}
-			}
-		}
-	}
-
-	return str;
-}
-
-/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__() {
-	var i=0, tmp, x, str='';
-	while (i < arguments.length) {
-		if (tmp = arguments[i++]) {
-			if (x = toVal(tmp)) {
-				str && (str += ' ');
-				str += x
-			}
-		}
-	}
-	return str;
-}
-
+function r(e){var t,f,n="";if("string"==typeof e||"number"==typeof e)n+=e;else if("object"==typeof e)if(Array.isArray(e))for(t=0;t<e.length;t++)e[t]&&(f=r(e[t]))&&(n&&(n+=" "),n+=f);else for(t in e)e[t]&&(n&&(n+=" "),n+=t);return n}function clsx(){for(var e,t,f=0,n="";f<arguments.length;)(e=arguments[f++])&&(t=r(e))&&(n&&(n+=" "),n+=t);return n}/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (clsx);
 
 /***/ }),
 
@@ -22598,7 +23504,7 @@ if (true) {
 "use strict";
 
 
-var reactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
+var reactIs = __webpack_require__(/*! react-is */ "./node_modules/hoist-non-react-statics/node_modules/react-is/index.js");
 
 /**
  * Copyright 2015, Yahoo! Inc.
@@ -22699,6 +23605,214 @@ function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
 }
 
 module.exports = hoistNonReactStatics;
+
+
+/***/ }),
+
+/***/ "./node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.development.js":
+/*!************************************************************************************************!*\
+  !*** ./node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.development.js ***!
+  \************************************************************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+/** @license React v16.13.1
+ * react-is.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+
+
+if (true) {
+  (function() {
+'use strict';
+
+// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
+// nor polyfill, then a plain number is used for performance.
+var hasSymbol = typeof Symbol === 'function' && Symbol.for;
+var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
+var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
+var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
+var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
+var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
+var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
+var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
+// (unstable) APIs that have been removed. Can we remove the symbols?
+
+var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
+var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
+var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
+var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
+var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
+var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
+var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
+var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for('react.block') : 0xead9;
+var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
+var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
+var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for('react.scope') : 0xead7;
+
+function isValidElementType(type) {
+  return typeof type === 'string' || typeof type === 'function' || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
+}
+
+function typeOf(object) {
+  if (typeof object === 'object' && object !== null) {
+    var $$typeof = object.$$typeof;
+
+    switch ($$typeof) {
+      case REACT_ELEMENT_TYPE:
+        var type = object.type;
+
+        switch (type) {
+          case REACT_ASYNC_MODE_TYPE:
+          case REACT_CONCURRENT_MODE_TYPE:
+          case REACT_FRAGMENT_TYPE:
+          case REACT_PROFILER_TYPE:
+          case REACT_STRICT_MODE_TYPE:
+          case REACT_SUSPENSE_TYPE:
+            return type;
+
+          default:
+            var $$typeofType = type && type.$$typeof;
+
+            switch ($$typeofType) {
+              case REACT_CONTEXT_TYPE:
+              case REACT_FORWARD_REF_TYPE:
+              case REACT_LAZY_TYPE:
+              case REACT_MEMO_TYPE:
+              case REACT_PROVIDER_TYPE:
+                return $$typeofType;
+
+              default:
+                return $$typeof;
+            }
+
+        }
+
+      case REACT_PORTAL_TYPE:
+        return $$typeof;
+    }
+  }
+
+  return undefined;
+} // AsyncMode is deprecated along with isAsyncMode
+
+var AsyncMode = REACT_ASYNC_MODE_TYPE;
+var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
+var ContextConsumer = REACT_CONTEXT_TYPE;
+var ContextProvider = REACT_PROVIDER_TYPE;
+var Element = REACT_ELEMENT_TYPE;
+var ForwardRef = REACT_FORWARD_REF_TYPE;
+var Fragment = REACT_FRAGMENT_TYPE;
+var Lazy = REACT_LAZY_TYPE;
+var Memo = REACT_MEMO_TYPE;
+var Portal = REACT_PORTAL_TYPE;
+var Profiler = REACT_PROFILER_TYPE;
+var StrictMode = REACT_STRICT_MODE_TYPE;
+var Suspense = REACT_SUSPENSE_TYPE;
+var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
+
+function isAsyncMode(object) {
+  {
+    if (!hasWarnedAboutDeprecatedIsAsyncMode) {
+      hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
+
+      console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
+    }
+  }
+
+  return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
+}
+function isConcurrentMode(object) {
+  return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
+}
+function isContextConsumer(object) {
+  return typeOf(object) === REACT_CONTEXT_TYPE;
+}
+function isContextProvider(object) {
+  return typeOf(object) === REACT_PROVIDER_TYPE;
+}
+function isElement(object) {
+  return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+}
+function isForwardRef(object) {
+  return typeOf(object) === REACT_FORWARD_REF_TYPE;
+}
+function isFragment(object) {
+  return typeOf(object) === REACT_FRAGMENT_TYPE;
+}
+function isLazy(object) {
+  return typeOf(object) === REACT_LAZY_TYPE;
+}
+function isMemo(object) {
+  return typeOf(object) === REACT_MEMO_TYPE;
+}
+function isPortal(object) {
+  return typeOf(object) === REACT_PORTAL_TYPE;
+}
+function isProfiler(object) {
+  return typeOf(object) === REACT_PROFILER_TYPE;
+}
+function isStrictMode(object) {
+  return typeOf(object) === REACT_STRICT_MODE_TYPE;
+}
+function isSuspense(object) {
+  return typeOf(object) === REACT_SUSPENSE_TYPE;
+}
+
+exports.AsyncMode = AsyncMode;
+exports.ConcurrentMode = ConcurrentMode;
+exports.ContextConsumer = ContextConsumer;
+exports.ContextProvider = ContextProvider;
+exports.Element = Element;
+exports.ForwardRef = ForwardRef;
+exports.Fragment = Fragment;
+exports.Lazy = Lazy;
+exports.Memo = Memo;
+exports.Portal = Portal;
+exports.Profiler = Profiler;
+exports.StrictMode = StrictMode;
+exports.Suspense = Suspense;
+exports.isAsyncMode = isAsyncMode;
+exports.isConcurrentMode = isConcurrentMode;
+exports.isContextConsumer = isContextConsumer;
+exports.isContextProvider = isContextProvider;
+exports.isElement = isElement;
+exports.isForwardRef = isForwardRef;
+exports.isFragment = isFragment;
+exports.isLazy = isLazy;
+exports.isMemo = isMemo;
+exports.isPortal = isPortal;
+exports.isProfiler = isProfiler;
+exports.isStrictMode = isStrictMode;
+exports.isSuspense = isSuspense;
+exports.isValidElementType = isValidElementType;
+exports.typeOf = typeOf;
+  })();
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/hoist-non-react-statics/node_modules/react-is/index.js":
+/*!*****************************************************************************!*\
+  !*** ./node_modules/hoist-non-react-statics/node_modules/react-is/index.js ***!
+  \*****************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+if (false) {} else {
+  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/hoist-non-react-statics/node_modules/react-is/cjs/react-is.development.js");
+}
 
 
 /***/ }),
@@ -23154,7 +24268,7 @@ module.exports = checkPropTypes;
 
 
 
-var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
+var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/prop-types/node_modules/react-is/index.js");
 var assign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
 
 var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
@@ -23773,7 +24887,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
  */
 
 if (true) {
-  var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
+  var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/prop-types/node_modules/react-is/index.js");
 
   // By explicitly using `prop-types` you are opting into new development behavior.
   // http://fb.me/prop-types-in-prod
@@ -23814,6 +24928,214 @@ module.exports = ReactPropTypesSecret;
 /***/ ((module) => {
 
 module.exports = Function.call.bind(Object.prototype.hasOwnProperty);
+
+
+/***/ }),
+
+/***/ "./node_modules/prop-types/node_modules/react-is/cjs/react-is.development.js":
+/*!***********************************************************************************!*\
+  !*** ./node_modules/prop-types/node_modules/react-is/cjs/react-is.development.js ***!
+  \***********************************************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+/** @license React v16.13.1
+ * react-is.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+
+
+if (true) {
+  (function() {
+'use strict';
+
+// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
+// nor polyfill, then a plain number is used for performance.
+var hasSymbol = typeof Symbol === 'function' && Symbol.for;
+var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
+var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
+var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
+var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
+var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
+var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
+var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
+// (unstable) APIs that have been removed. Can we remove the symbols?
+
+var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
+var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
+var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
+var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
+var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
+var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
+var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
+var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for('react.block') : 0xead9;
+var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
+var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
+var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for('react.scope') : 0xead7;
+
+function isValidElementType(type) {
+  return typeof type === 'string' || typeof type === 'function' || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
+  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
+}
+
+function typeOf(object) {
+  if (typeof object === 'object' && object !== null) {
+    var $$typeof = object.$$typeof;
+
+    switch ($$typeof) {
+      case REACT_ELEMENT_TYPE:
+        var type = object.type;
+
+        switch (type) {
+          case REACT_ASYNC_MODE_TYPE:
+          case REACT_CONCURRENT_MODE_TYPE:
+          case REACT_FRAGMENT_TYPE:
+          case REACT_PROFILER_TYPE:
+          case REACT_STRICT_MODE_TYPE:
+          case REACT_SUSPENSE_TYPE:
+            return type;
+
+          default:
+            var $$typeofType = type && type.$$typeof;
+
+            switch ($$typeofType) {
+              case REACT_CONTEXT_TYPE:
+              case REACT_FORWARD_REF_TYPE:
+              case REACT_LAZY_TYPE:
+              case REACT_MEMO_TYPE:
+              case REACT_PROVIDER_TYPE:
+                return $$typeofType;
+
+              default:
+                return $$typeof;
+            }
+
+        }
+
+      case REACT_PORTAL_TYPE:
+        return $$typeof;
+    }
+  }
+
+  return undefined;
+} // AsyncMode is deprecated along with isAsyncMode
+
+var AsyncMode = REACT_ASYNC_MODE_TYPE;
+var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
+var ContextConsumer = REACT_CONTEXT_TYPE;
+var ContextProvider = REACT_PROVIDER_TYPE;
+var Element = REACT_ELEMENT_TYPE;
+var ForwardRef = REACT_FORWARD_REF_TYPE;
+var Fragment = REACT_FRAGMENT_TYPE;
+var Lazy = REACT_LAZY_TYPE;
+var Memo = REACT_MEMO_TYPE;
+var Portal = REACT_PORTAL_TYPE;
+var Profiler = REACT_PROFILER_TYPE;
+var StrictMode = REACT_STRICT_MODE_TYPE;
+var Suspense = REACT_SUSPENSE_TYPE;
+var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
+
+function isAsyncMode(object) {
+  {
+    if (!hasWarnedAboutDeprecatedIsAsyncMode) {
+      hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
+
+      console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
+    }
+  }
+
+  return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
+}
+function isConcurrentMode(object) {
+  return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
+}
+function isContextConsumer(object) {
+  return typeOf(object) === REACT_CONTEXT_TYPE;
+}
+function isContextProvider(object) {
+  return typeOf(object) === REACT_PROVIDER_TYPE;
+}
+function isElement(object) {
+  return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+}
+function isForwardRef(object) {
+  return typeOf(object) === REACT_FORWARD_REF_TYPE;
+}
+function isFragment(object) {
+  return typeOf(object) === REACT_FRAGMENT_TYPE;
+}
+function isLazy(object) {
+  return typeOf(object) === REACT_LAZY_TYPE;
+}
+function isMemo(object) {
+  return typeOf(object) === REACT_MEMO_TYPE;
+}
+function isPortal(object) {
+  return typeOf(object) === REACT_PORTAL_TYPE;
+}
+function isProfiler(object) {
+  return typeOf(object) === REACT_PROFILER_TYPE;
+}
+function isStrictMode(object) {
+  return typeOf(object) === REACT_STRICT_MODE_TYPE;
+}
+function isSuspense(object) {
+  return typeOf(object) === REACT_SUSPENSE_TYPE;
+}
+
+exports.AsyncMode = AsyncMode;
+exports.ConcurrentMode = ConcurrentMode;
+exports.ContextConsumer = ContextConsumer;
+exports.ContextProvider = ContextProvider;
+exports.Element = Element;
+exports.ForwardRef = ForwardRef;
+exports.Fragment = Fragment;
+exports.Lazy = Lazy;
+exports.Memo = Memo;
+exports.Portal = Portal;
+exports.Profiler = Profiler;
+exports.StrictMode = StrictMode;
+exports.Suspense = Suspense;
+exports.isAsyncMode = isAsyncMode;
+exports.isConcurrentMode = isConcurrentMode;
+exports.isContextConsumer = isContextConsumer;
+exports.isContextProvider = isContextProvider;
+exports.isElement = isElement;
+exports.isForwardRef = isForwardRef;
+exports.isFragment = isFragment;
+exports.isLazy = isLazy;
+exports.isMemo = isMemo;
+exports.isPortal = isPortal;
+exports.isProfiler = isProfiler;
+exports.isStrictMode = isStrictMode;
+exports.isSuspense = isSuspense;
+exports.isValidElementType = isValidElementType;
+exports.typeOf = typeOf;
+  })();
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/prop-types/node_modules/react-is/index.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/prop-types/node_modules/react-is/index.js ***!
+  \****************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+if (false) {} else {
+  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/prop-types/node_modules/react-is/cjs/react-is.development.js");
+}
 
 
 /***/ }),
@@ -53776,7 +55098,8 @@ if (false) {} else {
 /***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
-/** @license React v16.13.1
+/**
+ * @license React
  * react-is.development.js
  *
  * Copyright (c) Facebook, Inc. and its affiliates.
@@ -53787,39 +55110,68 @@ if (false) {} else {
 
 
 
-
-
 if (true) {
   (function() {
 'use strict';
 
-// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
-// nor polyfill, then a plain number is used for performance.
-var hasSymbol = typeof Symbol === 'function' && Symbol.for;
-var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
-var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
-var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
-var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
-var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
-var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
-var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
-// (unstable) APIs that have been removed. Can we remove the symbols?
+// ATTENTION
+// When adding new symbols to this file,
+// Please consider also adding to 'react-devtools-shared/src/backend/ReactSymbols'
+// The Symbol used to tag the ReactElement-like types.
+var REACT_ELEMENT_TYPE = Symbol.for('react.element');
+var REACT_PORTAL_TYPE = Symbol.for('react.portal');
+var REACT_FRAGMENT_TYPE = Symbol.for('react.fragment');
+var REACT_STRICT_MODE_TYPE = Symbol.for('react.strict_mode');
+var REACT_PROFILER_TYPE = Symbol.for('react.profiler');
+var REACT_PROVIDER_TYPE = Symbol.for('react.provider');
+var REACT_CONTEXT_TYPE = Symbol.for('react.context');
+var REACT_SERVER_CONTEXT_TYPE = Symbol.for('react.server_context');
+var REACT_FORWARD_REF_TYPE = Symbol.for('react.forward_ref');
+var REACT_SUSPENSE_TYPE = Symbol.for('react.suspense');
+var REACT_SUSPENSE_LIST_TYPE = Symbol.for('react.suspense_list');
+var REACT_MEMO_TYPE = Symbol.for('react.memo');
+var REACT_LAZY_TYPE = Symbol.for('react.lazy');
+var REACT_OFFSCREEN_TYPE = Symbol.for('react.offscreen');
 
-var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
-var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
-var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
-var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
-var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
-var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
-var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
-var REACT_BLOCK_TYPE = hasSymbol ? Symbol.for('react.block') : 0xead9;
-var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
-var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
-var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for('react.scope') : 0xead7;
+// -----------------------------------------------------------------------------
+
+var enableScopeAPI = false; // Experimental Create Event Handle API.
+var enableCacheElement = false;
+var enableTransitionTracing = false; // No known bugs, but needs performance testing
+
+var enableLegacyHidden = false; // Enables unstable_avoidThisFallback feature in Fiber
+// stuff. Intended to enable React core members to more easily debug scheduling
+// issues in DEV builds.
+
+var enableDebugTracing = false; // Track which Fiber(s) schedule render work.
+
+var REACT_MODULE_REFERENCE;
+
+{
+  REACT_MODULE_REFERENCE = Symbol.for('react.module.reference');
+}
 
 function isValidElementType(type) {
-  return typeof type === 'string' || typeof type === 'function' || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
-  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE || type.$$typeof === REACT_BLOCK_TYPE);
+  if (typeof type === 'string' || typeof type === 'function') {
+    return true;
+  } // Note: typeof might be other than 'symbol' or 'number' (e.g. if it's a polyfill).
+
+
+  if (type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || enableDebugTracing  || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || enableLegacyHidden  || type === REACT_OFFSCREEN_TYPE || enableScopeAPI  || enableCacheElement  || enableTransitionTracing ) {
+    return true;
+  }
+
+  if (typeof type === 'object' && type !== null) {
+    if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || // This needs to include all possible module reference object
+    // types supported by any Flight configuration anywhere since
+    // we don't know which Flight build this will end up being used
+    // with.
+    type.$$typeof === REACT_MODULE_REFERENCE || type.getModuleId !== undefined) {
+      return true;
+    }
+  }
+
+  return false;
 }
 
 function typeOf(object) {
@@ -53831,18 +55183,18 @@ function typeOf(object) {
         var type = object.type;
 
         switch (type) {
-          case REACT_ASYNC_MODE_TYPE:
-          case REACT_CONCURRENT_MODE_TYPE:
           case REACT_FRAGMENT_TYPE:
           case REACT_PROFILER_TYPE:
           case REACT_STRICT_MODE_TYPE:
           case REACT_SUSPENSE_TYPE:
+          case REACT_SUSPENSE_LIST_TYPE:
             return type;
 
           default:
             var $$typeofType = type && type.$$typeof;
 
             switch ($$typeofType) {
+              case REACT_SERVER_CONTEXT_TYPE:
               case REACT_CONTEXT_TYPE:
               case REACT_FORWARD_REF_TYPE:
               case REACT_LAZY_TYPE:
@@ -53862,10 +55214,7 @@ function typeOf(object) {
   }
 
   return undefined;
-} // AsyncMode is deprecated along with isAsyncMode
-
-var AsyncMode = REACT_ASYNC_MODE_TYPE;
-var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
+}
 var ContextConsumer = REACT_CONTEXT_TYPE;
 var ContextProvider = REACT_PROVIDER_TYPE;
 var Element = REACT_ELEMENT_TYPE;
@@ -53877,21 +55226,31 @@ var Portal = REACT_PORTAL_TYPE;
 var Profiler = REACT_PROFILER_TYPE;
 var StrictMode = REACT_STRICT_MODE_TYPE;
 var Suspense = REACT_SUSPENSE_TYPE;
-var hasWarnedAboutDeprecatedIsAsyncMode = false; // AsyncMode should be deprecated
+var SuspenseList = REACT_SUSPENSE_LIST_TYPE;
+var hasWarnedAboutDeprecatedIsAsyncMode = false;
+var hasWarnedAboutDeprecatedIsConcurrentMode = false; // AsyncMode should be deprecated
 
 function isAsyncMode(object) {
   {
     if (!hasWarnedAboutDeprecatedIsAsyncMode) {
       hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
 
-      console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
+      console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 18+.');
     }
   }
 
-  return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
+  return false;
 }
 function isConcurrentMode(object) {
-  return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
+  {
+    if (!hasWarnedAboutDeprecatedIsConcurrentMode) {
+      hasWarnedAboutDeprecatedIsConcurrentMode = true; // Using console['warn'] to evade Babel and ESLint
+
+      console['warn']('The ReactIs.isConcurrentMode() alias has been deprecated, ' + 'and will be removed in React 18+.');
+    }
+  }
+
+  return false;
 }
 function isContextConsumer(object) {
   return typeOf(object) === REACT_CONTEXT_TYPE;
@@ -53926,9 +55285,10 @@ function isStrictMode(object) {
 function isSuspense(object) {
   return typeOf(object) === REACT_SUSPENSE_TYPE;
 }
+function isSuspenseList(object) {
+  return typeOf(object) === REACT_SUSPENSE_LIST_TYPE;
+}
 
-exports.AsyncMode = AsyncMode;
-exports.ConcurrentMode = ConcurrentMode;
 exports.ContextConsumer = ContextConsumer;
 exports.ContextProvider = ContextProvider;
 exports.Element = Element;
@@ -53940,6 +55300,7 @@ exports.Portal = Portal;
 exports.Profiler = Profiler;
 exports.StrictMode = StrictMode;
 exports.Suspense = Suspense;
+exports.SuspenseList = SuspenseList;
 exports.isAsyncMode = isAsyncMode;
 exports.isConcurrentMode = isConcurrentMode;
 exports.isContextConsumer = isContextConsumer;
@@ -53953,6 +55314,7 @@ exports.isPortal = isPortal;
 exports.isProfiler = isProfiler;
 exports.isStrictMode = isStrictMode;
 exports.isSuspense = isSuspense;
+exports.isSuspenseList = isSuspenseList;
 exports.isValidElementType = isValidElementType;
 exports.typeOf = typeOf;
   })();
@@ -53974,1093 +55336,6 @@ if (false) {} else {
   module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/react-is/cjs/react-is.development.js");
 }
 
-
-/***/ }),
-
-/***/ "./node_modules/react-transition-group/esm/Transition.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/react-transition-group/esm/Transition.js ***!
-  \***************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "ENTERED": () => (/* binding */ ENTERED),
-/* harmony export */   "ENTERING": () => (/* binding */ ENTERING),
-/* harmony export */   "EXITED": () => (/* binding */ EXITED),
-/* harmony export */   "EXITING": () => (/* binding */ EXITING),
-/* harmony export */   "UNMOUNTED": () => (/* binding */ UNMOUNTED),
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inheritsLoose */ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./config */ "./node_modules/react-transition-group/esm/config.js");
-/* harmony import */ var _utils_PropTypes__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./utils/PropTypes */ "./node_modules/react-transition-group/esm/utils/PropTypes.js");
-/* harmony import */ var _TransitionGroupContext__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./TransitionGroupContext */ "./node_modules/react-transition-group/esm/TransitionGroupContext.js");
-
-
-
-
-
-
-
-
-var UNMOUNTED = 'unmounted';
-var EXITED = 'exited';
-var ENTERING = 'entering';
-var ENTERED = 'entered';
-var EXITING = 'exiting';
-/**
- * The Transition component lets you describe a transition from one component
- * state to another _over time_ with a simple declarative API. Most commonly
- * it's used to animate the mounting and unmounting of a component, but can also
- * be used to describe in-place transition states as well.
- *
- * ---
- *
- * **Note**: `Transition` is a platform-agnostic base component. If you're using
- * transitions in CSS, you'll probably want to use
- * [`CSSTransition`](https://reactcommunity.org/react-transition-group/css-transition)
- * instead. It inherits all the features of `Transition`, but contains
- * additional features necessary to play nice with CSS transitions (hence the
- * name of the component).
- *
- * ---
- *
- * By default the `Transition` component does not alter the behavior of the
- * component it renders, it only tracks "enter" and "exit" states for the
- * components. It's up to you to give meaning and effect to those states. For
- * example we can add styles to a component when it enters or exits:
- *
- * ```jsx
- * import { Transition } from 'react-transition-group';
- *
- * const duration = 300;
- *
- * const defaultStyle = {
- *   transition: `opacity ${duration}ms ease-in-out`,
- *   opacity: 0,
- * }
- *
- * const transitionStyles = {
- *   entering: { opacity: 1 },
- *   entered:  { opacity: 1 },
- *   exiting:  { opacity: 0 },
- *   exited:  { opacity: 0 },
- * };
- *
- * const Fade = ({ in: inProp }) => (
- *   <Transition in={inProp} timeout={duration}>
- *     {state => (
- *       <div style={{
- *         ...defaultStyle,
- *         ...transitionStyles[state]
- *       }}>
- *         I'm a fade Transition!
- *       </div>
- *     )}
- *   </Transition>
- * );
- * ```
- *
- * There are 4 main states a Transition can be in:
- *  - `'entering'`
- *  - `'entered'`
- *  - `'exiting'`
- *  - `'exited'`
- *
- * Transition state is toggled via the `in` prop. When `true` the component
- * begins the "Enter" stage. During this stage, the component will shift from
- * its current transition state, to `'entering'` for the duration of the
- * transition and then to the `'entered'` stage once it's complete. Let's take
- * the following example (we'll use the
- * [useState](https://reactjs.org/docs/hooks-reference.html#usestate) hook):
- *
- * ```jsx
- * function App() {
- *   const [inProp, setInProp] = useState(false);
- *   return (
- *     <div>
- *       <Transition in={inProp} timeout={500}>
- *         {state => (
- *           // ...
- *         )}
- *       </Transition>
- *       <button onClick={() => setInProp(true)}>
- *         Click to Enter
- *       </button>
- *     </div>
- *   );
- * }
- * ```
- *
- * When the button is clicked the component will shift to the `'entering'` state
- * and stay there for 500ms (the value of `timeout`) before it finally switches
- * to `'entered'`.
- *
- * When `in` is `false` the same thing happens except the state moves from
- * `'exiting'` to `'exited'`.
- */
-
-var Transition = /*#__PURE__*/function (_React$Component) {
-  (0,_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(Transition, _React$Component);
-
-  function Transition(props, context) {
-    var _this;
-
-    _this = _React$Component.call(this, props, context) || this;
-    var parentGroup = context; // In the context of a TransitionGroup all enters are really appears
-
-    var appear = parentGroup && !parentGroup.isMounting ? props.enter : props.appear;
-    var initialStatus;
-    _this.appearStatus = null;
-
-    if (props.in) {
-      if (appear) {
-        initialStatus = EXITED;
-        _this.appearStatus = ENTERING;
-      } else {
-        initialStatus = ENTERED;
-      }
-    } else {
-      if (props.unmountOnExit || props.mountOnEnter) {
-        initialStatus = UNMOUNTED;
-      } else {
-        initialStatus = EXITED;
-      }
-    }
-
-    _this.state = {
-      status: initialStatus
-    };
-    _this.nextCallback = null;
-    return _this;
-  }
-
-  Transition.getDerivedStateFromProps = function getDerivedStateFromProps(_ref, prevState) {
-    var nextIn = _ref.in;
-
-    if (nextIn && prevState.status === UNMOUNTED) {
-      return {
-        status: EXITED
-      };
-    }
-
-    return null;
-  } // getSnapshotBeforeUpdate(prevProps) {
-  //   let nextStatus = null
-  //   if (prevProps !== this.props) {
-  //     const { status } = this.state
-  //     if (this.props.in) {
-  //       if (status !== ENTERING && status !== ENTERED) {
-  //         nextStatus = ENTERING
-  //       }
-  //     } else {
-  //       if (status === ENTERING || status === ENTERED) {
-  //         nextStatus = EXITING
-  //       }
-  //     }
-  //   }
-  //   return { nextStatus }
-  // }
-  ;
-
-  var _proto = Transition.prototype;
-
-  _proto.componentDidMount = function componentDidMount() {
-    this.updateStatus(true, this.appearStatus);
-  };
-
-  _proto.componentDidUpdate = function componentDidUpdate(prevProps) {
-    var nextStatus = null;
-
-    if (prevProps !== this.props) {
-      var status = this.state.status;
-
-      if (this.props.in) {
-        if (status !== ENTERING && status !== ENTERED) {
-          nextStatus = ENTERING;
-        }
-      } else {
-        if (status === ENTERING || status === ENTERED) {
-          nextStatus = EXITING;
-        }
-      }
-    }
-
-    this.updateStatus(false, nextStatus);
-  };
-
-  _proto.componentWillUnmount = function componentWillUnmount() {
-    this.cancelNextCallback();
-  };
-
-  _proto.getTimeouts = function getTimeouts() {
-    var timeout = this.props.timeout;
-    var exit, enter, appear;
-    exit = enter = appear = timeout;
-
-    if (timeout != null && typeof timeout !== 'number') {
-      exit = timeout.exit;
-      enter = timeout.enter; // TODO: remove fallback for next major
-
-      appear = timeout.appear !== undefined ? timeout.appear : enter;
-    }
-
-    return {
-      exit: exit,
-      enter: enter,
-      appear: appear
-    };
-  };
-
-  _proto.updateStatus = function updateStatus(mounting, nextStatus) {
-    if (mounting === void 0) {
-      mounting = false;
-    }
-
-    if (nextStatus !== null) {
-      // nextStatus will always be ENTERING or EXITING.
-      this.cancelNextCallback();
-
-      if (nextStatus === ENTERING) {
-        this.performEnter(mounting);
-      } else {
-        this.performExit();
-      }
-    } else if (this.props.unmountOnExit && this.state.status === EXITED) {
-      this.setState({
-        status: UNMOUNTED
-      });
-    }
-  };
-
-  _proto.performEnter = function performEnter(mounting) {
-    var _this2 = this;
-
-    var enter = this.props.enter;
-    var appearing = this.context ? this.context.isMounting : mounting;
-
-    var _ref2 = this.props.nodeRef ? [appearing] : [react_dom__WEBPACK_IMPORTED_MODULE_3__.findDOMNode(this), appearing],
-        maybeNode = _ref2[0],
-        maybeAppearing = _ref2[1];
-
-    var timeouts = this.getTimeouts();
-    var enterTimeout = appearing ? timeouts.appear : timeouts.enter; // no enter animation skip right to ENTERED
-    // if we are mounting and running this it means appear _must_ be set
-
-    if (!mounting && !enter || _config__WEBPACK_IMPORTED_MODULE_4__["default"].disabled) {
-      this.safeSetState({
-        status: ENTERED
-      }, function () {
-        _this2.props.onEntered(maybeNode);
-      });
-      return;
-    }
-
-    this.props.onEnter(maybeNode, maybeAppearing);
-    this.safeSetState({
-      status: ENTERING
-    }, function () {
-      _this2.props.onEntering(maybeNode, maybeAppearing);
-
-      _this2.onTransitionEnd(enterTimeout, function () {
-        _this2.safeSetState({
-          status: ENTERED
-        }, function () {
-          _this2.props.onEntered(maybeNode, maybeAppearing);
-        });
-      });
-    });
-  };
-
-  _proto.performExit = function performExit() {
-    var _this3 = this;
-
-    var exit = this.props.exit;
-    var timeouts = this.getTimeouts();
-    var maybeNode = this.props.nodeRef ? undefined : react_dom__WEBPACK_IMPORTED_MODULE_3__.findDOMNode(this); // no exit animation skip right to EXITED
-
-    if (!exit || _config__WEBPACK_IMPORTED_MODULE_4__["default"].disabled) {
-      this.safeSetState({
-        status: EXITED
-      }, function () {
-        _this3.props.onExited(maybeNode);
-      });
-      return;
-    }
-
-    this.props.onExit(maybeNode);
-    this.safeSetState({
-      status: EXITING
-    }, function () {
-      _this3.props.onExiting(maybeNode);
-
-      _this3.onTransitionEnd(timeouts.exit, function () {
-        _this3.safeSetState({
-          status: EXITED
-        }, function () {
-          _this3.props.onExited(maybeNode);
-        });
-      });
-    });
-  };
-
-  _proto.cancelNextCallback = function cancelNextCallback() {
-    if (this.nextCallback !== null) {
-      this.nextCallback.cancel();
-      this.nextCallback = null;
-    }
-  };
-
-  _proto.safeSetState = function safeSetState(nextState, callback) {
-    // This shouldn't be necessary, but there are weird race conditions with
-    // setState callbacks and unmounting in testing, so always make sure that
-    // we can cancel any pending setState callbacks after we unmount.
-    callback = this.setNextCallback(callback);
-    this.setState(nextState, callback);
-  };
-
-  _proto.setNextCallback = function setNextCallback(callback) {
-    var _this4 = this;
-
-    var active = true;
-
-    this.nextCallback = function (event) {
-      if (active) {
-        active = false;
-        _this4.nextCallback = null;
-        callback(event);
-      }
-    };
-
-    this.nextCallback.cancel = function () {
-      active = false;
-    };
-
-    return this.nextCallback;
-  };
-
-  _proto.onTransitionEnd = function onTransitionEnd(timeout, handler) {
-    this.setNextCallback(handler);
-    var node = this.props.nodeRef ? this.props.nodeRef.current : react_dom__WEBPACK_IMPORTED_MODULE_3__.findDOMNode(this);
-    var doesNotHaveTimeoutOrListener = timeout == null && !this.props.addEndListener;
-
-    if (!node || doesNotHaveTimeoutOrListener) {
-      setTimeout(this.nextCallback, 0);
-      return;
-    }
-
-    if (this.props.addEndListener) {
-      var _ref3 = this.props.nodeRef ? [this.nextCallback] : [node, this.nextCallback],
-          maybeNode = _ref3[0],
-          maybeNextCallback = _ref3[1];
-
-      this.props.addEndListener(maybeNode, maybeNextCallback);
-    }
-
-    if (timeout != null) {
-      setTimeout(this.nextCallback, timeout);
-    }
-  };
-
-  _proto.render = function render() {
-    var status = this.state.status;
-
-    if (status === UNMOUNTED) {
-      return null;
-    }
-
-    var _this$props = this.props,
-        children = _this$props.children,
-        _in = _this$props.in,
-        _mountOnEnter = _this$props.mountOnEnter,
-        _unmountOnExit = _this$props.unmountOnExit,
-        _appear = _this$props.appear,
-        _enter = _this$props.enter,
-        _exit = _this$props.exit,
-        _timeout = _this$props.timeout,
-        _addEndListener = _this$props.addEndListener,
-        _onEnter = _this$props.onEnter,
-        _onEntering = _this$props.onEntering,
-        _onEntered = _this$props.onEntered,
-        _onExit = _this$props.onExit,
-        _onExiting = _this$props.onExiting,
-        _onExited = _this$props.onExited,
-        _nodeRef = _this$props.nodeRef,
-        childProps = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(_this$props, ["children", "in", "mountOnEnter", "unmountOnExit", "appear", "enter", "exit", "timeout", "addEndListener", "onEnter", "onEntering", "onEntered", "onExit", "onExiting", "onExited", "nodeRef"]);
-
-    return (
-      /*#__PURE__*/
-      // allows for nested Transitions
-      react__WEBPACK_IMPORTED_MODULE_2___default().createElement(_TransitionGroupContext__WEBPACK_IMPORTED_MODULE_5__["default"].Provider, {
-        value: null
-      }, typeof children === 'function' ? children(status, childProps) : react__WEBPACK_IMPORTED_MODULE_2___default().cloneElement(react__WEBPACK_IMPORTED_MODULE_2___default().Children.only(children), childProps))
-    );
-  };
-
-  return Transition;
-}((react__WEBPACK_IMPORTED_MODULE_2___default().Component));
-
-Transition.contextType = _TransitionGroupContext__WEBPACK_IMPORTED_MODULE_5__["default"];
-Transition.propTypes =  true ? {
-  /**
-   * A React reference to DOM element that need to transition:
-   * https://stackoverflow.com/a/51127130/4671932
-   *
-   *   - When `nodeRef` prop is used, `node` is not passed to callback functions
-   *      (e.g. `onEnter`) because user already has direct access to the node.
-   *   - When changing `key` prop of `Transition` in a `TransitionGroup` a new
-   *     `nodeRef` need to be provided to `Transition` with changed `key` prop
-   *     (see
-   *     [test/CSSTransition-test.js](https://github.com/reactjs/react-transition-group/blob/13435f897b3ab71f6e19d724f145596f5910581c/test/CSSTransition-test.js#L362-L437)).
-   */
-  nodeRef: prop_types__WEBPACK_IMPORTED_MODULE_6___default().shape({
-    current: typeof Element === 'undefined' ? (prop_types__WEBPACK_IMPORTED_MODULE_6___default().any) : function (propValue, key, componentName, location, propFullName, secret) {
-      var value = propValue[key];
-      return prop_types__WEBPACK_IMPORTED_MODULE_6___default().instanceOf(value && 'ownerDocument' in value ? value.ownerDocument.defaultView.Element : Element)(propValue, key, componentName, location, propFullName, secret);
-    }
-  }),
-
-  /**
-   * A `function` child can be used instead of a React element. This function is
-   * called with the current transition status (`'entering'`, `'entered'`,
-   * `'exiting'`, `'exited'`), which can be used to apply context
-   * specific props to a component.
-   *
-   * ```jsx
-   * <Transition in={this.state.in} timeout={150}>
-   *   {state => (
-   *     <MyComponent className={`fade fade-${state}`} />
-   *   )}
-   * </Transition>
-   * ```
-   */
-  children: prop_types__WEBPACK_IMPORTED_MODULE_6___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_6___default().func.isRequired), (prop_types__WEBPACK_IMPORTED_MODULE_6___default().element.isRequired)]).isRequired,
-
-  /**
-   * Show the component; triggers the enter or exit states
-   */
-  in: (prop_types__WEBPACK_IMPORTED_MODULE_6___default().bool),
-
-  /**
-   * By default the child component is mounted immediately along with
-   * the parent `Transition` component. If you want to "lazy mount" the component on the
-   * first `in={true}` you can set `mountOnEnter`. After the first enter transition the component will stay
-   * mounted, even on "exited", unless you also specify `unmountOnExit`.
-   */
-  mountOnEnter: (prop_types__WEBPACK_IMPORTED_MODULE_6___default().bool),
-
-  /**
-   * By default the child component stays mounted after it reaches the `'exited'` state.
-   * Set `unmountOnExit` if you'd prefer to unmount the component after it finishes exiting.
-   */
-  unmountOnExit: (prop_types__WEBPACK_IMPORTED_MODULE_6___default().bool),
-
-  /**
-   * By default the child component does not perform the enter transition when
-   * it first mounts, regardless of the value of `in`. If you want this
-   * behavior, set both `appear` and `in` to `true`.
-   *
-   * > **Note**: there are no special appear states like `appearing`/`appeared`, this prop
-   * > only adds an additional enter transition. However, in the
-   * > `<CSSTransition>` component that first enter transition does result in
-   * > additional `.appear-*` classes, that way you can choose to style it
-   * > differently.
-   */
-  appear: (prop_types__WEBPACK_IMPORTED_MODULE_6___default().bool),
-
-  /**
-   * Enable or disable enter transitions.
-   */
-  enter: (prop_types__WEBPACK_IMPORTED_MODULE_6___default().bool),
-
-  /**
-   * Enable or disable exit transitions.
-   */
-  exit: (prop_types__WEBPACK_IMPORTED_MODULE_6___default().bool),
-
-  /**
-   * The duration of the transition, in milliseconds.
-   * Required unless `addEndListener` is provided.
-   *
-   * You may specify a single timeout for all transitions:
-   *
-   * ```jsx
-   * timeout={500}
-   * ```
-   *
-   * or individually:
-   *
-   * ```jsx
-   * timeout={{
-   *  appear: 500,
-   *  enter: 300,
-   *  exit: 500,
-   * }}
-   * ```
-   *
-   * - `appear` defaults to the value of `enter`
-   * - `enter` defaults to `0`
-   * - `exit` defaults to `0`
-   *
-   * @type {number | { enter?: number, exit?: number, appear?: number }}
-   */
-  timeout: function timeout(props) {
-    var pt = _utils_PropTypes__WEBPACK_IMPORTED_MODULE_7__.timeoutsShape;
-    if (!props.addEndListener) pt = pt.isRequired;
-
-    for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-      args[_key - 1] = arguments[_key];
-    }
-
-    return pt.apply(void 0, [props].concat(args));
-  },
-
-  /**
-   * Add a custom transition end trigger. Called with the transitioning
-   * DOM node and a `done` callback. Allows for more fine grained transition end
-   * logic. Timeouts are still used as a fallback if provided.
-   *
-   * **Note**: when `nodeRef` prop is passed, `node` is not passed.
-   *
-   * ```jsx
-   * addEndListener={(node, done) => {
-   *   // use the css transitionend event to mark the finish of a transition
-   *   node.addEventListener('transitionend', done, false);
-   * }}
-   * ```
-   */
-  addEndListener: (prop_types__WEBPACK_IMPORTED_MODULE_6___default().func),
-
-  /**
-   * Callback fired before the "entering" status is applied. An extra parameter
-   * `isAppearing` is supplied to indicate if the enter stage is occurring on the initial mount
-   *
-   * **Note**: when `nodeRef` prop is passed, `node` is not passed.
-   *
-   * @type Function(node: HtmlElement, isAppearing: bool) -> void
-   */
-  onEnter: (prop_types__WEBPACK_IMPORTED_MODULE_6___default().func),
-
-  /**
-   * Callback fired after the "entering" status is applied. An extra parameter
-   * `isAppearing` is supplied to indicate if the enter stage is occurring on the initial mount
-   *
-   * **Note**: when `nodeRef` prop is passed, `node` is not passed.
-   *
-   * @type Function(node: HtmlElement, isAppearing: bool)
-   */
-  onEntering: (prop_types__WEBPACK_IMPORTED_MODULE_6___default().func),
-
-  /**
-   * Callback fired after the "entered" status is applied. An extra parameter
-   * `isAppearing` is supplied to indicate if the enter stage is occurring on the initial mount
-   *
-   * **Note**: when `nodeRef` prop is passed, `node` is not passed.
-   *
-   * @type Function(node: HtmlElement, isAppearing: bool) -> void
-   */
-  onEntered: (prop_types__WEBPACK_IMPORTED_MODULE_6___default().func),
-
-  /**
-   * Callback fired before the "exiting" status is applied.
-   *
-   * **Note**: when `nodeRef` prop is passed, `node` is not passed.
-   *
-   * @type Function(node: HtmlElement) -> void
-   */
-  onExit: (prop_types__WEBPACK_IMPORTED_MODULE_6___default().func),
-
-  /**
-   * Callback fired after the "exiting" status is applied.
-   *
-   * **Note**: when `nodeRef` prop is passed, `node` is not passed.
-   *
-   * @type Function(node: HtmlElement) -> void
-   */
-  onExiting: (prop_types__WEBPACK_IMPORTED_MODULE_6___default().func),
-
-  /**
-   * Callback fired after the "exited" status is applied.
-   *
-   * **Note**: when `nodeRef` prop is passed, `node` is not passed
-   *
-   * @type Function(node: HtmlElement) -> void
-   */
-  onExited: (prop_types__WEBPACK_IMPORTED_MODULE_6___default().func)
-} : 0; // Name the function so it is clearer in the documentation
-
-function noop() {}
-
-Transition.defaultProps = {
-  in: false,
-  mountOnEnter: false,
-  unmountOnExit: false,
-  appear: false,
-  enter: true,
-  exit: true,
-  onEnter: noop,
-  onEntering: noop,
-  onEntered: noop,
-  onExit: noop,
-  onExiting: noop,
-  onExited: noop
-};
-Transition.UNMOUNTED = UNMOUNTED;
-Transition.EXITED = EXITED;
-Transition.ENTERING = ENTERING;
-Transition.ENTERED = ENTERED;
-Transition.EXITING = EXITING;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Transition);
-
-/***/ }),
-
-/***/ "./node_modules/react-transition-group/esm/TransitionGroup.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/react-transition-group/esm/TransitionGroup.js ***!
-  \********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inheritsLoose */ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _TransitionGroupContext__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./TransitionGroupContext */ "./node_modules/react-transition-group/esm/TransitionGroupContext.js");
-/* harmony import */ var _utils_ChildMapping__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./utils/ChildMapping */ "./node_modules/react-transition-group/esm/utils/ChildMapping.js");
-
-
-
-
-
-
-
-
-
-var values = Object.values || function (obj) {
-  return Object.keys(obj).map(function (k) {
-    return obj[k];
-  });
-};
-
-var defaultProps = {
-  component: 'div',
-  childFactory: function childFactory(child) {
-    return child;
-  }
-};
-/**
- * The `<TransitionGroup>` component manages a set of transition components
- * (`<Transition>` and `<CSSTransition>`) in a list. Like with the transition
- * components, `<TransitionGroup>` is a state machine for managing the mounting
- * and unmounting of components over time.
- *
- * Consider the example below. As items are removed or added to the TodoList the
- * `in` prop is toggled automatically by the `<TransitionGroup>`.
- *
- * Note that `<TransitionGroup>`  does not define any animation behavior!
- * Exactly _how_ a list item animates is up to the individual transition
- * component. This means you can mix and match animations across different list
- * items.
- */
-
-var TransitionGroup = /*#__PURE__*/function (_React$Component) {
-  (0,_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_3__["default"])(TransitionGroup, _React$Component);
-
-  function TransitionGroup(props, context) {
-    var _this;
-
-    _this = _React$Component.call(this, props, context) || this;
-
-    var handleExited = _this.handleExited.bind((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_2__["default"])(_this)); // Initial children should all be entering, dependent on appear
-
-
-    _this.state = {
-      contextValue: {
-        isMounting: true
-      },
-      handleExited: handleExited,
-      firstRender: true
-    };
-    return _this;
-  }
-
-  var _proto = TransitionGroup.prototype;
-
-  _proto.componentDidMount = function componentDidMount() {
-    this.mounted = true;
-    this.setState({
-      contextValue: {
-        isMounting: false
-      }
-    });
-  };
-
-  _proto.componentWillUnmount = function componentWillUnmount() {
-    this.mounted = false;
-  };
-
-  TransitionGroup.getDerivedStateFromProps = function getDerivedStateFromProps(nextProps, _ref) {
-    var prevChildMapping = _ref.children,
-        handleExited = _ref.handleExited,
-        firstRender = _ref.firstRender;
-    return {
-      children: firstRender ? (0,_utils_ChildMapping__WEBPACK_IMPORTED_MODULE_5__.getInitialChildMapping)(nextProps, handleExited) : (0,_utils_ChildMapping__WEBPACK_IMPORTED_MODULE_5__.getNextChildMapping)(nextProps, prevChildMapping, handleExited),
-      firstRender: false
-    };
-  } // node is `undefined` when user provided `nodeRef` prop
-  ;
-
-  _proto.handleExited = function handleExited(child, node) {
-    var currentChildMapping = (0,_utils_ChildMapping__WEBPACK_IMPORTED_MODULE_5__.getChildMapping)(this.props.children);
-    if (child.key in currentChildMapping) return;
-
-    if (child.props.onExited) {
-      child.props.onExited(node);
-    }
-
-    if (this.mounted) {
-      this.setState(function (state) {
-        var children = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_1__["default"])({}, state.children);
-
-        delete children[child.key];
-        return {
-          children: children
-        };
-      });
-    }
-  };
-
-  _proto.render = function render() {
-    var _this$props = this.props,
-        Component = _this$props.component,
-        childFactory = _this$props.childFactory,
-        props = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(_this$props, ["component", "childFactory"]);
-
-    var contextValue = this.state.contextValue;
-    var children = values(this.state.children).map(childFactory);
-    delete props.appear;
-    delete props.enter;
-    delete props.exit;
-
-    if (Component === null) {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default().createElement(_TransitionGroupContext__WEBPACK_IMPORTED_MODULE_6__["default"].Provider, {
-        value: contextValue
-      }, children);
-    }
-
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default().createElement(_TransitionGroupContext__WEBPACK_IMPORTED_MODULE_6__["default"].Provider, {
-      value: contextValue
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_4___default().createElement(Component, props, children));
-  };
-
-  return TransitionGroup;
-}((react__WEBPACK_IMPORTED_MODULE_4___default().Component));
-
-TransitionGroup.propTypes =  true ? {
-  /**
-   * `<TransitionGroup>` renders a `<div>` by default. You can change this
-   * behavior by providing a `component` prop.
-   * If you use React v16+ and would like to avoid a wrapping `<div>` element
-   * you can pass in `component={null}`. This is useful if the wrapping div
-   * borks your css styles.
-   */
-  component: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().any),
-
-  /**
-   * A set of `<Transition>` components, that are toggled `in` and out as they
-   * leave. the `<TransitionGroup>` will inject specific transition props, so
-   * remember to spread them through if you are wrapping the `<Transition>` as
-   * with our `<Fade>` example.
-   *
-   * While this component is meant for multiple `Transition` or `CSSTransition`
-   * children, sometimes you may want to have a single transition child with
-   * content that you want to be transitioned out and in when you change it
-   * (e.g. routes, images etc.) In that case you can change the `key` prop of
-   * the transition child as you change its content, this will cause
-   * `TransitionGroup` to transition the child out and back in.
-   */
-  children: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().node),
-
-  /**
-   * A convenience prop that enables or disables appear animations
-   * for all children. Note that specifying this will override any defaults set
-   * on individual children Transitions.
-   */
-  appear: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().bool),
-
-  /**
-   * A convenience prop that enables or disables enter animations
-   * for all children. Note that specifying this will override any defaults set
-   * on individual children Transitions.
-   */
-  enter: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().bool),
-
-  /**
-   * A convenience prop that enables or disables exit animations
-   * for all children. Note that specifying this will override any defaults set
-   * on individual children Transitions.
-   */
-  exit: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().bool),
-
-  /**
-   * You may need to apply reactive updates to a child as it is exiting.
-   * This is generally done by using `cloneElement` however in the case of an exiting
-   * child the element has already been removed and not accessible to the consumer.
-   *
-   * If you do need to update a child as it leaves you can provide a `childFactory`
-   * to wrap every child, even the ones that are leaving.
-   *
-   * @type Function(child: ReactElement) -> ReactElement
-   */
-  childFactory: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().func)
-} : 0;
-TransitionGroup.defaultProps = defaultProps;
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (TransitionGroup);
-
-/***/ }),
-
-/***/ "./node_modules/react-transition-group/esm/TransitionGroupContext.js":
-/*!***************************************************************************!*\
-  !*** ./node_modules/react-transition-group/esm/TransitionGroupContext.js ***!
-  \***************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (react__WEBPACK_IMPORTED_MODULE_0___default().createContext(null));
-
-/***/ }),
-
-/***/ "./node_modules/react-transition-group/esm/config.js":
-/*!***********************************************************!*\
-  !*** ./node_modules/react-transition-group/esm/config.js ***!
-  \***********************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  disabled: false
-});
-
-/***/ }),
-
-/***/ "./node_modules/react-transition-group/esm/utils/ChildMapping.js":
-/*!***********************************************************************!*\
-  !*** ./node_modules/react-transition-group/esm/utils/ChildMapping.js ***!
-  \***********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "getChildMapping": () => (/* binding */ getChildMapping),
-/* harmony export */   "getInitialChildMapping": () => (/* binding */ getInitialChildMapping),
-/* harmony export */   "getNextChildMapping": () => (/* binding */ getNextChildMapping),
-/* harmony export */   "mergeChildMappings": () => (/* binding */ mergeChildMappings)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-
-/**
- * Given `this.props.children`, return an object mapping key to child.
- *
- * @param {*} children `this.props.children`
- * @return {object} Mapping of key to child
- */
-
-function getChildMapping(children, mapFn) {
-  var mapper = function mapper(child) {
-    return mapFn && (0,react__WEBPACK_IMPORTED_MODULE_0__.isValidElement)(child) ? mapFn(child) : child;
-  };
-
-  var result = Object.create(null);
-  if (children) react__WEBPACK_IMPORTED_MODULE_0__.Children.map(children, function (c) {
-    return c;
-  }).forEach(function (child) {
-    // run the map function here instead so that the key is the computed one
-    result[child.key] = mapper(child);
-  });
-  return result;
-}
-/**
- * When you're adding or removing children some may be added or removed in the
- * same render pass. We want to show *both* since we want to simultaneously
- * animate elements in and out. This function takes a previous set of keys
- * and a new set of keys and merges them with its best guess of the correct
- * ordering. In the future we may expose some of the utilities in
- * ReactMultiChild to make this easy, but for now React itself does not
- * directly have this concept of the union of prevChildren and nextChildren
- * so we implement it here.
- *
- * @param {object} prev prev children as returned from
- * `ReactTransitionChildMapping.getChildMapping()`.
- * @param {object} next next children as returned from
- * `ReactTransitionChildMapping.getChildMapping()`.
- * @return {object} a key set that contains all keys in `prev` and all keys
- * in `next` in a reasonable order.
- */
-
-function mergeChildMappings(prev, next) {
-  prev = prev || {};
-  next = next || {};
-
-  function getValueForKey(key) {
-    return key in next ? next[key] : prev[key];
-  } // For each key of `next`, the list of keys to insert before that key in
-  // the combined list
-
-
-  var nextKeysPending = Object.create(null);
-  var pendingKeys = [];
-
-  for (var prevKey in prev) {
-    if (prevKey in next) {
-      if (pendingKeys.length) {
-        nextKeysPending[prevKey] = pendingKeys;
-        pendingKeys = [];
-      }
-    } else {
-      pendingKeys.push(prevKey);
-    }
-  }
-
-  var i;
-  var childMapping = {};
-
-  for (var nextKey in next) {
-    if (nextKeysPending[nextKey]) {
-      for (i = 0; i < nextKeysPending[nextKey].length; i++) {
-        var pendingNextKey = nextKeysPending[nextKey][i];
-        childMapping[nextKeysPending[nextKey][i]] = getValueForKey(pendingNextKey);
-      }
-    }
-
-    childMapping[nextKey] = getValueForKey(nextKey);
-  } // Finally, add the keys which didn't appear before any key in `next`
-
-
-  for (i = 0; i < pendingKeys.length; i++) {
-    childMapping[pendingKeys[i]] = getValueForKey(pendingKeys[i]);
-  }
-
-  return childMapping;
-}
-
-function getProp(child, prop, props) {
-  return props[prop] != null ? props[prop] : child.props[prop];
-}
-
-function getInitialChildMapping(props, onExited) {
-  return getChildMapping(props.children, function (child) {
-    return (0,react__WEBPACK_IMPORTED_MODULE_0__.cloneElement)(child, {
-      onExited: onExited.bind(null, child),
-      in: true,
-      appear: getProp(child, 'appear', props),
-      enter: getProp(child, 'enter', props),
-      exit: getProp(child, 'exit', props)
-    });
-  });
-}
-function getNextChildMapping(nextProps, prevChildMapping, onExited) {
-  var nextChildMapping = getChildMapping(nextProps.children);
-  var children = mergeChildMappings(prevChildMapping, nextChildMapping);
-  Object.keys(children).forEach(function (key) {
-    var child = children[key];
-    if (!(0,react__WEBPACK_IMPORTED_MODULE_0__.isValidElement)(child)) return;
-    var hasPrev = (key in prevChildMapping);
-    var hasNext = (key in nextChildMapping);
-    var prevChild = prevChildMapping[key];
-    var isLeaving = (0,react__WEBPACK_IMPORTED_MODULE_0__.isValidElement)(prevChild) && !prevChild.props.in; // item is new (entering)
-
-    if (hasNext && (!hasPrev || isLeaving)) {
-      // console.log('entering', key)
-      children[key] = (0,react__WEBPACK_IMPORTED_MODULE_0__.cloneElement)(child, {
-        onExited: onExited.bind(null, child),
-        in: true,
-        exit: getProp(child, 'exit', nextProps),
-        enter: getProp(child, 'enter', nextProps)
-      });
-    } else if (!hasNext && hasPrev && !isLeaving) {
-      // item is old (exiting)
-      // console.log('leaving', key)
-      children[key] = (0,react__WEBPACK_IMPORTED_MODULE_0__.cloneElement)(child, {
-        in: false
-      });
-    } else if (hasNext && hasPrev && (0,react__WEBPACK_IMPORTED_MODULE_0__.isValidElement)(prevChild)) {
-      // item hasn't changed transition states
-      // copy over the last transition props;
-      // console.log('unchanged', key)
-      children[key] = (0,react__WEBPACK_IMPORTED_MODULE_0__.cloneElement)(child, {
-        onExited: onExited.bind(null, child),
-        in: prevChild.props.in,
-        exit: getProp(child, 'exit', nextProps),
-        enter: getProp(child, 'enter', nextProps)
-      });
-    }
-  });
-  return children;
-}
-
-/***/ }),
-
-/***/ "./node_modules/react-transition-group/esm/utils/PropTypes.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/react-transition-group/esm/utils/PropTypes.js ***!
-  \********************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "classNamesShape": () => (/* binding */ classNamesShape),
-/* harmony export */   "timeoutsShape": () => (/* binding */ timeoutsShape)
-/* harmony export */ });
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_0__);
-
-var timeoutsShape =  true ? prop_types__WEBPACK_IMPORTED_MODULE_0___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_0___default().number), prop_types__WEBPACK_IMPORTED_MODULE_0___default().shape({
-  enter: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().number),
-  exit: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().number),
-  appear: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().number)
-}).isRequired]) : 0;
-var classNamesShape =  true ? prop_types__WEBPACK_IMPORTED_MODULE_0___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_0___default().string), prop_types__WEBPACK_IMPORTED_MODULE_0___default().shape({
-  enter: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().string),
-  exit: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().string),
-  active: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().string)
-}), prop_types__WEBPACK_IMPORTED_MODULE_0___default().shape({
-  enter: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().string),
-  enterDone: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().string),
-  enterActive: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().string),
-  exit: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().string),
-  exitDone: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().string),
-  exitActive: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().string)
-})]) : 0;
 
 /***/ }),
 
@@ -63016,7 +63291,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_AnimatePresence_use_presence_mjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../components/AnimatePresence/use-presence.mjs */ "./node_modules/framer-motion/dist/es/components/AnimatePresence/use-presence.mjs");
 /* harmony import */ var _context_LayoutGroupContext_mjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../context/LayoutGroupContext.mjs */ "./node_modules/framer-motion/dist/es/context/LayoutGroupContext.mjs");
 /* harmony import */ var _context_SwitchLayoutGroupContext_mjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../context/SwitchLayoutGroupContext.mjs */ "./node_modules/framer-motion/dist/es/context/SwitchLayoutGroupContext.mjs");
-/* harmony import */ var _projection_node_create_projection_node_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../projection/node/create-projection-node.mjs */ "./node_modules/framer-motion/dist/es/projection/node/create-projection-node.mjs");
+/* harmony import */ var _projection_node_state_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../projection/node/state.mjs */ "./node_modules/framer-motion/dist/es/projection/node/state.mjs");
 /* harmony import */ var _projection_styles_scale_border_radius_mjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../projection/styles/scale-border-radius.mjs */ "./node_modules/framer-motion/dist/es/projection/styles/scale-border-radius.mjs");
 /* harmony import */ var _projection_styles_scale_box_shadow_mjs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../projection/styles/scale-box-shadow.mjs */ "./node_modules/framer-motion/dist/es/projection/styles/scale-box-shadow.mjs");
 /* harmony import */ var _projection_styles_scale_correction_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../projection/styles/scale-correction.mjs */ "./node_modules/framer-motion/dist/es/projection/styles/scale-correction.mjs");
@@ -63058,7 +63333,7 @@ var MeasureLayoutWithContext = /** @class */ (function (_super) {
             });
             projection.setOptions((0,tslib__WEBPACK_IMPORTED_MODULE_2__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_2__.__assign)({}, projection.options), { onExitComplete: function () { return _this.safeToRemove(); } }));
         }
-        _projection_node_create_projection_node_mjs__WEBPACK_IMPORTED_MODULE_4__.globalProjectionState.hasEverUpdated = true;
+        _projection_node_state_mjs__WEBPACK_IMPORTED_MODULE_4__.globalProjectionState.hasEverUpdated = true;
     };
     MeasureLayoutWithContext.prototype.getSnapshotBeforeUpdate = function (prevProps) {
         var _this = this;
@@ -64643,32 +64918,33 @@ var HTMLProjectionNode = (0,_create_projection_node_mjs__WEBPACK_IMPORTED_MODULE
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "createProjectionNode": () => (/* binding */ createProjectionNode),
-/* harmony export */   "globalProjectionState": () => (/* binding */ globalProjectionState),
 /* harmony export */   "mixAxis": () => (/* binding */ mixAxis),
 /* harmony export */   "mixAxisDelta": () => (/* binding */ mixAxisDelta),
 /* harmony export */   "mixBox": () => (/* binding */ mixBox)
 /* harmony export */ });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var framesync__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! framesync */ "./node_modules/framesync/dist/es/index.mjs");
-/* harmony import */ var popmotion__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! popmotion */ "./node_modules/popmotion/dist/es/utils/mix.mjs");
-/* harmony import */ var _animation_animate_mjs__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../animation/animate.mjs */ "./node_modules/framer-motion/dist/es/animation/animate.mjs");
+/* harmony import */ var popmotion__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! popmotion */ "./node_modules/popmotion/dist/es/utils/mix.mjs");
+/* harmony import */ var _animation_animate_mjs__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../animation/animate.mjs */ "./node_modules/framer-motion/dist/es/animation/animate.mjs");
 /* harmony import */ var _utils_subscription_manager_mjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utils/subscription-manager.mjs */ "./node_modules/framer-motion/dist/es/utils/subscription-manager.mjs");
-/* harmony import */ var _animation_mix_values_mjs__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../animation/mix-values.mjs */ "./node_modules/framer-motion/dist/es/projection/animation/mix-values.mjs");
-/* harmony import */ var _geometry_copy_mjs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../geometry/copy.mjs */ "./node_modules/framer-motion/dist/es/projection/geometry/copy.mjs");
-/* harmony import */ var _geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../geometry/delta-apply.mjs */ "./node_modules/framer-motion/dist/es/projection/geometry/delta-apply.mjs");
-/* harmony import */ var _geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../geometry/delta-calc.mjs */ "./node_modules/framer-motion/dist/es/projection/geometry/delta-calc.mjs");
-/* harmony import */ var _geometry_delta_remove_mjs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../geometry/delta-remove.mjs */ "./node_modules/framer-motion/dist/es/projection/geometry/delta-remove.mjs");
-/* harmony import */ var _geometry_models_mjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../geometry/models.mjs */ "./node_modules/framer-motion/dist/es/projection/geometry/models.mjs");
-/* harmony import */ var _animation_utils_transitions_mjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../animation/utils/transitions.mjs */ "./node_modules/framer-motion/dist/es/animation/utils/transitions.mjs");
-/* harmony import */ var _geometry_utils_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../geometry/utils.mjs */ "./node_modules/framer-motion/dist/es/projection/geometry/utils.mjs");
-/* harmony import */ var _shared_stack_mjs__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../shared/stack.mjs */ "./node_modules/framer-motion/dist/es/projection/shared/stack.mjs");
-/* harmony import */ var _styles_scale_correction_mjs__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../styles/scale-correction.mjs */ "./node_modules/framer-motion/dist/es/projection/styles/scale-correction.mjs");
-/* harmony import */ var _styles_transform_mjs__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../styles/transform.mjs */ "./node_modules/framer-motion/dist/es/projection/styles/transform.mjs");
-/* harmony import */ var _utils_each_axis_mjs__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../utils/each-axis.mjs */ "./node_modules/framer-motion/dist/es/projection/utils/each-axis.mjs");
-/* harmony import */ var _utils_has_transform_mjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../utils/has-transform.mjs */ "./node_modules/framer-motion/dist/es/projection/utils/has-transform.mjs");
-/* harmony import */ var _render_html_utils_transform_mjs__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../render/html/utils/transform.mjs */ "./node_modules/framer-motion/dist/es/render/html/utils/transform.mjs");
+/* harmony import */ var _animation_mix_values_mjs__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../animation/mix-values.mjs */ "./node_modules/framer-motion/dist/es/projection/animation/mix-values.mjs");
+/* harmony import */ var _geometry_copy_mjs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../geometry/copy.mjs */ "./node_modules/framer-motion/dist/es/projection/geometry/copy.mjs");
+/* harmony import */ var _geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../geometry/delta-apply.mjs */ "./node_modules/framer-motion/dist/es/projection/geometry/delta-apply.mjs");
+/* harmony import */ var _geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../geometry/delta-calc.mjs */ "./node_modules/framer-motion/dist/es/projection/geometry/delta-calc.mjs");
+/* harmony import */ var _geometry_delta_remove_mjs__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../geometry/delta-remove.mjs */ "./node_modules/framer-motion/dist/es/projection/geometry/delta-remove.mjs");
+/* harmony import */ var _geometry_models_mjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../geometry/models.mjs */ "./node_modules/framer-motion/dist/es/projection/geometry/models.mjs");
+/* harmony import */ var _animation_utils_transitions_mjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../animation/utils/transitions.mjs */ "./node_modules/framer-motion/dist/es/animation/utils/transitions.mjs");
+/* harmony import */ var _geometry_utils_mjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../geometry/utils.mjs */ "./node_modules/framer-motion/dist/es/projection/geometry/utils.mjs");
+/* harmony import */ var _shared_stack_mjs__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../shared/stack.mjs */ "./node_modules/framer-motion/dist/es/projection/shared/stack.mjs");
+/* harmony import */ var _styles_scale_correction_mjs__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../styles/scale-correction.mjs */ "./node_modules/framer-motion/dist/es/projection/styles/scale-correction.mjs");
+/* harmony import */ var _styles_transform_mjs__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../styles/transform.mjs */ "./node_modules/framer-motion/dist/es/projection/styles/transform.mjs");
+/* harmony import */ var _utils_each_axis_mjs__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../utils/each-axis.mjs */ "./node_modules/framer-motion/dist/es/projection/utils/each-axis.mjs");
+/* harmony import */ var _utils_has_transform_mjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../utils/has-transform.mjs */ "./node_modules/framer-motion/dist/es/projection/utils/has-transform.mjs");
+/* harmony import */ var _render_html_utils_transform_mjs__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../render/html/utils/transform.mjs */ "./node_modules/framer-motion/dist/es/render/html/utils/transform.mjs");
 /* harmony import */ var _render_utils_flat_tree_mjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../render/utils/flat-tree.mjs */ "./node_modules/framer-motion/dist/es/render/utils/flat-tree.mjs");
-/* harmony import */ var _value_utils_resolve_motion_value_mjs__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../value/utils/resolve-motion-value.mjs */ "./node_modules/framer-motion/dist/es/value/utils/resolve-motion-value.mjs");
+/* harmony import */ var _value_utils_resolve_motion_value_mjs__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../value/utils/resolve-motion-value.mjs */ "./node_modules/framer-motion/dist/es/value/utils/resolve-motion-value.mjs");
+/* harmony import */ var _state_mjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./state.mjs */ "./node_modules/framer-motion/dist/es/projection/node/state.mjs");
+
 
 
 
@@ -64696,23 +64972,6 @@ __webpack_require__.r(__webpack_exports__);
  * which has a noticeable difference in spring animations
  */
 var animationTarget = 1000;
-/**
- * This should only ever be modified on the client otherwise it'll
- * persist through server requests. If we need instanced states we
- * could lazy-init via root.
- */
-var globalProjectionState = {
-    /**
-     * Global flag as to whether the tree has animated since the last time
-     * we resized the window
-     */
-    hasAnimatedSinceResize: true,
-    /**
-     * We set this to true once, on the first update. Any nodes added to the tree beyond that
-     * update will be given a `data-projection-id` attribute.
-     */
-    hasEverUpdated: false,
-};
 function createProjectionNode(_a) {
     var attachResizeListener = _a.attachResizeListener, defaultParent = _a.defaultParent, measureScroll = _a.measureScroll, checkIsScrollRoot = _a.checkIsScrollRoot, resetTransform = _a.resetTransform;
     return /** @class */ (function () {
@@ -64866,8 +65125,8 @@ function createProjectionNode(_a) {
                     _this.root.updateBlockedByResize = true;
                     clearTimeout(unblockTimeout_1);
                     unblockTimeout_1 = window.setTimeout(resizeUnblockUpdate_1, 250);
-                    if (globalProjectionState.hasAnimatedSinceResize) {
-                        globalProjectionState.hasAnimatedSinceResize = false;
+                    if (_state_mjs__WEBPACK_IMPORTED_MODULE_4__.globalProjectionState.hasAnimatedSinceResize) {
+                        _state_mjs__WEBPACK_IMPORTED_MODULE_4__.globalProjectionState.hasAnimatedSinceResize = false;
                         _this.nodes.forEach(finishAnimation);
                     }
                 });
@@ -64895,7 +65154,7 @@ function createProjectionNode(_a) {
                      * but its position relative to its parent has changed.
                      */
                     var targetChanged = !_this.targetLayout ||
-                        !(0,_geometry_utils_mjs__WEBPACK_IMPORTED_MODULE_4__.boxEquals)(_this.targetLayout, newLayout) ||
+                        !(0,_geometry_utils_mjs__WEBPACK_IMPORTED_MODULE_5__.boxEquals)(_this.targetLayout, newLayout) ||
                         hasRelativeTargetChanged;
                     /**
                      * If the layout hasn't seemed to have changed, it might be that the
@@ -64912,7 +65171,7 @@ function createProjectionNode(_a) {
                             _this.resumingFrom.resumingFrom = undefined;
                         }
                         _this.setAnimationOrigin(delta, hasOnlyRelativeTargetChanged);
-                        var animationOptions = (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)({}, (0,_animation_utils_transitions_mjs__WEBPACK_IMPORTED_MODULE_5__.getValueTransition)(layoutTransition, "layout")), { onPlay: onLayoutAnimationStart, onComplete: onLayoutAnimationComplete });
+                        var animationOptions = (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)({}, (0,_animation_utils_transitions_mjs__WEBPACK_IMPORTED_MODULE_6__.getValueTransition)(layoutTransition, "layout")), { onPlay: onLayoutAnimationStart, onComplete: onLayoutAnimationComplete });
                         if (visualElement.shouldReduceMotion) {
                             animationOptions.delay = 0;
                             animationOptions.type = false;
@@ -65109,7 +65368,7 @@ function createProjectionNode(_a) {
                 measured: measured,
                 actual: this.removeElementScroll(measured),
             };
-            this.layoutCorrected = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_6__.createBox)();
+            this.layoutCorrected = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_7__.createBox)();
             this.isLayoutDirty = false;
             this.projectionDelta = undefined;
             this.notifyListeners("measure", this.layout.actual);
@@ -65126,13 +65385,13 @@ function createProjectionNode(_a) {
             if (!resetTransform)
                 return;
             var isResetRequested = this.isLayoutDirty || this.shouldResetTransform;
-            var hasProjection = this.projectionDelta && !(0,_geometry_utils_mjs__WEBPACK_IMPORTED_MODULE_4__.isDeltaZero)(this.projectionDelta);
+            var hasProjection = this.projectionDelta && !(0,_geometry_utils_mjs__WEBPACK_IMPORTED_MODULE_5__.isDeltaZero)(this.projectionDelta);
             var transformTemplate = (_a = this.options.visualElement) === null || _a === void 0 ? void 0 : _a.getProps().transformTemplate;
             var transformTemplateValue = transformTemplate === null || transformTemplate === void 0 ? void 0 : transformTemplate(this.latestValues, "");
             var transformTemplateHasChanged = transformTemplateValue !== this.prevTransformTemplateValue;
             if (isResetRequested &&
                 (hasProjection ||
-                    (0,_utils_has_transform_mjs__WEBPACK_IMPORTED_MODULE_7__.hasTransform)(this.latestValues) ||
+                    (0,_utils_has_transform_mjs__WEBPACK_IMPORTED_MODULE_8__.hasTransform)(this.latestValues) ||
                     transformTemplateHasChanged)) {
                 resetTransform(this.instance, transformTemplateValue);
                 this.shouldResetTransform = false;
@@ -65142,19 +65401,19 @@ function createProjectionNode(_a) {
         ProjectionNode.prototype.measure = function () {
             var visualElement = this.options.visualElement;
             if (!visualElement)
-                return (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_6__.createBox)();
+                return (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_7__.createBox)();
             var box = visualElement.measureViewportBox();
             // Remove viewport scroll to give page-relative coordinates
             var scroll = this.root.scroll;
             if (scroll) {
-                (0,_geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_8__.translateAxis)(box.x, scroll.x);
-                (0,_geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_8__.translateAxis)(box.y, scroll.y);
+                (0,_geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_9__.translateAxis)(box.x, scroll.x);
+                (0,_geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_9__.translateAxis)(box.y, scroll.y);
             }
             return box;
         };
         ProjectionNode.prototype.removeElementScroll = function (box) {
-            var boxWithoutScroll = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_6__.createBox)();
-            (0,_geometry_copy_mjs__WEBPACK_IMPORTED_MODULE_9__.copyBoxInto)(boxWithoutScroll, box);
+            var boxWithoutScroll = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_7__.createBox)();
+            (0,_geometry_copy_mjs__WEBPACK_IMPORTED_MODULE_10__.copyBoxInto)(boxWithoutScroll, box);
             /**
              * Performance TODO: Keep a cumulative scroll offset down the tree
              * rather than loop back up the path.
@@ -65168,65 +65427,65 @@ function createProjectionNode(_a) {
                      * from the viewport box.
                      */
                     if (isScrollRoot) {
-                        (0,_geometry_copy_mjs__WEBPACK_IMPORTED_MODULE_9__.copyBoxInto)(boxWithoutScroll, box);
+                        (0,_geometry_copy_mjs__WEBPACK_IMPORTED_MODULE_10__.copyBoxInto)(boxWithoutScroll, box);
                         var rootScroll = this.root.scroll;
                         /**
                          * Undo the application of page scroll that was originally added
                          * to the measured bounding box.
                          */
                         if (rootScroll) {
-                            (0,_geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_8__.translateAxis)(boxWithoutScroll.x, -rootScroll.x);
-                            (0,_geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_8__.translateAxis)(boxWithoutScroll.y, -rootScroll.y);
+                            (0,_geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_9__.translateAxis)(boxWithoutScroll.x, -rootScroll.x);
+                            (0,_geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_9__.translateAxis)(boxWithoutScroll.y, -rootScroll.y);
                         }
                     }
-                    (0,_geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_8__.translateAxis)(boxWithoutScroll.x, scroll_1.x);
-                    (0,_geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_8__.translateAxis)(boxWithoutScroll.y, scroll_1.y);
+                    (0,_geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_9__.translateAxis)(boxWithoutScroll.x, scroll_1.x);
+                    (0,_geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_9__.translateAxis)(boxWithoutScroll.y, scroll_1.y);
                 }
             }
             return boxWithoutScroll;
         };
         ProjectionNode.prototype.applyTransform = function (box, transformOnly) {
             if (transformOnly === void 0) { transformOnly = false; }
-            var withTransforms = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_6__.createBox)();
-            (0,_geometry_copy_mjs__WEBPACK_IMPORTED_MODULE_9__.copyBoxInto)(withTransforms, box);
+            var withTransforms = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_7__.createBox)();
+            (0,_geometry_copy_mjs__WEBPACK_IMPORTED_MODULE_10__.copyBoxInto)(withTransforms, box);
             for (var i = 0; i < this.path.length; i++) {
                 var node = this.path[i];
                 if (!transformOnly &&
                     node.options.layoutScroll &&
                     node.scroll &&
                     node !== node.root) {
-                    (0,_geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_8__.transformBox)(withTransforms, {
+                    (0,_geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_9__.transformBox)(withTransforms, {
                         x: -node.scroll.x,
                         y: -node.scroll.y,
                     });
                 }
-                if (!(0,_utils_has_transform_mjs__WEBPACK_IMPORTED_MODULE_7__.hasTransform)(node.latestValues))
+                if (!(0,_utils_has_transform_mjs__WEBPACK_IMPORTED_MODULE_8__.hasTransform)(node.latestValues))
                     continue;
-                (0,_geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_8__.transformBox)(withTransforms, node.latestValues);
+                (0,_geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_9__.transformBox)(withTransforms, node.latestValues);
             }
-            if ((0,_utils_has_transform_mjs__WEBPACK_IMPORTED_MODULE_7__.hasTransform)(this.latestValues)) {
-                (0,_geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_8__.transformBox)(withTransforms, this.latestValues);
+            if ((0,_utils_has_transform_mjs__WEBPACK_IMPORTED_MODULE_8__.hasTransform)(this.latestValues)) {
+                (0,_geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_9__.transformBox)(withTransforms, this.latestValues);
             }
             return withTransforms;
         };
         ProjectionNode.prototype.removeTransform = function (box) {
             var _a;
-            var boxWithoutTransform = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_6__.createBox)();
-            (0,_geometry_copy_mjs__WEBPACK_IMPORTED_MODULE_9__.copyBoxInto)(boxWithoutTransform, box);
+            var boxWithoutTransform = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_7__.createBox)();
+            (0,_geometry_copy_mjs__WEBPACK_IMPORTED_MODULE_10__.copyBoxInto)(boxWithoutTransform, box);
             for (var i = 0; i < this.path.length; i++) {
                 var node = this.path[i];
                 if (!node.instance)
                     continue;
-                if (!(0,_utils_has_transform_mjs__WEBPACK_IMPORTED_MODULE_7__.hasTransform)(node.latestValues))
+                if (!(0,_utils_has_transform_mjs__WEBPACK_IMPORTED_MODULE_8__.hasTransform)(node.latestValues))
                     continue;
-                (0,_utils_has_transform_mjs__WEBPACK_IMPORTED_MODULE_7__.hasScale)(node.latestValues) && node.updateSnapshot();
-                var sourceBox = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_6__.createBox)();
+                (0,_utils_has_transform_mjs__WEBPACK_IMPORTED_MODULE_8__.hasScale)(node.latestValues) && node.updateSnapshot();
+                var sourceBox = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_7__.createBox)();
                 var nodeBox = node.measure();
-                (0,_geometry_copy_mjs__WEBPACK_IMPORTED_MODULE_9__.copyBoxInto)(sourceBox, nodeBox);
-                (0,_geometry_delta_remove_mjs__WEBPACK_IMPORTED_MODULE_10__.removeBoxTransforms)(boxWithoutTransform, node.latestValues, (_a = node.snapshot) === null || _a === void 0 ? void 0 : _a.layout, sourceBox);
+                (0,_geometry_copy_mjs__WEBPACK_IMPORTED_MODULE_10__.copyBoxInto)(sourceBox, nodeBox);
+                (0,_geometry_delta_remove_mjs__WEBPACK_IMPORTED_MODULE_11__.removeBoxTransforms)(boxWithoutTransform, node.latestValues, (_a = node.snapshot) === null || _a === void 0 ? void 0 : _a.layout, sourceBox);
             }
-            if ((0,_utils_has_transform_mjs__WEBPACK_IMPORTED_MODULE_7__.hasTransform)(this.latestValues)) {
-                (0,_geometry_delta_remove_mjs__WEBPACK_IMPORTED_MODULE_10__.removeBoxTransforms)(boxWithoutTransform, this.latestValues);
+            if ((0,_utils_has_transform_mjs__WEBPACK_IMPORTED_MODULE_8__.hasTransform)(this.latestValues)) {
+                (0,_geometry_delta_remove_mjs__WEBPACK_IMPORTED_MODULE_11__.removeBoxTransforms)(boxWithoutTransform, this.latestValues);
             }
             return boxWithoutTransform;
         };
@@ -65271,10 +65530,10 @@ function createProjectionNode(_a) {
                 // TODO: This is a semi-repetition of further down this function, make DRY
                 this.relativeParent = this.getClosestProjectingParent();
                 if (this.relativeParent && this.relativeParent.layout) {
-                    this.relativeTarget = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_6__.createBox)();
-                    this.relativeTargetOrigin = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_6__.createBox)();
-                    (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_11__.calcRelativePosition)(this.relativeTargetOrigin, this.layout.actual, this.relativeParent.layout.actual);
-                    (0,_geometry_copy_mjs__WEBPACK_IMPORTED_MODULE_9__.copyBoxInto)(this.relativeTarget, this.relativeTargetOrigin);
+                    this.relativeTarget = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_7__.createBox)();
+                    this.relativeTargetOrigin = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_7__.createBox)();
+                    (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_12__.calcRelativePosition)(this.relativeTargetOrigin, this.layout.actual, this.relativeParent.layout.actual);
+                    (0,_geometry_copy_mjs__WEBPACK_IMPORTED_MODULE_10__.copyBoxInto)(this.relativeTarget, this.relativeTargetOrigin);
                 }
             }
             /**
@@ -65287,8 +65546,8 @@ function createProjectionNode(_a) {
              * Lazy-init target data structure
              */
             if (!this.target) {
-                this.target = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_6__.createBox)();
-                this.targetWithTransforms = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_6__.createBox)();
+                this.target = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_7__.createBox)();
+                this.targetWithTransforms = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_7__.createBox)();
             }
             /**
              * If we've got a relative box for this component, resolve it into a target relative to the parent.
@@ -65296,7 +65555,7 @@ function createProjectionNode(_a) {
             if (this.relativeTarget &&
                 this.relativeTargetOrigin &&
                 ((_a = this.relativeParent) === null || _a === void 0 ? void 0 : _a.target)) {
-                (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_11__.calcRelativeBox)(this.target, this.relativeTarget, this.relativeParent.target);
+                (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_12__.calcRelativeBox)(this.target, this.relativeTarget, this.relativeParent.target);
                 /**
                  * If we've only got a targetDelta, resolve it into a target
                  */
@@ -65307,15 +65566,15 @@ function createProjectionNode(_a) {
                     this.target = this.applyTransform(this.layout.actual);
                 }
                 else {
-                    (0,_geometry_copy_mjs__WEBPACK_IMPORTED_MODULE_9__.copyBoxInto)(this.target, this.layout.actual);
+                    (0,_geometry_copy_mjs__WEBPACK_IMPORTED_MODULE_10__.copyBoxInto)(this.target, this.layout.actual);
                 }
-                (0,_geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_8__.applyBoxDelta)(this.target, this.targetDelta);
+                (0,_geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_9__.applyBoxDelta)(this.target, this.targetDelta);
             }
             else {
                 /**
                  * If no target, use own layout as target
                  */
-                (0,_geometry_copy_mjs__WEBPACK_IMPORTED_MODULE_9__.copyBoxInto)(this.target, this.layout.actual);
+                (0,_geometry_copy_mjs__WEBPACK_IMPORTED_MODULE_10__.copyBoxInto)(this.target, this.layout.actual);
             }
             /**
              * If we've been told to attempt to resolve a relative target, do so.
@@ -65328,15 +65587,15 @@ function createProjectionNode(_a) {
                         Boolean(this.resumingFrom) &&
                     !this.relativeParent.options.layoutScroll &&
                     this.relativeParent.target) {
-                    this.relativeTarget = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_6__.createBox)();
-                    this.relativeTargetOrigin = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_6__.createBox)();
-                    (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_11__.calcRelativePosition)(this.relativeTargetOrigin, this.target, this.relativeParent.target);
-                    (0,_geometry_copy_mjs__WEBPACK_IMPORTED_MODULE_9__.copyBoxInto)(this.relativeTarget, this.relativeTargetOrigin);
+                    this.relativeTarget = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_7__.createBox)();
+                    this.relativeTargetOrigin = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_7__.createBox)();
+                    (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_12__.calcRelativePosition)(this.relativeTargetOrigin, this.target, this.relativeParent.target);
+                    (0,_geometry_copy_mjs__WEBPACK_IMPORTED_MODULE_10__.copyBoxInto)(this.relativeTarget, this.relativeTargetOrigin);
                 }
             }
         };
         ProjectionNode.prototype.getClosestProjectingParent = function () {
-            if (!this.parent || (0,_utils_has_transform_mjs__WEBPACK_IMPORTED_MODULE_7__.hasTransform)(this.parent.latestValues))
+            if (!this.parent || (0,_utils_has_transform_mjs__WEBPACK_IMPORTED_MODULE_8__.hasTransform)(this.parent.latestValues))
                 return undefined;
             if ((this.parent.relativeTarget || this.parent.targetDelta) &&
                 this.parent.layout) {
@@ -65366,18 +65625,18 @@ function createProjectionNode(_a) {
              * Reset the corrected box with the latest values from box, as we're then going
              * to perform mutative operations on it.
              */
-            (0,_geometry_copy_mjs__WEBPACK_IMPORTED_MODULE_9__.copyBoxInto)(this.layoutCorrected, this.layout.actual);
+            (0,_geometry_copy_mjs__WEBPACK_IMPORTED_MODULE_10__.copyBoxInto)(this.layoutCorrected, this.layout.actual);
             /**
              * Apply all the parent deltas to this box to produce the corrected box. This
              * is the layout box, as it will appear on screen as a result of the transforms of its parents.
              */
-            (0,_geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_8__.applyTreeDeltas)(this.layoutCorrected, this.treeScale, this.path, Boolean(this.resumingFrom) || this !== lead);
+            (0,_geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_9__.applyTreeDeltas)(this.layoutCorrected, this.treeScale, this.path, Boolean(this.resumingFrom) || this !== lead);
             var target = lead.target;
             if (!target)
                 return;
             if (!this.projectionDelta) {
-                this.projectionDelta = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_6__.createDelta)();
-                this.projectionDeltaWithTransform = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_6__.createDelta)();
+                this.projectionDelta = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_7__.createDelta)();
+                this.projectionDeltaWithTransform = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_7__.createDelta)();
             }
             var prevTreeScaleX = this.treeScale.x;
             var prevTreeScaleY = this.treeScale.y;
@@ -65391,8 +65650,8 @@ function createProjectionNode(_a) {
              * to allow people to choose whether these styles are corrected based on just the
              * layout reprojection or the final bounding box.
              */
-            (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_11__.calcBoxDelta)(this.projectionDelta, this.layoutCorrected, target, this.latestValues);
-            this.projectionTransform = (0,_styles_transform_mjs__WEBPACK_IMPORTED_MODULE_12__.buildProjectionTransform)(this.projectionDelta, this.treeScale);
+            (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_12__.calcBoxDelta)(this.projectionDelta, this.layoutCorrected, target, this.latestValues);
+            this.projectionTransform = (0,_styles_transform_mjs__WEBPACK_IMPORTED_MODULE_13__.buildProjectionTransform)(this.projectionDelta, this.treeScale);
             if (this.projectionTransform !== prevProjectionTransform ||
                 this.treeScale.x !== prevTreeScaleX ||
                 this.treeScale.y !== prevTreeScaleY) {
@@ -65425,10 +65684,10 @@ function createProjectionNode(_a) {
             var snapshot = this.snapshot;
             var snapshotLatestValues = (snapshot === null || snapshot === void 0 ? void 0 : snapshot.latestValues) || {};
             var mixedValues = (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)({}, this.latestValues);
-            var targetDelta = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_6__.createDelta)();
+            var targetDelta = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_7__.createDelta)();
             this.relativeTarget = this.relativeTargetOrigin = undefined;
             this.attemptToResolveRelativeTarget = !hasOnlyRelativeTargetChanged;
-            var relativeLayout = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_6__.createBox)();
+            var relativeLayout = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_7__.createBox)();
             var isSharedLayoutAnimation = snapshot === null || snapshot === void 0 ? void 0 : snapshot.isShared;
             var isOnlyMember = (((_a = this.getStack()) === null || _a === void 0 ? void 0 : _a.members.length) || 0) <= 1;
             var shouldCrossfadeOpacity = Boolean(isSharedLayoutAnimation &&
@@ -65446,12 +65705,12 @@ function createProjectionNode(_a) {
                     _this.relativeTargetOrigin &&
                     _this.layout &&
                     ((_a = _this.relativeParent) === null || _a === void 0 ? void 0 : _a.layout)) {
-                    (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_11__.calcRelativePosition)(relativeLayout, _this.layout.actual, _this.relativeParent.layout.actual);
+                    (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_12__.calcRelativePosition)(relativeLayout, _this.layout.actual, _this.relativeParent.layout.actual);
                     mixBox(_this.relativeTarget, _this.relativeTargetOrigin, relativeLayout, progress);
                 }
                 if (isSharedLayoutAnimation) {
                     _this.animationValues = mixedValues;
-                    (0,_animation_mix_values_mjs__WEBPACK_IMPORTED_MODULE_13__.mixValues)(mixedValues, snapshotLatestValues, _this.latestValues, progress, shouldCrossfadeOpacity, isOnlyMember);
+                    (0,_animation_mix_values_mjs__WEBPACK_IMPORTED_MODULE_14__.mixValues)(mixedValues, snapshotLatestValues, _this.latestValues, progress, shouldCrossfadeOpacity, isOnlyMember);
                 }
                 _this.root.scheduleUpdateProjection();
                 _this.scheduleRender();
@@ -65477,8 +65736,8 @@ function createProjectionNode(_a) {
              * calculate the relative positions correctly for instant transitions.
              */
             this.pendingAnimation = framesync__WEBPACK_IMPORTED_MODULE_0__["default"].update(function () {
-                globalProjectionState.hasAnimatedSinceResize = true;
-                _this.currentAnimation = (0,_animation_animate_mjs__WEBPACK_IMPORTED_MODULE_14__.animate)(0, animationTarget, (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)({}, options), { onUpdate: function (latest) {
+                _state_mjs__WEBPACK_IMPORTED_MODULE_4__.globalProjectionState.hasAnimatedSinceResize = true;
+                _this.currentAnimation = (0,_animation_animate_mjs__WEBPACK_IMPORTED_MODULE_15__.animate)(0, animationTarget, (0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)((0,tslib__WEBPACK_IMPORTED_MODULE_1__.__assign)({}, options), { onUpdate: function (latest) {
                         var _a;
                         _this.mixTargetDelta(latest);
                         (_a = options.onUpdate) === null || _a === void 0 ? void 0 : _a.call(options, latest);
@@ -65518,25 +65777,25 @@ function createProjectionNode(_a) {
             var _a = this.getLead(), targetWithTransforms = _a.targetWithTransforms, target = _a.target, layout = _a.layout, latestValues = _a.latestValues;
             if (!targetWithTransforms || !target || !layout)
                 return;
-            (0,_geometry_copy_mjs__WEBPACK_IMPORTED_MODULE_9__.copyBoxInto)(targetWithTransforms, target);
+            (0,_geometry_copy_mjs__WEBPACK_IMPORTED_MODULE_10__.copyBoxInto)(targetWithTransforms, target);
             /**
              * Apply the latest user-set transforms to the targetBox to produce the targetBoxFinal.
              * This is the final box that we will then project into by calculating a transform delta and
              * applying it to the corrected box.
              */
-            (0,_geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_8__.transformBox)(targetWithTransforms, latestValues);
+            (0,_geometry_delta_apply_mjs__WEBPACK_IMPORTED_MODULE_9__.transformBox)(targetWithTransforms, latestValues);
             /**
              * Update the delta between the corrected box and the final target box, after
              * user-set transforms are applied to it. This will be used by the renderer to
              * create a transform style that will reproject the element from its actual layout
              * into the desired bounding box.
              */
-            (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_11__.calcBoxDelta)(this.projectionDeltaWithTransform, this.layoutCorrected, targetWithTransforms, latestValues);
+            (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_12__.calcBoxDelta)(this.projectionDeltaWithTransform, this.layoutCorrected, targetWithTransforms, latestValues);
         };
         ProjectionNode.prototype.registerSharedNode = function (layoutId, node) {
             var _a, _b, _c;
             if (!this.sharedNodes.has(layoutId)) {
-                this.sharedNodes.set(layoutId, new _shared_stack_mjs__WEBPACK_IMPORTED_MODULE_15__.NodeStack());
+                this.sharedNodes.set(layoutId, new _shared_stack_mjs__WEBPACK_IMPORTED_MODULE_16__.NodeStack());
             }
             var stack = this.sharedNodes.get(layoutId);
             stack.add(node);
@@ -65594,8 +65853,8 @@ function createProjectionNode(_a) {
             // Keep a record of all the values we've reset
             var resetValues = {};
             // Check the rotate value of all axes and reset to 0
-            for (var i = 0; i < _render_html_utils_transform_mjs__WEBPACK_IMPORTED_MODULE_16__.transformAxes.length; i++) {
-                var axis = _render_html_utils_transform_mjs__WEBPACK_IMPORTED_MODULE_16__.transformAxes[i];
+            for (var i = 0; i < _render_html_utils_transform_mjs__WEBPACK_IMPORTED_MODULE_17__.transformAxes.length; i++) {
+                var axis = _render_html_utils_transform_mjs__WEBPACK_IMPORTED_MODULE_17__.transformAxes[i];
                 var key = "rotate" + axis;
                 // If this rotation doesn't exist as a motion value, then we don't
                 // need to reset it
@@ -65639,7 +65898,7 @@ function createProjectionNode(_a) {
                 this.needsReset = false;
                 styles.opacity = "";
                 styles.pointerEvents =
-                    (0,_value_utils_resolve_motion_value_mjs__WEBPACK_IMPORTED_MODULE_17__.resolveMotionValue)(styleProp.pointerEvents) || "";
+                    (0,_value_utils_resolve_motion_value_mjs__WEBPACK_IMPORTED_MODULE_18__.resolveMotionValue)(styleProp.pointerEvents) || "";
                 styles.transform = transformTemplate
                     ? transformTemplate(this.latestValues, "")
                     : "none";
@@ -65651,9 +65910,9 @@ function createProjectionNode(_a) {
                 if (this.options.layoutId) {
                     emptyStyles.opacity = (_b = this.latestValues.opacity) !== null && _b !== void 0 ? _b : 1;
                     emptyStyles.pointerEvents =
-                        (0,_value_utils_resolve_motion_value_mjs__WEBPACK_IMPORTED_MODULE_17__.resolveMotionValue)(styleProp.pointerEvents) || "";
+                        (0,_value_utils_resolve_motion_value_mjs__WEBPACK_IMPORTED_MODULE_18__.resolveMotionValue)(styleProp.pointerEvents) || "";
                 }
-                if (this.hasProjected && !(0,_utils_has_transform_mjs__WEBPACK_IMPORTED_MODULE_7__.hasTransform)(this.latestValues)) {
+                if (this.hasProjected && !(0,_utils_has_transform_mjs__WEBPACK_IMPORTED_MODULE_8__.hasTransform)(this.latestValues)) {
                     emptyStyles.transform = transformTemplate
                         ? transformTemplate({}, "")
                         : "none";
@@ -65663,7 +65922,7 @@ function createProjectionNode(_a) {
             }
             var valuesToRender = lead.animationValues || lead.latestValues;
             this.applyTransformsToTarget();
-            styles.transform = (0,_styles_transform_mjs__WEBPACK_IMPORTED_MODULE_12__.buildProjectionTransform)(this.projectionDeltaWithTransform, this.treeScale, valuesToRender);
+            styles.transform = (0,_styles_transform_mjs__WEBPACK_IMPORTED_MODULE_13__.buildProjectionTransform)(this.projectionDeltaWithTransform, this.treeScale, valuesToRender);
             if (transformTemplate) {
                 styles.transform = transformTemplate(valuesToRender, styles.transform);
             }
@@ -65694,10 +65953,10 @@ function createProjectionNode(_a) {
             /**
              * Apply scale correction
              */
-            for (var key in _styles_scale_correction_mjs__WEBPACK_IMPORTED_MODULE_18__.scaleCorrectors) {
+            for (var key in _styles_scale_correction_mjs__WEBPACK_IMPORTED_MODULE_19__.scaleCorrectors) {
                 if (valuesToRender[key] === undefined)
                     continue;
-                var _h = _styles_scale_correction_mjs__WEBPACK_IMPORTED_MODULE_18__.scaleCorrectors[key], correct = _h.correct, applyTo = _h.applyTo;
+                var _h = _styles_scale_correction_mjs__WEBPACK_IMPORTED_MODULE_19__.scaleCorrectors[key], correct = _h.correct, applyTo = _h.applyTo;
                 var corrected = correct(valuesToRender[key], lead);
                 if (applyTo) {
                     var num = applyTo.length;
@@ -65717,7 +65976,7 @@ function createProjectionNode(_a) {
             if (this.options.layoutId) {
                 styles.pointerEvents =
                     lead === this
-                        ? (0,_value_utils_resolve_motion_value_mjs__WEBPACK_IMPORTED_MODULE_17__.resolveMotionValue)(styleProp.pointerEvents) || ""
+                        ? (0,_value_utils_resolve_motion_value_mjs__WEBPACK_IMPORTED_MODULE_18__.resolveMotionValue)(styleProp.pointerEvents) || ""
                         : "none";
             }
             return styles;
@@ -65748,34 +66007,34 @@ function notifyLayoutUpdate(node) {
         // TODO Maybe we want to also resize the layout snapshot so we don't trigger
         // animations for instance if layout="size" and an element has only changed position
         if (node.options.animationType === "size") {
-            (0,_utils_each_axis_mjs__WEBPACK_IMPORTED_MODULE_19__.eachAxis)(function (axis) {
+            (0,_utils_each_axis_mjs__WEBPACK_IMPORTED_MODULE_20__.eachAxis)(function (axis) {
                 var axisSnapshot = snapshot.isShared
                     ? snapshot.measured[axis]
                     : snapshot.layout[axis];
-                var length = (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_11__.calcLength)(axisSnapshot);
+                var length = (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_12__.calcLength)(axisSnapshot);
                 axisSnapshot.min = layout_1[axis].min;
                 axisSnapshot.max = axisSnapshot.min + length;
             });
         }
         else if (node.options.animationType === "position") {
-            (0,_utils_each_axis_mjs__WEBPACK_IMPORTED_MODULE_19__.eachAxis)(function (axis) {
+            (0,_utils_each_axis_mjs__WEBPACK_IMPORTED_MODULE_20__.eachAxis)(function (axis) {
                 var axisSnapshot = snapshot.isShared
                     ? snapshot.measured[axis]
                     : snapshot.layout[axis];
-                var length = (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_11__.calcLength)(layout_1[axis]);
+                var length = (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_12__.calcLength)(layout_1[axis]);
                 axisSnapshot.max = axisSnapshot.min + length;
             });
         }
-        var layoutDelta = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_6__.createDelta)();
-        (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_11__.calcBoxDelta)(layoutDelta, layout_1, snapshot.layout);
-        var visualDelta = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_6__.createDelta)();
+        var layoutDelta = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_7__.createDelta)();
+        (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_12__.calcBoxDelta)(layoutDelta, layout_1, snapshot.layout);
+        var visualDelta = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_7__.createDelta)();
         if (snapshot.isShared) {
-            (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_11__.calcBoxDelta)(visualDelta, node.applyTransform(measuredLayout, true), snapshot.measured);
+            (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_12__.calcBoxDelta)(visualDelta, node.applyTransform(measuredLayout, true), snapshot.measured);
         }
         else {
-            (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_11__.calcBoxDelta)(visualDelta, layout_1, snapshot.layout);
+            (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_12__.calcBoxDelta)(visualDelta, layout_1, snapshot.layout);
         }
-        var hasLayoutChanged = !(0,_geometry_utils_mjs__WEBPACK_IMPORTED_MODULE_4__.isDeltaZero)(layoutDelta);
+        var hasLayoutChanged = !(0,_geometry_utils_mjs__WEBPACK_IMPORTED_MODULE_5__.isDeltaZero)(layoutDelta);
         var hasRelativeTargetChanged = false;
         if (!node.resumeFrom) {
             node.relativeParent = node.getClosestProjectingParent();
@@ -65786,11 +66045,11 @@ function notifyLayoutUpdate(node) {
             if (node.relativeParent && !node.relativeParent.resumeFrom) {
                 var _f = node.relativeParent, parentSnapshot = _f.snapshot, parentLayout = _f.layout;
                 if (parentSnapshot && parentLayout) {
-                    var relativeSnapshot = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_6__.createBox)();
-                    (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_11__.calcRelativePosition)(relativeSnapshot, snapshot.layout, parentSnapshot.layout);
-                    var relativeLayout = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_6__.createBox)();
-                    (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_11__.calcRelativePosition)(relativeLayout, layout_1, parentLayout.actual);
-                    if (!(0,_geometry_utils_mjs__WEBPACK_IMPORTED_MODULE_4__.boxEquals)(relativeSnapshot, relativeLayout)) {
+                    var relativeSnapshot = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_7__.createBox)();
+                    (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_12__.calcRelativePosition)(relativeSnapshot, snapshot.layout, parentSnapshot.layout);
+                    var relativeLayout = (0,_geometry_models_mjs__WEBPACK_IMPORTED_MODULE_7__.createBox)();
+                    (0,_geometry_delta_calc_mjs__WEBPACK_IMPORTED_MODULE_12__.calcRelativePosition)(relativeLayout, layout_1, parentLayout.actual);
+                    if (!(0,_geometry_utils_mjs__WEBPACK_IMPORTED_MODULE_5__.boxEquals)(relativeSnapshot, relativeLayout)) {
                         hasRelativeTargetChanged = true;
                     }
                 }
@@ -65845,14 +66104,14 @@ function removeLeadSnapshots(stack) {
     stack.removeLeadSnapshot();
 }
 function mixAxisDelta(output, delta, p) {
-    output.translate = (0,popmotion__WEBPACK_IMPORTED_MODULE_20__.mix)(delta.translate, 0, p);
-    output.scale = (0,popmotion__WEBPACK_IMPORTED_MODULE_20__.mix)(delta.scale, 1, p);
+    output.translate = (0,popmotion__WEBPACK_IMPORTED_MODULE_21__.mix)(delta.translate, 0, p);
+    output.scale = (0,popmotion__WEBPACK_IMPORTED_MODULE_21__.mix)(delta.scale, 1, p);
     output.origin = delta.origin;
     output.originPoint = delta.originPoint;
 }
 function mixAxis(output, from, to, p) {
-    output.min = (0,popmotion__WEBPACK_IMPORTED_MODULE_20__.mix)(from.min, to.min, p);
-    output.max = (0,popmotion__WEBPACK_IMPORTED_MODULE_20__.mix)(from.max, to.max, p);
+    output.min = (0,popmotion__WEBPACK_IMPORTED_MODULE_21__.mix)(from.min, to.min, p);
+    output.max = (0,popmotion__WEBPACK_IMPORTED_MODULE_21__.mix)(from.max, to.max, p);
 }
 function mixBox(output, from, to, p) {
     mixAxis(output.x, from.x, to.x, p);
@@ -65908,18 +66167,52 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "useProjectionId": () => (/* binding */ useProjectionId)
 /* harmony export */ });
 /* harmony import */ var _utils_use_constant_mjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../utils/use-constant.mjs */ "./node_modules/framer-motion/dist/es/utils/use-constant.mjs");
-/* harmony import */ var _create_projection_node_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./create-projection-node.mjs */ "./node_modules/framer-motion/dist/es/projection/node/create-projection-node.mjs");
+/* harmony import */ var _state_mjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./state.mjs */ "./node_modules/framer-motion/dist/es/projection/node/state.mjs");
 
 
 
 var id = 1;
 function useProjectionId() {
     return (0,_utils_use_constant_mjs__WEBPACK_IMPORTED_MODULE_0__.useConstant)(function () {
-        if (_create_projection_node_mjs__WEBPACK_IMPORTED_MODULE_1__.globalProjectionState.hasEverUpdated) {
+        if (_state_mjs__WEBPACK_IMPORTED_MODULE_1__.globalProjectionState.hasEverUpdated) {
             return id++;
         }
     });
 }
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/framer-motion/dist/es/projection/node/state.mjs":
+/*!**********************************************************************!*\
+  !*** ./node_modules/framer-motion/dist/es/projection/node/state.mjs ***!
+  \**********************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "globalProjectionState": () => (/* binding */ globalProjectionState)
+/* harmony export */ });
+/**
+ * This should only ever be modified on the client otherwise it'll
+ * persist through server requests. If we need instanced states we
+ * could lazy-init via root.
+ */
+var globalProjectionState = {
+    /**
+     * Global flag as to whether the tree has animated since the last time
+     * we resized the window
+     */
+    hasAnimatedSinceResize: true,
+    /**
+     * We set this to true once, on the first update. Any nodes added to the tree beyond that
+     * update will be given a `data-projection-id` attribute.
+     */
+    hasEverUpdated: false,
+};
 
 
 
@@ -69656,7 +69949,7 @@ function updateMotionValuesFromProps(element, next, prev) {
              * and warn against mismatches.
              */
             if (true) {
-                (0,_utils_warn_once_mjs__WEBPACK_IMPORTED_MODULE_1__.warnOnce)(nextValue.version === "6.3.16", "Attempting to mix Framer Motion versions ".concat(nextValue.version, " with 6.3.16 may not work as expected."));
+                (0,_utils_warn_once_mjs__WEBPACK_IMPORTED_MODULE_1__.warnOnce)(nextValue.version === "6.5.1", "Attempting to mix Framer Motion versions ".concat(nextValue.version, " with 6.5.1 may not work as expected."));
             }
         }
         else if ((0,_value_utils_is_motion_value_mjs__WEBPACK_IMPORTED_MODULE_0__.isMotionValue)(prevValue)) {
@@ -70540,7 +70833,7 @@ var MotionValue = /** @class */ (function () {
          * This will be replaced by the build step with the latest version number.
          * When MotionValues are provided to motion components, warn if versions are mixed.
          */
-        this.version = "6.3.16";
+        this.version = "6.5.1";
         /**
          * Duration, in milliseconds, since last updating frame.
          *

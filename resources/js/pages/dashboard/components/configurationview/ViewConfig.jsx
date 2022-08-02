@@ -8,6 +8,7 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormLabel from '@mui/material/FormLabel';
 
+import Stack from '@mui/material/Stack';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
@@ -31,12 +32,20 @@ const theme = createTheme({
             main: '#123E66',
             darker: '#336666',
         },
+        secondary:{
+            main: "#FF5858",
+            darker: "#336666"
+        }
     },
 });
 
 
 export default function ViewConfig() {
-    const [dateValue, setDateValue] = React.useState < Date | null > (new Date());
+    const [value, setValue] = React.useState(new Date('2014-08-18T21:11:54'));
+
+    const handleChange = (newValue) => {
+        setValue(newValue);
+    };
     return (
         <motion.div
             transition={{ duration: 0.8 }}
@@ -173,20 +182,21 @@ export default function ViewConfig() {
                         xs={6}
                     >
                         <LocalizationProvider dateAdapter={AdapterDateFns}>
-                            <DateTimePicker
-                                renderInput={(props) => <TextField {...props} />}
-                                label="DateTimePicker"
-                                value={dateValue}
-                                onChange={(newValue) => {
-                                    setDateValue(newValue);
-                                }}
-                            />
+                            <Stack spacing={3}>
+                                <DateTimePicker
+                                    label="Fecha y tiempo del simulacro"
+                                    value={value}
+                                    onChange={handleChange}
+                                    renderInput={(params) => <TextField {...params} />}
+                                />
+                            </Stack>
                         </LocalizationProvider>
                     </Grid>
                     <Grid
                         item
                         xs={6}
                     >
+                        <Button variant="contained" color='secondary'>START</Button>
                     </Grid>
                 </Grid>
             </ThemeProvider>
