@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class ConfiguracionRaspberry extends Model
 {
     use HasFactory;
-    protected $table = 'configactions';
+    protected $table = 'config_actions';
 }
