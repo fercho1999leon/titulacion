@@ -13,10 +13,17 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('configactions', function (Blueprint $table) {
+        Schema::create('config_actions', function (Blueprint $table) {
             $table->id();
-            
-            $table->foreing('user_id')->references('id')->on('users');
+            $table->integer('line');
+            $table->integer('timeActionError');
+            $table->integer('timeLastError');
+            $table->string('email',300);
+            $table->integer('vmax');
+            $table->integer('vmin');
+            $table->boolean('active');
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }
