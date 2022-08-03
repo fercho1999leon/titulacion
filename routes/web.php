@@ -1,14 +1,17 @@
 <?php
 
 use App\Events\ListenerLineElectricEvent;
+use App\Http\Controllers\ControllerConfigRaspberry;
 use App\Http\Controllers\ControllerDemonServer;
 use App\Http\Controllers\ControllerLogin;
 use App\Http\Controllers\ControllerNotify;
 use App\Http\Controllers\ControllerUsers;
+use App\Mail\NotifyError;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 /*
 |--------------------------------------------------------------------------
@@ -34,19 +37,28 @@ Route::group(['middleware' => ['auth']],function(){
         setcookie("__token", csrf_token());
         setcookie("XSRF", csrf_token());
         return view('/pages/dashboard/index');
-    })->middleware(['auth'])->name('ViewDashboard');
+    })->name('ViewDashboard');
     //Configuracion de parametros del microcontrolador
 
     //Notificaciones
-    Route::post('/import/notify',[ControllerNotify::class,'store'])->middleware(['auth']);
-    Route::post('/remove/notify', [ControllerNotify::class,'remove'])->middleware(['auth']);
+    Route::post('/import/notify',[ControllerNotify::class,'store']);
+    Route::post('/remove/notify', [ControllerNotify::class,'remove']);
 
     //Usuarios actions CRUD
-    Route::post('/user/new',[ControllerUsers::class,'store'])->middleware(['auth']);
-    Route::post('/user/import',[ControllerUsers::class,'read'])->middleware(['auth']);
-    Route::post('/user/update',[ControllerUsers::class,'update'])->middleware(['auth']);
-    Route::post('/user/delete',[ControllerUsers::class,'delete'])->middleware(['auth']);
+    Route::post('/user/new',[ControllerUsers::class,'store']);
+    Route::post('/user/import',[ControllerUsers::class,'read']);
+    Route::post('/user/update',[ControllerUsers::class,'update']);
+    Route::post('/user/delete',[ControllerUsers::class,'delete']);
+
+    //Almacenamiento de configuraciones para raspberry pi
+    Route::post('/config/create',[ControllerConfigRaspberry::class,'create']);
+    Route::post('/config/read',[ControllerConfigRaspberry::class,'read']);
+    Route::post('/config/delect',[ControllerConfigRaspberry::class,'delect']);
+    //Si hay tiempo agregar actualizar
+
 });
+
+
 Route::get('/server', [ControllerDemonServer::class,'start']);
 Route::get('/prueba', function () {
     //return Cache::remember();

@@ -51,7 +51,7 @@ export default function NavMain(props) {
         <Box
             sx={{
                 width: isOpen ? "180px" : "50px",
-                height: isOpen ? "96vh" : "50px",
+                height: isOpen ? "96%" : "50px",
                 marginTop: '2vh',
                 marginLeft: '2vh',
                 backgroundColor: 'var(--color-primary)',

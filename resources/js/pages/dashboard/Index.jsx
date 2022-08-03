@@ -28,6 +28,7 @@ function Index() {
             <Grid
                 container
                 direction="row"
+                height='100vh'
             >
                 <Grid
                     item

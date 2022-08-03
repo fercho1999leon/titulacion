@@ -13,6 +13,37 @@ import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
 
+//Tabla
+import TableModel from '../registerUsers/TableModel';
+import IconButton from '@mui/material/IconButton';
+import DeleteIcon from '@mui/icons-material/Delete';
+
+const columnsModel = [
+    { id: 'name', label: 'Nombre del Creador', minWidth: '10%' },
+    { id: 'line', label: 'Linea Principal', minWidth: '10%' },
+    { id: 'timeActionError', label: 'T. espera antes de recuperacion', minWidth: '10%' },
+    { id: 'timeLastError', label: 'T. espera despues de evento', minWidth: '10%' },
+    { id: 'email', label: 'Correo', minWidth: '10%' },
+    { id: 'vmax', label: 'Voltaje max', minWidth: '10%' },
+    { id: 'vmin', label: 'Voltaje min', minWidth: '10%' },
+    { id: 'active', label: 'Activo', minWidth: '10%' },
+    { id: 'action', label: 'Accion', minWidth: '10%' },
+];
+
+const rows = [
+    {
+        name: 'fernando',
+        line: '1',
+        timeActionError: '10',
+        timeLastError: '15',
+        email: 'fercho1999_w@hotmail.com',
+        vmax: 120,
+        vmin: 100,
+        active: 'YES'
+
+    }
+];
+
 const centrarHorizontal = {
     display: 'flex',
     justifyContent: 'center',
@@ -32,7 +63,7 @@ const theme = createTheme({
             main: '#123E66',
             darker: '#336666',
         },
-        secondary:{
+        secondary: {
             main: "#FF5858",
             darker: "#336666"
         }
@@ -50,12 +81,11 @@ export default function ViewConfig() {
         <motion.div
             transition={{ duration: 0.8 }}
             initial={{
-                marginTop: '25px',
                 padding: '20px',
                 boxShadow: '0px 0px 56px 17px rgb(0 0 0 / 30%)',
             }}
             animate={{
-                scale: [0.6, 0.8],
+                scale: [0.6, 0.9],
                 borderRadius: ["0px", "15px"],
             }}
         >
@@ -179,6 +209,25 @@ export default function ViewConfig() {
                     </Grid>
                     <Grid
                         item
+                        xs={12}
+                    >
+                        <LoadTable></LoadTable>
+                    </Grid>
+                    <Grid
+                        item
+                        xs={12}
+                    >
+                        <div
+                            style={{
+                                width: '100%',
+                                height: '2px',
+                                backgroundColor: 'var(--color-primary)',
+                            }}
+                        >
+                        </div>
+                    </Grid>
+                    <Grid
+                        item
                         xs={6}
                     >
                         <LocalizationProvider dateAdapter={AdapterDateFns}>
@@ -201,5 +250,73 @@ export default function ViewConfig() {
                 </Grid>
             </ThemeProvider>
         </motion.div>
+    );
+}
+
+const importData = (insertDataRows,setErrorHTML) => {
+    const token = document.cookie.replace(/(?:(?:^|.*;\s*)__token\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+    fetch('/config/read', {
+        headers: {
+            'X-CSRF-TOKEN': token,
+            'Content-Type': 'application/json',
+        },
+        method: 'POST',
+    }).then(res => {
+        return res.text();
+    }).then(res => {
+        try {
+            const data = JSON.parse(res);
+            setErrorHTML(false);
+            insertDataRows(data);
+        }
+        catch (error) {
+            setErrorHTML(true);
+            const $div = document.getElementById('insertTable');
+            $div.contentWindow.document.open();
+            $div.contentWindow.document.write(res);
+            $div.contentWindow.document.close();
+        }
+        /*const $div = document.getElementById('insertTable');
+        $div.contentWindow.document.open();
+        $div.contentWindow.document.write(res);
+        $div.contentWindow.document.close();*/
+    });
+
+}
+
+function createData(name, line, timeActionError, timeLastError, email, vmax, vmin, active, action) {
+    return { name, line, timeActionError, timeLastError, email, vmax, vmin, active, action };
+}
+
+const LoadTable = () => {
+    const [rows, setRows] = React.useState([]);
+    const [errorHTML, setErrorHTML] = React.useState(false);
+    const insertDataRows = (data) => {
+        const arrayData = [];
+        data.map((el) => {
+            const name = el['user_create'];
+            const config = el['configuracion'];
+            arrayData.push(createData(name, config['line'], config['timeActionError'], config['timeLastError'],
+            config['email'], config['vmax'], config['vmin'], config['active'],
+                <>
+                    <IconButton onClick={(e)=>{
+                        delectUser(insertDataRows,el['id']);
+                    }}>
+                        <DeleteIcon/>
+                    </IconButton>
+                </>
+            ))
+        });
+        setRows(arrayData);
+    }
+    React.useEffect(() => {
+        importData(insertDataRows,setErrorHTML);
+    }, [rows]);
+    //<TableModel columns={columnsModel} rows={rows} xs={11}></TableModel>
+    return (
+        <>
+            {errorHTML?<iframe style={{width:'100%',height:'400px'}} id='insertTable'></iframe>:<TableModel columns={columnsModel} rows={rows} xs={11}></TableModel>}
+        </>
+        
     );
 }
