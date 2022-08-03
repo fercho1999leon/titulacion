@@ -21,12 +21,12 @@ use Illuminate\Http\Request;
 |
 */
 //Rutas del login
-Route::get('/', [ControllerLogin::class,'create'])->middleware('guest','verifyusers')->name('ViewLogin');
+Route::get('/', [ControllerLogin::class,'create'])->middleware(['guest','verifyusers'])->name('ViewLogin');
 Route::post('/',[ControllerLogin::class,'store'])->middleware('guest');
 Route::get('/logout',[ControllerLogin::class,'destroy'])->name('Logout');
 //Rutas para la creacion de usuarios
-Route::get('/new-user',[ControllerUsers::class,'create'])->middleware('guest','verifyusersroute')->name('FormsNewUsers');
-Route::post('/new-user',[ControllerUsers::class,'store'])->middleware('guest','verifyusersroute')->name('FormsNewUsers');
+Route::get('/new-user',[ControllerUsers::class,'create'])->middleware('verifyusersroute')->name('FormsNewUsers');
+Route::post('/new-user',[ControllerUsers::class,'store'])->middleware('verifyusersroute')->name('FormsNewUsers');
 //Rutas despues del login
 Route::group(['middleware' => ['auth']],function(){
     //Dashboard

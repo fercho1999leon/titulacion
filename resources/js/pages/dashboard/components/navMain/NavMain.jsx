@@ -86,11 +86,11 @@ export default function NavMain(props) {
                         }}
                     >
                         {isOpen ?
-                            <MenuIcon sx={{
+                            <CloseRoundedIcon sx={{
                                 color: 'var(--color-fourth)',
                             }} />
                             :
-                            <CloseRoundedIcon sx={{
+                            <MenuIcon sx={{
                                 color: 'var(--color-fourth)',
                             }} />
                         }

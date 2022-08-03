@@ -6,6 +6,7 @@ import ViewDashboard from './components/dashboard/ViewDashboard';
 import ViewNotificaciones from './components/notificaciones/ViewNotificaciones';
 import { Grid } from '@mui/material';
 import FormNewUser from './components/registerUsers/FormNewUser';
+import ViewConfig from './components/configurationview/ViewConfig';
 
 function Index() {
     const [showNav,setShowNav] = React.useState(false);
@@ -14,10 +15,10 @@ function Index() {
         if(idSelect === 1){
             return (<ViewDashboard showNav={showNav} />);
         }else if(idSelect === 2){
-            return null;
+            return <ViewConfig></ViewConfig>;
         }
         else if(idSelect === 3){
-            return <ViewNotificaciones />
+            return <ViewNotificaciones />;
         }else{
             return <FormNewUser/>;
         }
