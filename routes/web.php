@@ -1,5 +1,6 @@
 <?php
 
+use App\Events\ListenerLineElectricEvent;
 use App\Http\Controllers\ControllerDemonServer;
 use App\Http\Controllers\ControllerLogin;
 use App\Http\Controllers\ControllerNotify;
