@@ -266,20 +266,16 @@ const importData = (insertDataRows,setErrorHTML) => {
     }).then(res => {
         try {
             const data = JSON.parse(res);
-            setErrorHTML(false);
+            setErrorHTML(true);
             insertDataRows(data);
         }
         catch (error) {
-            setErrorHTML(true);
             const $div = document.getElementById('insertTable');
             $div.contentWindow.document.open();
             $div.contentWindow.document.write(res);
             $div.contentWindow.document.close();
+            setErrorHTML(false);
         }
-        /*const $div = document.getElementById('insertTable');
-        $div.contentWindow.document.open();
-        $div.contentWindow.document.write(res);
-        $div.contentWindow.document.close();*/
     });
 
 }
@@ -288,9 +284,40 @@ function createData(name, line, timeActionError, timeLastError, email, vmax, vmi
     return { name, line, timeActionError, timeLastError, email, vmax, vmin, active, action };
 }
 
+const delectUser = (insertDataRows,id,setErrorHTML) =>{
+    const token = document.cookie.replace(/(?:(?:^|.*;\s*)__token\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+    let archivoDatos={
+        id,
+    }
+    archivoDatos = JSON.stringify(archivoDatos);
+    fetch('/config/delect',{
+        headers:{
+            'X-CSRF-TOKEN': token,
+            'Content-Type': 'application/json',
+        },
+        method:'POST',
+        body:archivoDatos,
+    }).then(res => {
+        return res.text();
+    }).then(res => {
+        try {
+            const data = JSON.parse(res);
+            setErrorHTML(true);
+            insertDataRows(data);
+        }
+        catch (error) {
+            const $div = document.getElementById('insertTable');
+            $div.contentWindow.document.open();
+            $div.contentWindow.document.write(res);
+            $div.contentWindow.document.close();
+            setErrorHTML(false);
+        }
+    });
+}
+
 const LoadTable = () => {
     const [rows, setRows] = React.useState([]);
-    const [errorHTML, setErrorHTML] = React.useState(false);
+    const [errorHTML, setErrorHTML] = React.useState(true);
     const insertDataRows = (data) => {
         const arrayData = [];
         data.map((el) => {
@@ -300,7 +327,7 @@ const LoadTable = () => {
             config['email'], config['vmax'], config['vmin'], config['active'],
                 <>
                     <IconButton onClick={(e)=>{
-                        delectUser(insertDataRows,el['id']);
+                        delectUser(insertDataRows,config['id'],setErrorHTML);
                     }}>
                         <DeleteIcon/>
                     </IconButton>
@@ -311,11 +338,12 @@ const LoadTable = () => {
     }
     React.useEffect(() => {
         importData(insertDataRows,setErrorHTML);
-    }, [rows]);
+    }, []);
     //<TableModel columns={columnsModel} rows={rows} xs={11}></TableModel>
     return (
         <>
-            {errorHTML?<iframe style={{width:'100%',height:'400px'}} id='insertTable'></iframe>:<TableModel columns={columnsModel} rows={rows} xs={11}></TableModel>}
+            {errorHTML?<TableModel columns={columnsModel} rows={rows} xs={11}></TableModel>:null}
+            <iframe hidden={errorHTML} style={{width:'100%',height:'400px'}} id='insertTable'></iframe>
         </>
         
     );

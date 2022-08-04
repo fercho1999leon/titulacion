@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 use function PHPUnit\Framework\isEmpty;
+use function PHPUnit\Framework\returnValueMap;
 
 class ControllerConfigRaspberry extends Controller
 {
@@ -51,10 +52,10 @@ class ControllerConfigRaspberry extends Controller
     }
 
     public function delect(Request $request){
-        $configuracion = ConfiguracionRaspberry::findOrFail($request->id);
-        if(isEmpty($configuracion) && isset($configuracion)){
+        $configuracion = ConfiguracionRaspberry::where('id',$request->id)->first();
+        if($configuracion!=null){
             $configuracion->delete();
-            return response(['msg'=> 'Registro eliminado'],200);
+            return $this->read();
         }
         return response([
             'msg'=> 'Registro no existe'

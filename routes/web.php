@@ -58,7 +58,6 @@ Route::group(['middleware' => ['auth']],function(){
 
 });
 
-
 Route::get('/server', [ControllerDemonServer::class,'start']);
 Route::get('/prueba', function () {
     //return Cache::remember();
