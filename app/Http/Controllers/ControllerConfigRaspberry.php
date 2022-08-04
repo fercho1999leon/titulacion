@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Events\ListenerDbConfig;
 use App\Models\ConfiguracionRaspberry;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -32,9 +33,10 @@ class ControllerConfigRaspberry extends Controller
             $save_config->active = 1;
             $save_config->user_id = Auth::user()->id;
             $save_config->save();
-            return response([],200);
+            event(new ListenerDbConfig($this->read()));
+            return response(['msg' => 'ok'],200);
         }
-        return response([],500);
+        return response(['msg' => 'error'],500);
     }
 
     public function read(){

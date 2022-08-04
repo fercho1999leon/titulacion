@@ -18,6 +18,8 @@ import TableModel from '../registerUsers/TableModel';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 
+import Alert from '@mui/material/Alert';
+
 const columnsModel = [
     { id: 'name', label: 'Nombre del Creador', minWidth: '10%' },
     { id: 'line', label: 'Linea Principal', minWidth: '10%' },
@@ -73,6 +75,8 @@ const theme = createTheme({
 
 export default function ViewConfig() {
     const [value, setValue] = React.useState(new Date('2014-08-18T21:11:54'));
+    const [showMsg, setShowMsg] = React.useState(false);
+    const [errorHTML, setErrorHTML] = React.useState(true);
 
     const handleChange = (newValue) => {
         setValue(newValue);
@@ -89,11 +93,14 @@ export default function ViewConfig() {
                 borderRadius: ["0px", "15px"],
             }}
         >
+
             <ThemeProvider theme={theme}>
                 <Grid
                     container
                     direction='row'
                     justifyContent='space-evenly'
+                    component="form"
+                    autoComplete="off"
                     spacing={2}
                 >
                     <Grid
@@ -115,8 +122,8 @@ export default function ViewConfig() {
                             name="radio-buttons-group"
                             color='primary'
                         >
-                            <FormControlLabel value="1" control={<Radio />} label="LINEA 1" />
-                            <FormControlLabel value="2" control={<Radio />} label="LINEA 2" />
+                            <FormControlLabel value="1" control={<Radio id="line1" />} label="LINEA 1" />
+                            <FormControlLabel value="2" control={<Radio id="line2" />} label="LINEA 2" />
                         </RadioGroup>
                     </Grid>
                     <Grid
@@ -191,9 +198,24 @@ export default function ViewConfig() {
                         item
                         xs={12}
                     >
-                        <Button variant="contained" color='primary'>Guardar</Button>
+                        <Button variant="contained" color='primary' onClick={(e) => {
+                            saveData(showMsg, setShowMsg, setErrorHTML);
+                        }}>Guardar</Button>
                     </Grid>
-
+                    {
+                        showMsg ?
+                            <Grid
+                                item
+                                xs={12}
+                            >
+                                {
+                                    ShowAlert()
+                                }
+                            </Grid>
+                            :
+                            null
+                    }
+                    <iframe hidden={errorHTML} style={{ width: '100%', height: '400px' }} id='saveDataError'></iframe>
                     <Grid
                         item
                         xs={12}
@@ -249,11 +271,58 @@ export default function ViewConfig() {
                     </Grid>
                 </Grid>
             </ThemeProvider>
+
         </motion.div>
     );
 }
 
-const importData = (insertDataRows,setErrorHTML) => {
+const saveData = (showMsg, setShowMsg, setErrorHTML) => {
+    if (showMsg) {
+        setShowMsg(false);
+    }
+    const $form = document.querySelector('form');
+    if ($form.reportValidity()) {
+        const $data = $form.elements;
+        const token = document.cookie.replace(/(?:(?:^|.*;\s*)__token\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+        let arraydata = {
+            line: $data.line1.checked ? 1 : 2,
+            timeActionError: $data.timeActionError.value,
+            timeLastError: $data.timeLastError.value,
+            email: $data.idEmail.value,
+            vmax: $data.vmax.value,
+            vmin: $data.vmin.value,
+        };
+        arraydata = JSON.stringify(arraydata);
+        fetch('/config/create', {
+            headers: {
+                'X-CSRF-TOKEN': token,
+                'Content-Type': 'application/json'
+
+            },
+            method: 'POST',
+            body: arraydata
+        }).then(res => {
+            return res.text();
+        }).then(res => {
+            try {
+                JSON.parse(res);
+                setErrorHTML(true);
+                setShowMsg(true);
+            } catch (error) {
+                const $div = document.getElementById('saveDataError');
+                $div.contentWindow.document.open();
+                $div.contentWindow.document.write(res);
+                $div.contentWindow.document.close();
+                setErrorHTML(false);
+            }
+        });
+
+
+    }
+
+}
+
+const importData = (insertDataRows, setErrorHTML) => {
     const token = document.cookie.replace(/(?:(?:^|.*;\s*)__token\s*\=\s*([^;]*).*$)|^.*$/, "$1");
     fetch('/config/read', {
         headers: {
@@ -284,19 +353,19 @@ function createData(name, line, timeActionError, timeLastError, email, vmax, vmi
     return { name, line, timeActionError, timeLastError, email, vmax, vmin, active, action };
 }
 
-const delectUser = (insertDataRows,id,setErrorHTML) =>{
+const delectUser = (insertDataRows, id, setErrorHTML) => {
     const token = document.cookie.replace(/(?:(?:^|.*;\s*)__token\s*\=\s*([^;]*).*$)|^.*$/, "$1");
-    let archivoDatos={
+    let archivoDatos = {
         id,
     }
     archivoDatos = JSON.stringify(archivoDatos);
-    fetch('/config/delect',{
-        headers:{
+    fetch('/config/delect', {
+        headers: {
             'X-CSRF-TOKEN': token,
             'Content-Type': 'application/json',
         },
-        method:'POST',
-        body:archivoDatos,
+        method: 'POST',
+        body: archivoDatos,
     }).then(res => {
         return res.text();
     }).then(res => {
@@ -318,18 +387,24 @@ const delectUser = (insertDataRows,id,setErrorHTML) =>{
 const LoadTable = () => {
     const [rows, setRows] = React.useState([]);
     const [errorHTML, setErrorHTML] = React.useState(true);
+
+    window.Echo.private('upDateDbConfig').listen('ListenerDbConfig',(e)=>{
+        e.data;
+        console.log(e.data);
+    });
+
     const insertDataRows = (data) => {
         const arrayData = [];
         data.map((el) => {
             const name = el['user_create'];
             const config = el['configuracion'];
             arrayData.push(createData(name, config['line'], config['timeActionError'], config['timeLastError'],
-            config['email'], config['vmax'], config['vmin'], config['active'],
+                config['email'], config['vmax'], config['vmin'], config['active'],
                 <>
-                    <IconButton onClick={(e)=>{
-                        delectUser(insertDataRows,config['id'],setErrorHTML);
+                    <IconButton onClick={(e) => {
+                        delectUser(insertDataRows, config['id'], setErrorHTML);
                     }}>
-                        <DeleteIcon/>
+                        <DeleteIcon />
                     </IconButton>
                 </>
             ))
@@ -337,14 +412,31 @@ const LoadTable = () => {
         setRows(arrayData);
     }
     React.useEffect(() => {
-        importData(insertDataRows,setErrorHTML);
+        importData(insertDataRows, setErrorHTML);
     }, []);
     //<TableModel columns={columnsModel} rows={rows} xs={11}></TableModel>
     return (
         <>
-            {errorHTML?<TableModel columns={columnsModel} rows={rows} xs={11}></TableModel>:null}
-            <iframe hidden={errorHTML} style={{width:'100%',height:'400px'}} id='insertTable'></iframe>
+            {errorHTML ? <TableModel columns={columnsModel} rows={rows} xs={11}></TableModel> : null}
+            <iframe hidden={errorHTML} style={{ width: '100%', height: '400px' }} id='insertTable'></iframe>
         </>
-        
+
+    );
+}
+
+const ShowAlert = () => {
+    return (
+        <motion.div
+            transition={{ duration: 0.6 }}
+            animate={{
+                scale: [0, 1],
+            }}
+        >
+            <Stack sx={{ width: '100%' }} spacing={2}>
+                <Alert variant="filled" severity="info">
+                    Configuracion ingresada correctamente
+                </Alert>
+            </Stack>
+        </motion.div>
     );
 }
