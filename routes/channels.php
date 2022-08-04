@@ -20,3 +20,6 @@ use Illuminate\Support\Facades\Broadcast;
 Broadcast::channel('prueba',function(){
     return true;
 });
+Broadcast::channel('updatedbconfig',function(){
+    return true;
+});

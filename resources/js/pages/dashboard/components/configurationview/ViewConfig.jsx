@@ -388,7 +388,7 @@ const LoadTable = () => {
     const [rows, setRows] = React.useState([]);
     const [errorHTML, setErrorHTML] = React.useState(true);
 
-    window.Echo.private('upDateDbConfig').listen('ListenerDbConfig',(e)=>{
+    window.Echo.private('updatedbconfig').listen('ListenerDbConfig',(e)=>{
         e.data;
         console.log(e.data);
     });

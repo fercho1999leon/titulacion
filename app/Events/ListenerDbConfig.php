@@ -10,7 +10,7 @@ use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
 
-class ListenerDbConfig
+class ListenerDbConfig implements ShouldBroadcast
 {
     use Dispatchable, InteractsWithSockets, SerializesModels;
 
@@ -33,6 +33,6 @@ class ListenerDbConfig
      */
     public function broadcastOn()
     {
-        return new PrivateChannel('upDateDbConfig');
+        return new PrivateChannel('updatedbconfig');
     }
 }

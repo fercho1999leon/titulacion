@@ -28,8 +28,8 @@ Route::get('/', [ControllerLogin::class,'create'])->middleware(['guest','verifyu
 Route::post('/',[ControllerLogin::class,'store'])->middleware('guest');
 Route::get('/logout',[ControllerLogin::class,'destroy'])->name('Logout');
 //Rutas para la creacion de usuarios
-Route::get('/new-user',[ControllerUsers::class,'create'])->middleware('verifyusersroute')->name('FormsNewUsers');
-Route::post('/new-user',[ControllerUsers::class,'store'])->middleware('verifyusersroute')->name('FormsNewUsers');
+Route::get('/new-user',[ControllerUsers::class,'create'])->middleware('verifyusersroute');
+Route::post('/new-user',[ControllerUsers::class,'store'])->middleware('verifyusersroute');
 //Rutas despues del login
 Route::group(['middleware' => ['auth']],function(){
     //Dashboard
@@ -72,13 +72,15 @@ Route::get('correo',function(){
     return "mensaje enviado";
 });
 
+Route::get('/evento/dashboard', function (Request $request) {
+    event(new ListenerLineElectricEvent(intval($request->v1),intval($request->v2),round(floatval($request->a1), 2),intval($request->a2)));
+    $response = [
+        'msg' => "EVENTO ENVIADO",
+    ];
+    return response($response, 201);
+});
+
 Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::get('/auth/api/logout',[ControllerLogin::class,'apiLogout']);
-    Route::get('/evento/dashboard', function (Request $request) {
-        event(new ListenerLineElectricEvent(intval($request->v1),intval($request->v2),round(floatval($request->a1), 2),intval($request->a2)));
-        $response = [
-            'msg' => "EVENTO ENVIADO",
-        ];
-        return response($response, 201);
-    });
+    
 });
