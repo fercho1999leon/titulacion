@@ -389,8 +389,7 @@ const LoadTable = () => {
     const [errorHTML, setErrorHTML] = React.useState(true);
 
     window.Echo.private('updatedbconfig').listen('ListenerDbConfig',(e)=>{
-        e.data;
-        console.log(e.data);
+        insertDataRows(e.data['original']);
     });
 
     const insertDataRows = (data) => {

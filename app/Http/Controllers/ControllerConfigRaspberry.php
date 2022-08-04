@@ -33,7 +33,10 @@ class ControllerConfigRaspberry extends Controller
             $save_config->active = 1;
             $save_config->user_id = Auth::user()->id;
             $save_config->save();
-            event(new ListenerDbConfig($this->read()));
+
+            $config = $this->read();
+
+            event(new ListenerDbConfig($config));
             return response(['msg' => 'ok'],200);
         }
         return response(['msg' => 'error'],500);
