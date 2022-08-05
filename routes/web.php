@@ -54,7 +54,7 @@ Route::group(['middleware' => ['auth']],function(){
     Route::post('/config/create',[ControllerConfigRaspberry::class,'create']);
     Route::post('/config/read',[ControllerConfigRaspberry::class,'read']);
     Route::post('/config/delect',[ControllerConfigRaspberry::class,'delect']);
-    //Si hay tiempo agregar actualizar
+    Route::post('/config/update',[ControllerConfigRaspberry::class,'update']);
 
 });
 

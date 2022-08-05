@@ -9,7 +9,6 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 use function PHPUnit\Framework\isEmpty;
-use function PHPUnit\Framework\returnValueMap;
 
 class ControllerConfigRaspberry extends Controller
 {
@@ -65,5 +64,22 @@ class ControllerConfigRaspberry extends Controller
         return response([
             'msg'=> 'Registro no existe'
         ],500);
+    }
+
+    public function update(Request $request){
+        $configuraciones = ConfiguracionRaspberry::all();
+        foreach ($configuraciones as $configuracion){
+            if($configuracion->active === 1){
+                ConfiguracionRaspberry::where('id',$configuracion->id)->update([
+                    'active'=>0
+                ]);
+            }
+        }
+        ConfiguracionRaspberry::where('id',$request->id)->update(
+            [
+                'active' => 1 
+            ]
+        );
+        return $this->read();
     }
 }

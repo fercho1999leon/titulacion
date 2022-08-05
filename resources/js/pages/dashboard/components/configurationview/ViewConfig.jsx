@@ -19,6 +19,7 @@ import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 
 import Alert from '@mui/material/Alert';
+import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
 
 const columnsModel = [
     { id: 'name', label: 'Nombre del Creador', minWidth: '10%' },
@@ -29,7 +30,8 @@ const columnsModel = [
     { id: 'vmax', label: 'Voltaje max', minWidth: '10%' },
     { id: 'vmin', label: 'Voltaje min', minWidth: '10%' },
     { id: 'active', label: 'Activo', minWidth: '10%' },
-    { id: 'action', label: 'Accion', minWidth: '10%' },
+    { id: 'delect', label: 'Eliminar', minWidth: '10%' },
+    { id: 'setActive', label: 'Activar', minWidth: '10%' },
 ];
 
 const rows = [
@@ -308,6 +310,9 @@ const saveData = (showMsg, setShowMsg, setErrorHTML) => {
                 JSON.parse(res);
                 setErrorHTML(true);
                 setShowMsg(true);
+                setTimeout(()=>{
+                    setShowMsg(false);
+                },3000);
             } catch (error) {
                 const $div = document.getElementById('saveDataError');
                 $div.contentWindow.document.open();
@@ -349,8 +354,8 @@ const importData = (insertDataRows, setErrorHTML) => {
 
 }
 
-function createData(name, line, timeActionError, timeLastError, email, vmax, vmin, active, action) {
-    return { name, line, timeActionError, timeLastError, email, vmax, vmin, active, action };
+function createData(name, line, timeActionError, timeLastError, email, vmax, vmin, active, delect, setActive) {
+    return { name, line, timeActionError, timeLastError, email, vmax, vmin, active, delect, setActive };
 }
 
 const delectUser = (insertDataRows, id, setErrorHTML) => {
@@ -384,11 +389,42 @@ const delectUser = (insertDataRows, id, setErrorHTML) => {
     });
 }
 
+const updateUser = (insertDataRows, id, setErrorHTML) =>{
+    const token = document.cookie.replace(/(?:(?:^|.*;\s*)__token\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+    let archivoDatos = {
+        id,
+    }
+    archivoDatos = JSON.stringify(archivoDatos);
+    fetch('/config/update', {
+        headers: {
+            'X-CSRF-TOKEN': token,
+            'Content-Type': 'application/json',
+        },
+        method: 'POST',
+        body: archivoDatos,
+    }).then(res => {
+        return res.text();
+    }).then(res => {
+        try {
+            const data = JSON.parse(res);
+            setErrorHTML(true);
+            insertDataRows(data);
+        }
+        catch (error) {
+            const $div = document.getElementById('insertTable');
+            $div.contentWindow.document.open();
+            $div.contentWindow.document.write(res);
+            $div.contentWindow.document.close();
+            setErrorHTML(false);
+        }
+    });
+}
+
 const LoadTable = () => {
     const [rows, setRows] = React.useState([]);
     const [errorHTML, setErrorHTML] = React.useState(true);
 
-    window.Echo.private('updatedbconfig').listen('ListenerDbConfig',(e)=>{
+    window.Echo.private('updatedbconfig').listen('ListenerDbConfig', (e) => {
         insertDataRows(e.data['original']);
     });
 
@@ -404,6 +440,15 @@ const LoadTable = () => {
                         delectUser(insertDataRows, config['id'], setErrorHTML);
                     }}>
                         <DeleteIcon />
+                    </IconButton>
+                </>,
+                <>
+                    <IconButton onClick={(e) => {
+                        updateUser(insertDataRows, config['id'], setErrorHTML);
+                    }}>
+                        <VerifiedUserIcon style={{
+                            color:config['active']===1?'#83F06B':'#F06B7B'
+                        }}/>
                     </IconButton>
                 </>
             ))
