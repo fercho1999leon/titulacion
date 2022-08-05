@@ -6,6 +6,7 @@ use App\Http\Controllers\ControllerDemonServer;
 use App\Http\Controllers\ControllerLogin;
 use App\Http\Controllers\ControllerNotify;
 use App\Http\Controllers\ControllerUsers;
+use App\Http\Controllers\RaspberryController;
 use App\Mail\NotifyError;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Cache;
@@ -66,21 +67,20 @@ Route::get('/prueba', function () {
 
 Route::get('/auth/api/login',[ControllerLogin::class,'apiLogin']);
 
-Route::get('correo',function(){
-    $correo = new NotifyError();
-    Mail::to('fercho1999_w@hotmail.com')->send($correo);
-    return "mensaje enviado";
-});
-
-Route::get('/evento/dashboard', function (Request $request) {
-    event(new ListenerLineElectricEvent(intval($request->v1),intval($request->v2),round(floatval($request->a1), 2),intval($request->a2)));
-    $response = [
-        'msg' => "EVENTO ENVIADO",
-    ];
-    return response($response, 201);
-});
-
 Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::get('/auth/api/logout',[ControllerLogin::class,'apiLogout']);
+    Route::get('/send/correo',function(){
+        $correo = new NotifyError();
+        Mail::to('fercho1999_w@hotmail.com')->send($correo);
+        return "mensaje enviado";
+    });
+    Route::get('/event/dashboard', function (Request $request) {
+        event(new ListenerLineElectricEvent(intval($request->v1),intval($request->v2),round(floatval($request->a1), 2),intval($request->a2)));
+        $response = [
+            'msg' => "EVENTO ENVIADO",
+        ];
+        return response($response, 201);
+    });
+    Route::get('/api/getconfig',[RaspberryController::class,'getConfiInitial']);
     
 });

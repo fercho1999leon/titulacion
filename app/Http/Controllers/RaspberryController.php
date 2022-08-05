@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Events\ListenerLineElectricEvent;
 use App\Mail\NotifyError;
 use Illuminate\Support\Facades\Mail;
+use App\Models\ConfiguracionRaspberry;
 
 class RaspberryController extends Controller
 {
@@ -18,6 +19,17 @@ class RaspberryController extends Controller
     }
 
     public function getConfiInitial(){
+        $resp = array();
+        $configuraciones = ConfiguracionRaspberry::all();
+        foreach($configuraciones as $configuracion){
+            if($configuracion->active==1){
+                array_push($resp,[
+                    'CSRF_TOKEN' => csrf_token(),
+                    'CONFIG' => $configuracion
+                ]);
+            }
+        }
+        return response($resp,200);
         
     }
 }
