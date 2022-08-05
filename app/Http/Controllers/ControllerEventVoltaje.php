@@ -20,7 +20,7 @@ class ControllerEventVoltaje extends Controller
             $msg = sprintf($msg, $request->v1, $request->timeActionError);
         }
         $correo = new NotifyError($msg);
-        Mail::to('fercho1999_w@hotmail.com')->send($correo);
+        Mail::to($request->email)->send($correo);
         return response(['msg'=>$msg],200);
     }
 }

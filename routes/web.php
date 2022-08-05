@@ -66,11 +66,9 @@ Route::get('/prueba', function () {
 
 Route::get('/auth/api/login',[ControllerLogin::class,'apiLogin']);
 
-Route::get('/send/correo',[ControllerEventVoltaje::class,'managerEventVoltaje']);
-
 Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::get('/auth/api/logout',[ControllerLogin::class,'apiLogout']);
-    //Route::get('/send/correo',[ControllerEventVoltaje::class,'managerEventVoltaje']);
+    Route::get('/send/correo',[ControllerEventVoltaje::class,'managerEventVoltaje']);
     Route::get('/event/dashboard', function (Request $request) {
         event(new ListenerLineElectricEvent(intval($request->v1),intval($request->v2),round(floatval($request->a1), 2),intval($request->a2)));
         $response = [
