@@ -23,7 +23,6 @@ import VerifiedUserIcon from '@mui/icons-material/VerifiedUser';
 
 const columnsModel = [
     { id: 'name', label: 'Nombre del Creador', minWidth: '10%' },
-    { id: 'line', label: 'Linea Principal', minWidth: '10%' },
     { id: 'timeActionError', label: 'T. espera antes de recuperacion', minWidth: '10%' },
     { id: 'timeLastError', label: 'T. espera despues de evento', minWidth: '10%' },
     { id: 'email', label: 'Correo', minWidth: '10%' },
@@ -112,22 +111,26 @@ export default function ViewConfig() {
                     >
                         <h1>MENU DE CONFIGURACIÓN</h1>
                     </Grid>
-                    <Grid
-                        item
-                        xs={6}
-                    >
-                        <FormLabel id="demo-radio-buttons-group-label" color='primary'>ELIJA LINEA PRINCIPAL</FormLabel>
-                        <RadioGroup
-                            row
-                            aria-labelledby="demo-radio-buttons-group-label"
-                            defaultValue="1"
-                            name="radio-buttons-group"
-                            color='primary'
+                    {
+                        /*
+                        <Grid
+                            item
+                            xs={6}
                         >
-                            <FormControlLabel value="1" control={<Radio id="line1" />} label="LINEA 1" />
-                            <FormControlLabel value="2" control={<Radio id="line2" />} label="LINEA 2" />
-                        </RadioGroup>
-                    </Grid>
+                            <FormLabel id="demo-radio-buttons-group-label" color='primary'>ELIJA LINEA PRINCIPAL</FormLabel>
+                            <RadioGroup
+                                row
+                                aria-labelledby="demo-radio-buttons-group-label"
+                                defaultValue="1"
+                                name="radio-buttons-group"
+                                color='primary'
+                            >
+                                <FormControlLabel value="1" control={<Radio id="line1" />} label="LINEA 1" />
+                                <FormControlLabel value="2" control={<Radio id="line2" />} label="LINEA 2" />
+                            </RadioGroup>
+                        </Grid>*/
+                    }
+
                     <Grid
                         item
                         xs={6}
@@ -182,7 +185,7 @@ export default function ViewConfig() {
                     </Grid>
                     <Grid
                         item
-                        xs={6}
+                        xs={12}
                     >
                         <TextField
                             id="vmin"
@@ -287,7 +290,7 @@ const saveData = (showMsg, setShowMsg, setErrorHTML) => {
         const $data = $form.elements;
         const token = document.cookie.replace(/(?:(?:^|.*;\s*)__token\s*\=\s*([^;]*).*$)|^.*$/, "$1");
         let arraydata = {
-            line: $data.line1.checked ? 1 : 2,
+            line: 1,
             timeActionError: $data.timeActionError.value,
             timeLastError: $data.timeLastError.value,
             email: $data.idEmail.value,
@@ -310,9 +313,9 @@ const saveData = (showMsg, setShowMsg, setErrorHTML) => {
                 JSON.parse(res);
                 setErrorHTML(true);
                 setShowMsg(true);
-                setTimeout(()=>{
+                setTimeout(() => {
                     setShowMsg(false);
-                },3000);
+                }, 3000);
             } catch (error) {
                 const $div = document.getElementById('saveDataError');
                 $div.contentWindow.document.open();
@@ -354,8 +357,8 @@ const importData = (insertDataRows, setErrorHTML) => {
 
 }
 
-function createData(name, line, timeActionError, timeLastError, email, vmax, vmin, active, delect, setActive) {
-    return { name, line, timeActionError, timeLastError, email, vmax, vmin, active, delect, setActive };
+function createData(name, timeActionError, timeLastError, email, vmax, vmin, active, delect, setActive) {
+    return { name, timeActionError, timeLastError, email, vmax, vmin, active, delect, setActive };
 }
 
 const delectUser = (insertDataRows, id, setErrorHTML) => {
@@ -389,7 +392,7 @@ const delectUser = (insertDataRows, id, setErrorHTML) => {
     });
 }
 
-const updateUser = (insertDataRows, id, setErrorHTML) =>{
+const updateUser = (insertDataRows, id, setErrorHTML) => {
     const token = document.cookie.replace(/(?:(?:^|.*;\s*)__token\s*\=\s*([^;]*).*$)|^.*$/, "$1");
     let archivoDatos = {
         id,
@@ -433,7 +436,7 @@ const LoadTable = () => {
         data.map((el) => {
             const name = el['user_create'];
             const config = el['configuracion'];
-            arrayData.push(createData(name, config['line'], config['timeActionError'], config['timeLastError'],
+            arrayData.push(createData(name, config['timeActionError'], config['timeLastError'],
                 config['email'], config['vmax'], config['vmin'], config['active'],
                 <>
                     <IconButton onClick={(e) => {
@@ -447,8 +450,8 @@ const LoadTable = () => {
                         updateUser(insertDataRows, config['id'], setErrorHTML);
                     }}>
                         <VerifiedUserIcon style={{
-                            color:config['active']===1?'#83F06B':'#F06B7B'
-                        }}/>
+                            color: config['active'] === 1 ? '#83F06B' : '#F06B7B'
+                        }} />
                     </IconButton>
                 </>
             ))

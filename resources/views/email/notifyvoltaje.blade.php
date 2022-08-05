@@ -7,6 +7,8 @@
     <title>TITULACION</title>
 </head>
 <body>
-    <h1>HOLA ENVIANDO DESDE LARAVEL</h1>
+    <h1>EVENTO DE ERROR</h1>
+    <h2>{{$msg}}</h2>
+    <h4>Por favor no responder a este correo</h4>
 </body>
 </html>
