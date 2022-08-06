@@ -11,11 +11,11 @@ class ControllerEventVoltaje extends Controller
     public function managerEventVoltaje(Request $request)
     {
         if ($request->v1 < $request->vmin) {
-            $msg = 'SE GENERO UNA CAIDA DE TENSION EN LA LINEA PRINCIPAL VOLTAJE DE LINEA PRINCIPAL: %d' . "\n"
+            $msg = 'SE GENERO UNA CAIDA DE TENSION EN LA LINEA PRINCIPAL VOLTAJE DE LINEA PRINCIPAL: %d V' . "\n"
                 . 'EN %d MINUTOS INICIARA ACCIONES DE RESPALDO';
             $msg = sprintf($msg, $request->v1, $request->timeActionError);
         } elseif ($request->v1 > $request->vmax) {
-            $msg = 'SE GENERO UN EVENTO DE SOBRE TENSION DE TENSION EN LA LINEA PRINCIPAL: %d' . "\n"
+            $msg = 'SE GENERO UN EVENTO DE SOBRE TENSION DE TENSION EN LA LINEA PRINCIPAL: %d V' . "\n"
                 . 'EN %d MINUTOS INICIARA ACCIONES DE RESPALDO';
             $msg = sprintf($msg, $request->v1, $request->timeActionError);
         }
