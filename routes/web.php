@@ -56,6 +56,9 @@ Route::group(['middleware' => ['auth']],function(){
     Route::post('/config/delect',[ControllerConfigRaspberry::class,'delect']);
     Route::post('/config/update',[ControllerConfigRaspberry::class,'update']);
 
+    //Retorna arreglo con los datos para el diagrama de barras
+    Route::post('/date/dataofbars',[ControllerNotify::class,'barrerGraphic']);
+
 });
 
 Route::get('/server', [ControllerDemonServer::class,'start']);
@@ -70,7 +73,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::get('/auth/api/logout',[ControllerLogin::class,'apiLogout']);
     Route::get('/send/correo',[ControllerEventVoltaje::class,'managerEventVoltaje']);
     Route::get('/event/dashboard', function (Request $request) {
-        event(new ListenerLineElectricEvent(intval($request->v1),intval($request->v2),round(floatval($request->a1), 2),intval($request->a2)));
+        event(new ListenerLineElectricEvent(intval($request->v1),intval($request->v2),round(floatval($request->a1), 2),round(floatval($request->a2), 2)));
         $response = [
             'msg' => "EVENTO ENVIADO",
         ];
