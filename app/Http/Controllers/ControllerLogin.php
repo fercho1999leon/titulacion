@@ -25,7 +25,8 @@ class ControllerLogin extends Controller
             'code' => 1,
             'body' => 'Error credenciales no coincides'
         );
-        return json_encode($respuesta);
+
+        return response(json_encode($respuesta),201);
     }
 
     public function apiLogin(Request $request){

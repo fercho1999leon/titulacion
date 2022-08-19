@@ -61,17 +61,18 @@ Route::group(['middleware' => ['auth']],function(){
 
 });
 
-Route::get('/server', [ControllerDemonServer::class,'start']);
+/*Route::get('/server', [ControllerDemonServer::class,'start']);
 Route::get('/prueba', function () {
-    //return Cache::remember();
+    return Cache::remember();
     return Artisan::call('websockets:serve');
-});
+});*/
 
 Route::get('/auth/api/login',[ControllerLogin::class,'apiLogin']);
 
 Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::get('/auth/api/logout',[ControllerLogin::class,'apiLogout']);
-    Route::get('/send/correo',[ControllerEventVoltaje::class,'managerEventVoltaje']);
+    Route::get('/send/correo/line-primary',[ControllerEventVoltaje::class,'managerEventVoltaje']);
+    Route::get('/send/correo/line-secondary',[ControllerEventVoltaje::class,'managerEventRecovery']);
     Route::get('/event/dashboard', function (Request $request) {
         event(new ListenerLineElectricEvent(intval($request->v1),intval($request->v2),round(floatval($request->a1), 2),round(floatval($request->a2), 2)));
         $response = [

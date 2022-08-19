@@ -51,17 +51,17 @@ const EventOnClick = (...data) => {
                 method: 'POST',
                 body: archivoDatos,
             }).then(response => {
-                return response.text();
+                if(response.status===302){
+                    window.location.assign("/main");
+                }else{
+                    return response.text();
+                }
             }).then(response => {
                 try {
                     const res = JSON.parse(response);
                     data[2](true);
                     data[1](false);
-                    if (res['code'] === 0) {
-                        document.open();
-                        document.write(response);
-                        document.close();
-                    } else {
+                    if (!res['code'] === 0) {
                         (data[5])['setShowMsg'](true);
                     }
                 } catch (error) {

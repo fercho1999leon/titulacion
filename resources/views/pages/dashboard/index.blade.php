@@ -16,6 +16,13 @@
             rel="stylesheet"
             href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
         />
+        <meta http-equiv="Expires" content="0">
+        
+        <meta http-equiv="Last-Modified" content="0">
+        
+        <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+        
+        <meta http-equiv="Pragma" content="no-cache">
     </head>
     <body class="antialiased">
         <div id="viewMain"></div>

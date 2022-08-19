@@ -22191,18 +22191,18 @@ var EventOnClick = function EventOnClick() {
         method: 'POST',
         body: archivoDatos
       }).then(function (response) {
-        return response.text();
+        if (response.status === 302) {
+          window.location.assign("/main");
+        } else {
+          return response.text();
+        }
       }).then(function (response) {
         try {
           var res = JSON.parse(response);
           data[2](true);
           data[1](false);
 
-          if (res['code'] === 0) {
-            document.open();
-            document.write(response);
-            document.close();
-          } else {
+          if (!res['code'] === 0) {
             data[5]['setShowMsg'](true);
           }
         } catch (error) {
