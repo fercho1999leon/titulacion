@@ -135,7 +135,7 @@ export default function ViewConfig() {
                         item
                         xs={6}
                     >
-                        <TextField sx={styleTextField} id={'idEmail'} label={'Ingrese correo de notificacion'} variant="standard" color='primary'></TextField>
+                        <TextField sx={styleTextField} id={'idEmail'} label={'Ingrese correo de notificacion'} variant="standard" color='primary' ></TextField>
                     </Grid>
                     <Grid
                         item
@@ -150,6 +150,7 @@ export default function ViewConfig() {
                             }}
                             variant="filled"
                             color='primary'
+                            
                         />
                     </Grid>
                     <Grid
@@ -165,6 +166,7 @@ export default function ViewConfig() {
                             }}
                             variant="filled"
                             color='primary'
+                            
                         />
 
                     </Grid>
@@ -181,6 +183,7 @@ export default function ViewConfig() {
                             }}
                             variant="filled"
                             color='primary'
+                            
                         />
                     </Grid>
                     <Grid
@@ -196,6 +199,7 @@ export default function ViewConfig() {
                             }}
                             variant="filled"
                             color='primary'
+                            
                         />
                     </Grid>
 
@@ -213,9 +217,7 @@ export default function ViewConfig() {
                                 item
                                 xs={12}
                             >
-                                {
-                                    ShowAlert()
-                                }
+                                <ShowAlert showMsg={showMsg} />
                             </Grid>
                             :
                             null
@@ -253,7 +255,7 @@ export default function ViewConfig() {
                         >
                         </div>
                     </Grid>
-                    <Grid
+                    {/*<Grid
                         item
                         xs={6}
                     >
@@ -267,13 +269,13 @@ export default function ViewConfig() {
                                 />
                             </Stack>
                         </LocalizationProvider>
-                    </Grid>
+                        </Grid>
                     <Grid
                         item
                         xs={6}
                     >
                         <Button variant="contained" color='secondary'>START</Button>
-                    </Grid>
+                        </Grid>*/}
                 </Grid>
             </ThemeProvider>
 
@@ -310,12 +312,12 @@ const saveData = (showMsg, setShowMsg, setErrorHTML) => {
             return res.text();
         }).then(res => {
             try {
-                JSON.parse(res);
+                const result = JSON.parse(res);
                 setErrorHTML(true);
-                setShowMsg(true);
+                setShowMsg(result);
                 setTimeout(() => {
                     setShowMsg(false);
-                }, 3000);
+                }, 5000);
             } catch (error) {
                 const $div = document.getElementById('saveDataError');
                 $div.contentWindow.document.open();
@@ -471,7 +473,36 @@ const LoadTable = () => {
     );
 }
 
-const ShowAlert = () => {
+const ShowAlert = (props) => {
+    const [msg, setMsg] = React.useState(null);
+    const showMsgAlert = (arr) => {
+        const arrayAlert = [];
+        if (!arr.success) {
+            const object = arr.errors;
+            for (const property in object) {
+                arrayAlert.push(
+                    <Stack sx={{ width: '100%', 'padding-bottom': '10px','padding-top': '10px' }} spacing={2}>
+                        <Alert variant="filled" severity={'error'}>
+                            {object[property]}
+                        </Alert>
+                    </Stack>
+                );
+            }
+        } else {
+            arrayAlert.push(
+                <Stack sx={{ width: '100%', 'padding-bottom': '10px','padding-top': '10px' }} spacing={2}>
+                    <Alert variant="filled" severity={'info'}>
+                        Usuario ingresado correctamente.
+                    </Alert>
+                </Stack>
+            );
+        }
+        setMsg(arrayAlert);
+    };
+    React.useEffect(() => {
+        showMsgAlert(props.showMsg);
+    }, []);
+
     return (
         <motion.div
             transition={{ duration: 0.6 }}
@@ -479,11 +510,7 @@ const ShowAlert = () => {
                 scale: [0, 1],
             }}
         >
-            <Stack sx={{ width: '100%' }} spacing={2}>
-                <Alert variant="filled" severity="info">
-                    Configuracion ingresada correctamente
-                </Alert>
-            </Stack>
+            {msg ? msg.map(e => e) : null}
         </motion.div>
     );
 }

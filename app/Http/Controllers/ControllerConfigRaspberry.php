@@ -2,23 +2,47 @@
 
 namespace App\Http\Controllers;
 
-use App\Events\ListenerDbConfig;
 use App\Models\ConfiguracionRaspberry;
 use App\Models\User;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-
+use Illuminate\Support\Facades\Response;
+use Illuminate\Validation\Rule;
+use App\Events\ListenerDbConfig;
 use function PHPUnit\Framework\isEmpty;
 
 class ControllerConfigRaspberry extends Controller
 {
-    public function create(Request $request){
+    protected function validatevoltaje($vmin, $vmax)
+    {
+        if ($vmin < $vmax) {
+            return true;
+        }
+        return false;
+    }
+    public function create(Request $request)
+    {
+        $rules = array(
+            'email' => 'required|email:rfc,dns',
+            'timeActionError' => 'required|numeric|between:0,500',
+            'timeLastError' => 'required|numeric|between:0,500',
+            'vmax' => 'required|numeric|between:0,250',
+            'vmin' => ['required', Rule::prohibitedIf(fn () => !$this->validatevoltaje($request->vmin, $request->vmax))],
+        );
+        $validator = Validator::make($request->all(), $rules);
+        if ($validator->fails()) {
+            return Response::json(array(
+                'success' => false,
+                'errors' => $validator->getMessageBag()->toArray(),
+            ), 400);
+        }
         $configuraciones = ConfiguracionRaspberry::all();
-        if (isEmpty($configuraciones) && isset($configuraciones)){
-            foreach ($configuraciones as $configuracion){
-                if($configuracion->active === 1){
-                    ConfiguracionRaspberry::where('id',$configuracion->id)->update([
-                        'active'=>0
+        if (isEmpty($configuraciones) && isset($configuraciones)) {
+            foreach ($configuraciones as $configuracion) {
+                if ($configuracion->active === 1) {
+                    ConfiguracionRaspberry::where('id', $configuracion->id)->update([
+                        'active' => 0
                     ]);
                 }
             }
@@ -36,48 +60,56 @@ class ControllerConfigRaspberry extends Controller
             $config = $this->read();
 
             event(new ListenerDbConfig($config));
-            return response(['msg' => 'ok'],200);
+            return Response::json(array(
+                'success' => true,
+            ), 200);
         }
-        return response(['msg' => 'error'],500);
+        return Response::json(array(
+            'success' => false,
+            'errors' => ['sql' => 'error'],
+        ), 400);
     }
 
-    public function read(){
+    public function read()
+    {
         $configuraciones = ConfiguracionRaspberry::all();
         $resp = array();
-        if(isEmpty($configuraciones) && isset($configuraciones)){
-            foreach($configuraciones as $configuracion){
-                array_push($resp,[
-                    'user_create' => (User::where('id',$configuracion->user_id)->first())->name,
+        if (isEmpty($configuraciones) && isset($configuraciones)) {
+            foreach ($configuraciones as $configuracion) {
+                array_push($resp, [
+                    'user_create' => (User::where('id', $configuracion->user_id)->first())->name,
                     'configuracion' => $configuracion
                 ]);
             }
         }
-        return response($resp,200);
+        return response($resp, 200);
     }
 
-    public function delect(Request $request){
-        $configuracion = ConfiguracionRaspberry::where('id',$request->id)->first();
-        if($configuracion!=null){
+    public function delect(Request $request)
+    {
+        $configuracion = ConfiguracionRaspberry::where('id', $request->id)->first();
+        if ($configuracion != null) {
             $configuracion->delete();
             return $this->read();
         }
         return response([
-            'msg'=> 'Registro no existe'
-        ],500);
+            'msg' => 'Registro no existe'
+        ], 500);
     }
 
-    public function update(Request $request){
+    public function update(Request $request)
+    {
         $configuraciones = ConfiguracionRaspberry::all();
-        foreach ($configuraciones as $configuracion){
-            if($configuracion->active === 1){
-                ConfiguracionRaspberry::where('id',$configuracion->id)->update([
-                    'active'=>0
+        foreach ($configuraciones as $configuracion) {
+            if ($configuracion->active === 1) {
+                ConfiguracionRaspberry::where('id', $configuracion->id)->update([
+                    'active' => 0
                 ]);
             }
         }
-        ConfiguracionRaspberry::where('id',$request->id)->update(
+        ConfiguracionRaspberry::where('id', $request->id)->update(
             [
-                'active' => 1 
+                'active' => 1
             ]
         );
         return $this->read();
