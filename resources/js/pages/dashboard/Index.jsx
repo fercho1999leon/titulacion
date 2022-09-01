@@ -7,6 +7,7 @@ import ViewNotificaciones from './components/notificaciones/ViewNotificaciones';
 import { Grid } from '@mui/material';
 import FormNewUser from './components/registerUsers/FormNewUser';
 import ViewConfig from './components/configurationview/ViewConfig';
+import { WindowSharp } from '@mui/icons-material';
 
 function Index() {
     const [showNav,setShowNav] = React.useState(false);
@@ -19,8 +20,10 @@ function Index() {
         }
         else if(idSelect === 3){
             return <ViewNotificaciones />;
-        }else{
+        }else if(idSelect === 4){
             return <FormNewUser/>;
+        }else{
+            window.location.href = 'logout';
         }
     }
     return (

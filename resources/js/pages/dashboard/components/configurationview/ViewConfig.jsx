@@ -143,7 +143,7 @@ export default function ViewConfig() {
                     >
                         <TextField
                             id="timeActionError"
-                            label="Tiempo de respuesta en minutos"
+                            label="Tiempo de respuesta en segundos"
                             type="number"
                             InputLabelProps={{
                                 shrink: true,
@@ -159,7 +159,7 @@ export default function ViewConfig() {
                     >
                         <TextField
                             id="timeLastError"
-                            label="Tiempo cambio despues de fallo"
+                            label="Tiempo cambio despues de fallo segundos"
                             type="number"
                             InputLabelProps={{
                                 shrink: true,

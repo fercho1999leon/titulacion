@@ -42,6 +42,10 @@ const arrayBtn = [
     {
         id: 4,
         text: 'Usuarios'
+    },
+    {
+        id: 5,
+        text: 'Cerrar Sesion'
     }
 ];
 

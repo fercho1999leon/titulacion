@@ -58,7 +58,8 @@ const formatNofify = (id,time_data, evento, opend, setNotify ,notify) =>{
             marginBottom:'5px',
         }}>
             <Grid content>
-                <Grid item xs={12}>
+                {/**
+                 * <Grid item xs={12}>
                     <Toolbar>
                         <IconButton
                             sx={{
@@ -74,12 +75,15 @@ const formatNofify = (id,time_data, evento, opend, setNotify ,notify) =>{
                         </IconButton>
                     </Toolbar>
                 </Grid>
+                 */}
                 <Grid item xs={12}>
                     <h3>Evento: {evento}</h3>
                 </Grid>
-                <Grid item xs={12}>
+                {/**
+                 * <Grid item xs={12}>
                     <textarea rows="5" style={{width:'90%',margin:'5px', border:'none'}} disabled={true}>{evento}</textarea>
                 </Grid>
+                 */}
                 <Grid item xs={10}>
                     <h5>Hora: {time_data}</h5>
                 </Grid>
